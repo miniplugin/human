@@ -2,7 +2,7 @@
  
 ---
 
-- [목차](https://github.com/miniplugin/human)
+- [학습목차](https://github.com/miniplugin/human)
 - 능력단위 요소: 2001020224_16v4
 
 ---
