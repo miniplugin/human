@@ -33,8 +33,10 @@
 
 ### 개발도구 이해(아래)
 
-- 윈도우PC에서 자바(openjdk) 설치하기.
-- 이클립스(전자정부표준프레임웍)개발툴 설치하기.- https://www.egovframe.go.kr
+- 윈도우PC에 자바(openjdk) 설치하기. - https://jdk.java.net/ (8버전을 사용합니다.)
+- 윈도우PC에 서버(톰캣8) 설치하기. - https://archive.apache.org/dist/tomcat/tomcat-8/v8.0.32/bin/ 
+- 이클립스IDE(전자정부표준프레임웍)개발툴 설치하기. - https://www.egovframe.go.kr
+- Hello World 스프링 MVC 프로젝트 생성해서 브라우저로 확인해 보기.
 
 ### 데이터베이스 이해(아래)
 
@@ -48,7 +50,7 @@
 
 ### 공공 교육자료 출처(아래)
 
-- 위에 사용된 소프트웨어는 자유프로그램 또는LGPL / MIT license 입니다.
+- 위에 사용된 소프트웨어는 자유SW 또는 GNU / LGPL / MIT license 입니다.
 - [STEP온라인평생교육원] 응용 SW 기초 기술 활용 part 1(유투브)
 - https://www.youtube.com/watch?v=fmSEG6djoRA
 - [STEP온라인평생교육원] 응용 SW 기초 기술 활용 part 2(유투브)
