@@ -1,16 +1,8 @@
-## 응용SW기초기술활용 (v1.0.0)
+## 화면설계 (v2.0.0)
  
 ---
 
 - [목차를 보는 방법](https://github.com/miniplugin/human)
-- 능력단위 요소: 2001020216_15v3
+- 능력단위 요소: 2001020224_16v4
 
 ---
-
-### [STEP] 응용 SW 기초 기술 활용 part 1(아래)
-
-- https://www.youtube.com/watch?v=fmSEG6djoRA
-
-### [STEP] 응용 SW 기초 기술 활용 part 2(아래)
-
-- https://www.youtube.com/watch?v=UmnOIX2NQrk
