@@ -2,7 +2,7 @@
  
 ---
 
-- [목차를 보는 방법](https://github.com/miniplugin/human)
+- [학습목차](https://github.com/miniplugin/human)
 - 깃허브 태그(tag) 클릭: [v1.0.0] NCS능력단위 (코드번호)  
 
 ---
