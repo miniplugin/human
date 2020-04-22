@@ -7,6 +7,15 @@
 
 ---
 
+### 기본(마스터) 사용법
+
+```
+git add .
+git commit -m 'master'
+git push origin master
+```
+
+### 태그 고정버전 사용법
 ```
 git add .
 git commit -m 'v2.0.0'
