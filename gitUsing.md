@@ -1,3 +1,21 @@
+## 화면설계 (v2.0.0)
+
+---
+
+- [목차를 보는 방법](https://github.com/miniplugin/human)
+- 능력단위 요소: 2001020224_16v4
+
+---
+
+```
+git add .
+git commit -m 'v2.0.0'
+git tag -d v2.0.0
+git tag v2.0.0
+git push origin :v2.0.0
+git push origin v2.0.0
+```
+
 ## 커리큘럼
  
 ---
