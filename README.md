@@ -28,7 +28,7 @@
 ![ex_screenshot](./git_img/v1.0.1.jpg)
 - 운영체제를 설치할 가상머신의 정의및 구조 이해 및 설치실습.
 ![ex_screenshot](./git_img/v1.0.2.jpg)
-- 실습: 버추얼박스 설치: https://download.virtualbox.org/virtualbox/6.1.6/VirtualBox-6.1.6-137129-Win.exe
+- 실습: 버추얼박스 설치: https://www.virtualbox.org/wiki/Downloads
 - 실습: 버추얼박스확장팩 설치:버추얼박스에서 USB 인터페이스 사용이나 호스트↔게스트간 클립보드 복사 및 붙여넣기 기능 사용하기 위해서.
 ![ex_screenshot](./git_img/v1.0.3.jpg)
 - 실습: 버추럴 박스(오라클)를 이용해 리눅스(데비안) 서버 구동하기. https://bitnami.com/stack/lamp
