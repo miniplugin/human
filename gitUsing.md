@@ -2,6 +2,7 @@
 
 ---
 
+- git checkout master
 - git checkout tags/v1.0.0
 
 ---
