@@ -50,15 +50,19 @@
 - 실습: 워크벤치 설치. - https://dev.mysql.com/downloads/workbench/
 - 실습: 데이터에비스 CRUD 사용하기. - 워크벤치 사용.
 - 실습: ER모델을 논리모델과 물리모델로 변환하기 - 워크벤치 사용.
+- 실습: 파스타 클라우드 신청(회원가입필요-무료) - https://paas-ta.kr/experience/apply
+- 실습: 헤로쿠 클라우드 신청(회원가입필요-무료) - https://dashboard.heroku.com/
 
 ### 기본 개발환경 구축하기(아래)
 
 - 실습: 윈도우PC에 자바(openjdk) 설치하기. - https://jdk.java.net/ (8버전을 사용합니다.)
 - 실습: 윈도우PC에 서버(톰캣8) 설치하기. - https://archive.apache.org/dist/tomcat/tomcat-8/v8.0.32/bin/
 - 실습: 이클립스IDE(전자정부표준프레임웍)개발툴 설치하기. - https://www.egovframe.go.kr
-- 실습: Hello World 스프링 MVC 프로젝트 생성해서 브라우저로 확인해 보기.
-- 실습: 윈도우PC에 버전관리 도구(git) 설치 후 개발도구와 연동. https://git-scm.com/
-
+- 실습결과: Hello World 스프링 MVC 프로젝트 생성해서 브라우저로 확인해 보기. http://localhost:8080/프로젝트명/
+- 실습: 깃허브 레포지토리 생성(회원가입필요-무료) - https://github.com/
+- 실습: 윈도우PC에 버전관리 도구(git) 설치 후 개발도구와 연동(깃허브에 푸시). https://git-scm.com/
+- 실습: Hello World 스프링 MVC 프로젝트 클라우드에 배포(파스타)
+- 실습: Hello World 스프링 MVC 프로젝트 클라우드에 배포(헤로쿠)
 
 ### 참고자료 출처(아래)
 
