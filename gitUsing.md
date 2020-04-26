@@ -3,7 +3,7 @@
 ---
 
 - git checkout tags/v14.0.0
-
+- git clone -b <tag> <repository> -> git clone -b v14.0.0 https://github.com/miniplugin/human.git
 ---
 
 ### 기본(마스터) 사용법
