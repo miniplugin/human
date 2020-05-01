@@ -67,7 +67,7 @@
 ### 참고자료 출처(아래)
 
 - 위에 사용된 소프트웨어는 자유SW 또는 GNU / LGPL / MIT license 입니다.
-- [NCS학습모듈] https://ncs.go.kr/unity/th03/ncsSearchMain.do
+- [NCS학습모듈] https://ncs.go.kr/unity/th03/ncsSearchMain.do :/정보통신/정보기술/정보기술개발
 - 우분투 리눅스 설치 iso이미지 : http://releases.ubuntu.com
 - [STEP온라인평생교육원] 응용 SW 기초 기술 활용 part 1(유투브)
 - https://www.youtube.com/watch?v=fmSEG6djoRA
