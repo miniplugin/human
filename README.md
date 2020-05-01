@@ -115,7 +115,7 @@
 
 ---
 - 임베디드 리눅스
-#### 예제소스: https://github.com/miniplugin/human/git_img/Embeded-System-2019-2.zip
+#### 예제소스: <a id="raw-url" href="https://github.com/miniplugin/human/git_img/Embeded-System-2019-2.zip">Download FILE</a>
 ---
 
 ---
