@@ -116,6 +116,7 @@
 ---
 - 임베디드 리눅스
 #### 예제소스: [download this](git_img/Embeded-System-2019-2.zip)
+<a href="git_img/Embeded-System-2019-2.zip" download="Embeded-System-2019-2.zip">download this</a>
 ---
 
 ---
