@@ -4,7 +4,8 @@
 
 - git checkout master
 - git checkout tags/v1.0.0
-- git clone -b <tag> <repository>
+- git clone -b <tag> <repository> 
+- 사용예 : git clone -b v1.0.0 https://github.com/miniplugin/human.git
 
 ---
 
