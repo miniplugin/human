@@ -94,14 +94,18 @@
 ![ex_screenshot](./git_img/loadmap001.png)
 
 ### 교재별 소스 정보(아래)
-- 스프링5 참고: https://github.com/miniplugin/edu_ora/blob/master/spring5.md
-- 스프링5 소스: https://github.com/madvirus/spring5fs
+- 스프링5 
+-- 참고: https://github.com/miniplugin/edu_ora/blob/master/spring5.md
+-- 소스: https://github.com/madvirus/spring5fs
 
-- 이것이자바다 참고: https://www.youtube.com/playlist?list=PLVsNizTWUw7FPokuK8Cmlt72DQEt7hKZu
-- 이것이자바다 소스: https://www.hanbit.co.kr/support/supplement_list.html
+- 이것이자바다 
+-- 참고: https://www.youtube.com/playlist?list=PLVsNizTWUw7FPokuK8Cmlt72DQEt7hKZu
+-- 소스: https://www.hanbit.co.kr/support/supplement_list.html
 
-- C언어 참고: https://freelec.co.kr/lecture/c-%EC%96%B8%EC%96%B4%EC%9D%98-%EB%B3%B8%EC%A7%88%EC%9D%84-%ED%8C%8C%ED%97%A4%EC%B9%98%EB%8B%A4/
-- C언어 소스: https://freelec.co.kr/datacenter/?mode=list&board_name=DataCenter2&order_by=fn_pid&order_type=desc&category1=&category2=&category3=&search_field=fn_title&search_text=C+%EC%96%B8%EC%96%B4+%EB%B3%B8%EC%83%89
+- C언어 
+-- 참고: https://freelec.co.kr/lecture/c-%EC%96%B8%EC%96%B4%EC%9D%98-%EB%B3%B8%EC%A7%88%EC%9D%84-%ED%8C%8C%ED%97%A4%EC%B9%98%EB%8B%A4/
+-- 소스: https://freelec.co.kr/datacenter/?mode=list&board_name=DataCenter2&order_by=fn_pid&order_type=desc&category1=&category2=&category3=&search_field=fn_title&search_text=C+%EC%96%B8%EC%96%B4+%EB%B3%B8%EC%83%89
 
 - 임베디드리눅스: 강사에게 받음.
-- 아두이노 소스: http://www.kwangmoonkag.co.kr/sub3/sub3_1.html?target=Board_List&DB=sub3_1&Mode=View&Num=852&page=1&S=S&val=0&Word=&Board_TYPE=&PHPSESSID=03901ac7ddf268e8562dfba0413f5f1a
+- 아두이노 
+-- 소스: http://www.kwangmoonkag.co.kr/sub3/sub3_1.html?target=Board_List&DB=sub3_1&Mode=View&Num=852&page=1&S=S&val=0&Word=&Board_TYPE=&PHPSESSID=03901ac7ddf268e8562dfba0413f5f1a
