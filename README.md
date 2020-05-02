@@ -99,6 +99,7 @@
 - 스프링5 
 #### 참고자료: https://github.com/miniplugin/edu_ora/blob/master/spring5.md
 #### 예제소스: https://github.com/madvirus/spring5fs
+#### 강사자료: http://blog.daum.net/_blog/search.do?coll_range=1&query1=%EC%8A%A4%ED%94%84%EB%A7%81+%EC%9B%B9%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8+%EC%97%B0%EC%8A%B5&searchtype=%24%7Bsearchtype%7D&page=%2Fsearch%2Fmy%2FsearchBlog.vm&frombn=2&searchpage=&sort=&blogid=0FnMj&articleno=&recommend=N&sortType=recency&enddate=&begindate=&period=&category=0&target=all
 ---
 
 --- 
@@ -115,15 +116,24 @@
 
 ---
 - 임베디드 리눅스
+#### 참고자료1: https://www.youtube.com/watch?v=_fnPwBOk3OI (Raspbian으로 개발환경구축)
+#### 참고자료2: https://www.youtube.com/watch?v=RRKDUj3G-H8 (NOOBS로 개발환경구축)
+#### 참고자료3: https://www.youtube.com/watch?v=PySvSQ6n6mw (초기로그인:pi/raspberry)
 #### 예제소스: [download this](git_img/Embeded-System-2019-2.zip)
 ---
 
 ---
-- 아두이노 
+- 아두이노
 #### 예제소스: http://www.kwangmoonkag.co.kr/sub3/sub3_1.html?target=Board_List&DB=sub3_1&Mode=View&Num=852&page=1&S=S&val=0&Word=&Board_TYPE=&PHPSESSID=03901ac7ddf268e8562dfba0413f5f1a
+#### 강사자료: http://blog.daum.net/_blog/search.do?coll_range=1&query1=%EC%95%84%EB%91%90%EC%9D%B4%EB%85%B8&searchtype=%24%7Bsearchtype%7D&page=%2Fsearch%2Fmy%2FsearchBlog.vm&frombn=2&searchpage=&sort=&blogid=0FnMj&articleno=&recommend=N&sortType=recency&enddate=&begindate=&period=&category=0&target=all
 ---
 
 ---
 - NCS학습모듈 
-#### 예제소스: https://ncs.go.kr/unity/th03/ncsSearchMain.do
+#### 참고자료: https://ncs.go.kr/unity/th03/ncsSearchMain.do
+---
+
+---
+- 작업PC 환경 
+#### 기본브라우저: 크롬 ( 크롬 웹스토어/확장프로그램 http trace )
 ---
