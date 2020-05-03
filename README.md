@@ -33,5 +33,5 @@
 ### 참고자료 출처(아래)
 
 - 위에 사용된 소프트웨어는 자유SW 또는 GNU / LGPL / MIT license 입니다.
-- [NCS학습모듈] https://ncs.go.kr/unity/th03/ncsSearchMain.do :/정보통신/정보기술/정보기술개발/화면설계
+- [NCS학습모듈] https://ncs.go.kr/unity/th03/ncsSearchMain.do :/정보통신/정보기술/정보기술개발/화면 설계
 - [카카오오븐-화면설계 온라인 툴] 무료회원가입필요 https://ovenapp.io/
