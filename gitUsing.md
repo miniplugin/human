@@ -2,7 +2,7 @@
 
 ---
 
-- git checkout tags/v1.0.0
+- git checkout tags/v3.0.0
 
 ---
 
@@ -17,9 +17,9 @@ git push origin master
 ### 태그 고정버전 사용법
 ```
 git add .
-git commit -m 'v1.0.0'
-git tag -d v1.0.0
-git tag v1.0.0
-git push origin :v1.0.0
-git push origin v1.0.0
+git commit -m 'v3.0.0'
+git tag -d v3.0.0
+git tag v3.0.0
+git push origin :v3.0.0
+git push origin v3.0.0
 ```
