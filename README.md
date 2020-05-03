@@ -22,7 +22,7 @@
 
 ### UI 요구사항 확인하기(아래)
 
-- 카카오 오븐에서 UI요구사항 어떻게 나타내는지 확인. 
+- 카카오 오븐에서 UI요구사항을 어떻게 나타내는지 확인. 
 - 벤치마킹 웹 사이트(반응형): http://edu19.dothome.co.kr/metro/sub.php/CATEGORY/2/MENU_CODE/001001005
 - 위 모바일, 테블릿, PC 레이아웃 중 1가지 선택.
 - 5개메뉴 및 5개페이지 (HOME, WE ARE, WORK, BLOG, CONTACT) 확인.
