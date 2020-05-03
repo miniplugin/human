@@ -130,7 +130,7 @@
 
 ---
 - NCS학습모듈 
-#### 참고자료: https://ncs.go.kr/unity/th03/ncsSearchMain.do
+#### 참고자료: https://ncs.go.kr/unity/th03/ncsSearchMain.do :/정보통신/정보기술/정보기술개발
 ---
 
 ---
