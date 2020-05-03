@@ -3,6 +3,8 @@
 <%@ page session="false" %>
 <html>
 <head>
+	<base href="${pageContext.request.contextPath}/"/>
+	<link rel="stylesheet" href="resources/home/css/reset.css">
 	<title>Home</title>
 </head>
 <body>
