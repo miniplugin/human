@@ -2,7 +2,7 @@
 
 ---
 
-- git checkout tags/v3.0.0
+- git checkout tags/v4.0.0
 
 ---
 
