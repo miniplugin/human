@@ -19,8 +19,8 @@
 
 - 클래스 연습: 사용자 정의 자료형 사용하기(아래).
 - Hello World MVC 프로젝트에서 src/test/java 패키지에 아래 3개의 클래스 생성한다.
-- 실습1: 3개의 클래스 - MainControler,  MemberVO, ActionService 를 생성.
-- 실습2: 여러명의 회원 정보(MemberVO)를 전달받고(MainControl), 출력(ActionService)하는 메소드 선언하기.
+- 실습1: 3개의 클래스 - MainControler,  MemberVO, MemberService 를 생성.
+- 실습2: 여러명의 회원 정보(MemberVO)를 전달받고(MainControl), 출력(MemberService)하는 메소드 선언하기.
 - 실습결과: 아래처럼 출력 되도록 프로그램 작성.
 
 ```
@@ -38,12 +38,11 @@
 222-2222-2222
 ```
 
-### 외부 라이브러리-모듈 이용연습: 서버타임 출력하기(아래)
+### 외부 라이브러리-모듈 이용하기
 
-- 클래스 연습: 사용자 정의 자료형 사용하기(아래).
-- Hello World MVC 프로젝트에서 src/test/java 패키지에 아래 3개의 클래스 생성한다.
-- 실습1: 3개의 클래스 - MainControler,  MemberVO, ActionService 를 생성.
-- 실습코드: 여러명의 회원 정보(MemberVO)를 전달받고(MainControl), 출력(ActionService)하는 메소드 선언하기.
+- 서버타임 출력하기(아래).
+- 실습1: 위에서 작성한 클래스 중 MainControler를 사용해서 코드생성.
+- 실습코드(아래)
 
 ```
 <!-- 서버시간 가져오기 pom.xml -->
