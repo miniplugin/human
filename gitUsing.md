@@ -18,7 +18,7 @@ git push origin master
 ```
 git add .
 git commit -m 'v4.0.0'
-git tag -d v4.0.0git commit -m 'v4.0.0'
+git tag -d v4.0.0
 git tag v4.0.0
 git push origin :v4.0.0
 git push origin v4.0.0
