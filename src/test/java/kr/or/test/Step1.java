@@ -27,7 +27,8 @@ public class Step1 {
 		// 필드 field(배열변수)
 		String[] names = {"홍길동","성춘향","각시탈"};
 		int[] ages = {45,100,3};
-		String[] phoneNums = {"000-0000-0000","111-1111-1111","222-2222-2222"};
+		String[] phoneNums = null;
+		phoneNums = new String[] {"000-0000-0000","111-1111-1111","222-2222-2222"};
 		printMember(names, ages, phoneNums);
 		System.out.println("------------------------------------");
 
