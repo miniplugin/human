@@ -123,10 +123,13 @@
 
 ---
 - 임베디드 리눅스
-#### 참고자료1: https://www.youtube.com/watch?v=_fnPwBOk3OI (Raspbian으로 개발환경구축)
-#### 참고자료2: https://www.youtube.com/watch?v=RRKDUj3G-H8 (NOOBS로 개발환경구축)
-#### 참고자료3: https://www.youtube.com/watch?v=PySvSQ6n6mw (초기로그인:pi/raspberry)
 #### 예제소스: [download this](git_img/Embeded-System-2019-2.zip)
+#### 라즈베리 GPIO사용 하드웨어 제어: GCC컴파일 + wiringPi 라이브러리 사용 / 
+http://blog.daum.net/_blog/search.do?coll_range=1&query1=WiringPi&searchtype=&page=1&frombn=2&searchpage=&sort=&blogid=0aJjX&articleno=&recommend=N&sortType=accuracy&enddate=&begindate=&period=&category=0&target=all 
+#### 참고자료: http://blog.naver.com/PostSearchList.nhn?blogId=tipsware&categoryNo=0&SearchText=%EB%9D%BC%EC%A6%88%EB%B2%A0%EB%A6%AC+%ED%8C%8C%EC%9D%B4+%EC%8B%A4%EC%8A%B5&orderBy=date&term=specific&startDate=2017-05-16&endDate=2017-05-23&range=all&cpage=2
+#### 영상자료1: https://www.youtube.com/watch?v=_fnPwBOk3OI (Raspbian으로 개발환경구축)
+#### 영상자료2: https://www.youtube.com/watch?v=RRKDUj3G-H8 (NOOBS로 개발환경구축)
+#### 영상자료3: https://www.youtube.com/watch?v=PySvSQ6n6mw (초기로그인:pi/raspberry)
 ---
 
 ---
