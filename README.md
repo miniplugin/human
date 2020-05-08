@@ -135,7 +135,8 @@ http://blog.daum.net/_blog/search.do?coll_range=1&query1=WiringPi&searchtype=&pa
 ---
 - 아두이노
 #### 예제소스: http://www.kwangmoonkag.co.kr/sub3/sub3_1.html?target=Board_List&DB=sub3_1&Mode=View&Num=852&page=1&S=S&val=0&Word=&Board_TYPE=&PHPSESSID=03901ac7ddf268e8562dfba0413f5f1a
-#### 강사자료: http://blog.daum.net/_blog/search.do?coll_range=1&query1=%EC%95%84%EB%91%90%EC%9D%B4%EB%85%B8&searchtype=%24%7Bsearchtype%7D&page=%2Fsearch%2Fmy%2FsearchBlog.vm&frombn=2&searchpage=&sort=&blogid=0FnMj&articleno=&recommend=N&sortType=recency&enddate=&begindate=&period=&category=0&target=all
+#### 강사자료(아두이노메가2560): http://blog.daum.net/_blog/search.do?coll_range=1&query1=%EC%95%84%EB%91%90%EC%9D%B4%EB%85%B8&searchtype=%24%7Bsearchtype%7D&page=%2Fsearch%2Fmy%2FsearchBlog.vm&frombn=2&searchpage=&sort=&blogid=0FnMj&articleno=&recommend=N&sortType=recency&enddate=&begindate=&period=&category=0&target=all
+#### 참고자료1(아두이노미니): https://deneb21.tistory.com/325 , https://deneb21.tistory.com/393
 ---
 
 ---
