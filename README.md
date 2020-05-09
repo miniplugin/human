@@ -17,7 +17,8 @@ Integration)/ESB(Enterprise Service Bus), 엔터티 관계도(ERD: Entity Relati
 터페이스) 정의서, 연계(인터페이스) 설계서
 
 ### 연계 데이터 구성하기
-- 연계데이터 구성 및 Online 테스트페이지 확인: http://www.hrd.go.kr/hrdp/ap/papco/PAPCO0700T.do
+- HRD-Net 로그인 > 회원정보 > 오픈API신청 > 인증키 확인
+- HRD-Net 연계데이터 구성 및 Online 테스트페이지 확인: http://www.hrd.go.kr/hrdp/ap/papco/PAPCO0700T.do
 
 ### 연계 메커니즘 구성하기
 - [연계시스템 예시_원격모니터링시스템_Agent(중계)시스템으로 매커니즘 이해 PDF보기](/git_img/example.pdf).
@@ -27,5 +28,6 @@ Integration)/ESB(Enterprise Service Bus), 엔터티 관계도(ERD: Entity Relati
 
 ### 참고자료 출처(아래)
 - 위에 사용된 소프트웨어는 자유SW 또는 GNU / LGPL / MIT license 입니다.
-- HRD-Net 오픈API: http://www.hrd.go.kr/hrdp/ap/papao/PAPAO0100D.do
-- [연계시스템 예시_원격모니터링시스템_Agent(중계)시스템이해 PDF보기](/git_img/example.pdf).
+- HRD-Net 오픈API(정부3.0서비스): http://www.hrd.go.kr/hrdp/ap/papao/PAPAO0100D.do
+- [연계시스템 예시_원격모니터링시스템_Agent(중계)시스템이해 PDF보기](/git_img/example.pdf)
+- eclipse xmlutil pretty print(콘솔창에서 xml 이쁘게 출력)방법 : https://bryan7.tistory.com/83

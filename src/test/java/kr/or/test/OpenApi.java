@@ -9,8 +9,8 @@ public class OpenApi {
         BufferedReader br = null;
         try{            
             String urlstr = "http://www.hrd.go.kr/jsp/HRDP/HRDPO00/HRDPOA40/HRDPOA40_1.jsp"
-                    + "?authKey=68SzgzuXkSkv6QApdKjZmNOSvj4UsOLy&returnType=XML&outType=1&pageNum=1"
-                    + "&pageSize=20&srchTraStDt=20150101&srchTraEndDt=20150631&sort=ASC&sortCol=TR_NM_i";
+                    + "?authKey=yKt63a6Wtxfq282kkIdQAZVXtSlPW5GF&returnType=XML&outType=1&pageNum=1"
+                    + "&pageSize=20&srchTraStDt=20200101&srchTraEndDt=20200631&sort=ASC&sortCol=TR_NM_i";
             URL url = new URL(urlstr);
             HttpURLConnection urlconnection = (HttpURLConnection) url.openConnection();
             urlconnection.setRequestMethod("GET");
@@ -21,7 +21,9 @@ public class OpenApi {
             while((line = br.readLine()) != null) {
                 result = result + line + "\n";
             }
-            System.out.println(result);
+            //System.out.println(result);
+            String formatXml = XmlUtils.formatXml(result.toString());
+            System.out.println(formatXml);
         }catch(Exception e){
             System.out.println(e.getMessage());
         }
