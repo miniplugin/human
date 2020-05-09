@@ -24,7 +24,7 @@ Integration)/ESB(Enterprise Service Bus), 엔터티 관계도(ERD: Entity Relati
 - [연계시스템 예시_원격모니터링시스템_Agent(중계)시스템으로 매커니즘 이해 PDF보기](/git_img/example.pdf).
 
 ### 내외부 연계 모듈 구현하기(아래)
-- Hello World MVC 프로젝트에서 src/test/java 패키지에 OpenApi.java 클래스로 API모듈구현.
+- Hello World MVC 프로젝트에서 src/test/java 패키지에 OpenApi.java 클래스로  통합과정 실업자훈련 목록 API모듈구현.
 - 콘솔창에서 xml 이쁘게 출력하기 위해서 위 패키지에 XmlUtils.java 클래스 추가.
 
 ### 참고자료 출처(아래)
