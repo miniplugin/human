@@ -2,7 +2,7 @@
 
 ---
 
-- git checkout tags/v4.0.0
+- git checkout tags/v5.0.0
 
 ---
 
@@ -17,9 +17,17 @@ git push origin master
 ### 태그 고정버전 사용법
 ```
 git add .
-git commit -m 'v4.0.0'
-git tag -d v4.0.0
-git tag v4.0.0
-git push origin :v4.0.0
-git push origin v4.0.0
+git commit -m 'v5.0.0'
+git tag -d v5.0.0
+git tag v5.0.0
+git push origin :v5.0.0
+git push origin v5.0.0
+```
+
+### 깃 에러 처리 bad signature ,  bad signature 0x00000000
+```
+cd .git
+del index
+cd ..
+git reset
 ```
