@@ -45,12 +45,14 @@ BufferedReader br = null;
         while((line = br.readLine()) != null) {
             result = result + line + "\n";
         }
-        System.out.println(result);
+        //System.out.println(result);
+        String formatXml = XmlUtils.formatXml(result.toString());
+        System.out.println(formatXml);
     }catch(Exception e){
         System.out.println(e.getMessage());
     }
     
-//연계주기(반복실행)
+//연계주기(반복실행) 소스
 	// 실행간격 지정(5초)
     	int sleepSec = 5;
     	// 주기적인 작업을 위한 
