@@ -26,6 +26,50 @@ Integration)/ESB(Enterprise Service Bus), 엔터티 관계도(ERD: Entity Relati
 ### 내외부 연계 모듈 구현하기(아래)
 - Hello World MVC 프로젝트에서 src/test/java 패키지에 OpenApi.java 클래스로  통합과정 실업자훈련 목록 API모듈구현.
 - 콘솔창에서 xml 이쁘게 출력하기 위해서 위 패키지에 XmlUtils.java 클래스 추가.
+- 아래 2개의 소스를 합쳐서 5초마다 원격데이터를 가져오는 결과를 만든다.
+
+```
+//외부연계  소스
+BufferedReader br = null;
+    try{            
+        String urlstr = "http://www.hrd.go.kr/jsp/HRDP/HRDPO00/HRDPOA40/HRDPOA40_1.jsp"
+                + "?authKey=발급받은인증키&returnType=XML&outType=1&pageNum=1"
+                + "&pageSize=10&srchTraStDt=20200101&srchTraEndDt=20200631&sort=ASC&sortCol=TR_NM_i";
+        URL url = new URL(urlstr);
+        HttpURLConnection urlconnection = (HttpURLConnection) url.openConnection();
+        urlconnection.setRequestMethod("GET");
+        //br = new BufferedReader(new InputStreamReader(urlconnection.getInputStream(),"UTF-8"));
+        br = new BufferedReader(new InputStreamReader(urlconnection.getInputStream(),"euc-kr"));
+        String result = "";
+        String line;
+        while((line = br.readLine()) != null) {
+            result = result + line + "\n";
+        }
+        System.out.println(result);
+    }catch(Exception e){
+        System.out.println(e.getMessage());
+    }
+    
+//연계주기(반복실행)
+	// 실행간격 지정(5초)
+    	int sleepSec = 5;
+    	// 주기적인 작업을 위한 
+    	final ScheduledThreadPoolExecutor exec = new ScheduledThreadPoolExecutor(1);
+    	exec.scheduleAtFixedRate(new Runnable(){ 
+    		public void run(){ 
+    			try { 
+    				// 콘솔에 현재 시간 출력
+		         Calendar cal = Calendar.getInstance();
+				System.out.println(cal.getTime()); 
+    			} catch (Exception e) { 
+    				e.printStackTrace(); 
+    				// 에러 발생시 Executor를 중지시킨다 
+    				exec.shutdown(); 
+    				} 
+    			} 
+    		}, 0, sleepSec, TimeUnit.SECONDS); 
+```
+
 
 ### 참고자료 출처(아래)
 - 위에 사용된 소프트웨어는 자유SW 또는 GNU / LGPL / MIT license 입니다.

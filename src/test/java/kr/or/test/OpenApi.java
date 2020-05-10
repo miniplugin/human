@@ -32,7 +32,7 @@ public class OpenApi {
             System.out.println(e.getMessage());
         }
 		// 콘솔에 현재 시간 출력
-        Calendar cal = Calendar.getInstance() ;
+        Calendar cal = Calendar.getInstance();
 		System.out.println(cal.getTime()); 
 	}
 	//메인 Start매서드
@@ -48,7 +48,7 @@ public class OpenApi {
     			} catch (Exception e) { 
     				e.printStackTrace(); 
     				// 에러 발생시 Executor를 중지시킨다 
-    				exec.shutdown() ; 
+    				exec.shutdown(); 
     				} 
     			} 
     		}, 0, sleepSec, TimeUnit.SECONDS); 
