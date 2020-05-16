@@ -58,12 +58,17 @@
 - 실습: 윈도우PC에 자바(openjdk) 설치하기. - https://jdk.java.net/ (8버전을 사용합니다.)
 - 실습: 윈도우PC에 서버(톰캣8) 설치하기. - https://archive.apache.org/dist/tomcat/tomcat-8/v8.0.32/bin/
 - 실습: 이클립스IDE(전자정부표준프레임웍)개발툴 설치하기. - https://www.egovframe.go.kr
+- 실습을 위해 전자정부표준프레임웍3.9버전 폐쇄형 네트웍버전 으로 통일(아래 다운로드 링크)
+- 다운로드링크:(오픈자바1.8,이클립스,톰캣포함) 
+https://drive.google.com/file/d/1RT45WJLQMpy4Mzuh5zfJupQB5Q4YQxX3/view?usp=sharing 
 - 실습결과: Hello World 스프링 MVC 프로젝트 생성해서 브라우저로 확인해 보기. http://localhost:8080/프로젝트명/
 - 실습: 위 프로젝트를 전자정부표준프레임웍 버전3.9에서 지원하는 자바 버전1.8과 스프링프레임웍 버전4.3.22으로 변경한다.
 - 실습: 깃허브 레포지토리 생성(회원가입필요-무료) - https://github.com/
 - 실습: 윈도우PC에 버전관리 도구(git) 설치 후 개발도구와 연동(깃허브에 푸시). https://git-scm.com/
-- 실습: Hello World 스프링 MVC 프로젝트 클라우드에 배포(파스타)
 - 실습: Hello World 스프링 MVC 프로젝트 클라우드에 배포(헤로쿠)
+- 헤로쿠실습 주의사항(아래): 프로젝트 루트에 Procfile 파일을 생성 한 후 git으로 푸시한다.(헤로쿠에 실행 파일 경로를 알려주는 역할)
+- web: java $JAVA_OPTS -jar target/배포폴더이름확인/WEB-INF/lib/webapp-runner-8.0.33.0.jar --port $PORT target/*.war
+- 실습: Hello World 스프링 MVC 프로젝트 클라우드에 배포(파스타)
 
 ### 참고자료 출처(아래)
 
