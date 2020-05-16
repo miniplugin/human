@@ -148,6 +148,11 @@ http://blog.daum.net/_blog/search.do?coll_range=1&query1=WiringPi&searchtype=&pa
 ---
 - NCS학습모듈 
 #### 참고자료: https://ncs.go.kr/unity/th03/ncsSearchMain.do :/정보통신/정보기술/정보기술개발
+#### 전자정부표준프레임웍3.9버전 폐쇄형 네트웍버전 다운로드링크:(오픈자바1.8,이클립스,톰캣포함) 
+https://drive.google.com/file/d/1RT45WJLQMpy4Mzuh5zfJupQB5Q4YQxX3/view?usp=sharing
+#### 템플릿:https://dist.springsource.com/release/STS/help/org.springframework.templates.mvc-3.2.2.zip
+#### 위 템플릿 동시접속문제 발생시 템플릿 주소: http://timespace12.dothome.co.kr/org.springframework.templates.mvc-3.2.2.zip
+#### 오픈JDK1.8다른버전: https://drive.google.com/open?id=1KmlDcLnqO5dLmAN64_a1sa7Ot9318yby
 ---
 
 ---
