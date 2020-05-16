@@ -58,9 +58,9 @@
 - 실습: 윈도우PC에 자바(openjdk) 설치하기. - https://jdk.java.net/ (8버전을 사용합니다.)
 - 실습: 윈도우PC에 서버(톰캣8) 설치하기. - https://archive.apache.org/dist/tomcat/tomcat-8/v8.0.32/bin/
 - 실습: 이클립스IDE(전자정부표준프레임웍)개발툴 설치하기. - https://www.egovframe.go.kr
-- + 실습을 위해 전자정부표준프레임웍3.9버전 폐쇄형 네트웍버전 으로 통일(아래 / 다운로드 링크 / USB / 윈도우공유폴더/ 중 1가지로 배포)
-- + 폐쇄형 네트웍버전 다운로드링크:(오픈자바1.8,이클립스,톰캣포함) - 다운로드 속도때문에 윈도폴더공유 사용추천.
-https://drive.google.com/file/d/1RT45WJLQMpy4Mzuh5zfJupQB5Q4YQxX3/view?usp=sharing 
+- + 실습을 위해 전자정부표준프레임웍3.9 메이븐 오프라인 버전 으로 통일(아래 / 다운로드 링크 / USB / 윈도우공유폴더/ 중 1가지로 배포)
+- + 메이븐 오프라인 버전 다운로드링크:(오픈자바1.8,이클립스,톰캣포함) - 다운로드 속도때문에 윈도폴더공유 사용추천.
+ https://drive.google.com/open?id=1GnIzkvZNgVj-o4EbHzoy5WSDCEWk3GAx
 - 실습결과: Hello World 스프링 MVC 프로젝트 생성해서 브라우저로 확인해 보기. http://localhost:8080/프로젝트명/
 - 실습: 위 프로젝트를 전자정부표준프레임웍 버전3.9에서 지원하는 자바 버전1.8과 스프링프레임웍 버전4.3.22으로 변경한다.
 - 실습: 깃허브 레포지토리 생성(회원가입필요-무료) - https://github.com/
