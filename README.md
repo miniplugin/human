@@ -17,10 +17,13 @@ header, container, footer, color, UI 설계 검토, UI 구현 표준, UI 저작�
 테스트, 테스트 케이스
 
 ### UI 디자인 가이드 이해(아래)
-- 교사가 제시한 나라장터의 제안요청서 파일 검토.
+- 교사가 제시한 나라장터의 제안요청서 파일 검토(아래URL).
+- http://www.g2b.go.kr/pt/menu/selectSubFrame.do?framesrc=http://www.g2b.go.kr:8340/search.do?category=TGONG&kwd=%C0%CF%C7%D0%BD%C0%BA%B4%C7%E0%C1%A6
+- 기타 교사가 제시한 디자인 제안서 2가지 확인(구글드라이브) 
 
 ### UI 구현 표준 검토하기(아래)
-- 교사가 제시한 나라장터의 제안요청서 파일 검토.
+- 교사가 제시한 UI디자인 & Development개발 가이드 파일 검토(아래URL).
+- https://drive.google.com/file/d/1JsAIwUItL2phlsXEwQ7yK-BOA7mbizJ-/view?usp=sharing
 
 ### UI 저작도구 활용하기(아래)
 - 교사가 제시한 UI디자인 & Development개발 가이드 파일 검토(아래URL).
