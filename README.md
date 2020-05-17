@@ -1,80 +1,35 @@
-## 통합구현 (v5.0.0)
+## UI구현 (v6.0.0)
  
 ---
 
 - [학습목차](https://github.com/miniplugin/human)
-- 능력단위 요소: 2001020206_16v4
+- 능력단위 요소: 2001020708_17v2
 
 ---
 
 ### 학습목표(아래)
-- 모듈 간의 분산이 이루어진 경우를 포함하여 단위 모듈 간의 데이터 관계를 분석한다.
-- 이를 기반으로 한 메커니즘 모듈 간의 효율적인 연계를 구현하여 검증할 수 있다.
+- UI 설계 산출물과 GUI 디자인 가이드를 바탕으로 UI 구현표준을 수립하고 UI를 제작할 수 있다.
 
 ### 핵심키워드(아래)
-- 연계 데이터, 연계 메커니즘, 송수신 현황 모니터링, 데이터 보안, 연계 모듈, EAI(Enterprise Application
-Integration)/ESB(Enterprise Service Bus), 엔터티 관계도(ERD: Entity Relationship Diagram), 연계(인
-터페이스) 정의서, 연계(인터페이스) 설계서
+- 사용자 중심 인터랙션 디자인(human computer interaction design), html(hyper text markup
+language), web, app, css(cascading style sheets), gui(graphic user interface), layout, font,
+header, container, footer, color, UI 설계 검토, UI 구현 표준, UI 저작도구, 프로토타입 UI, 단위
+테스트, 테스트 케이스
 
-### 연계 데이터 구성하기(아래)
-- HRD-Net 로그인 > 회원정보 > 오픈API신청 > 인증키 확인
-- HRD-Net 연계데이터 구성 및 Online 테스트페이지 확인: http://www.hrd.go.kr/hrdp/ap/papco/PAPCO0700T.do
+### UI 디자인 가이드 이해(아래)
+- 교사가 제시한 나라장터의 제안요청서 파일 검토.
 
-### 연계 메커니즘 구성하기(아래)
-- [연계시스템 예시_원격모니터링시스템_Agent(중계)시스템으로 매커니즘 이해 PDF보기](/git_img/example.pdf).
+### UI 구현 표준 검토하기(아래)
+- 교사가 제시한 나라장터의 제안요청서 파일 검토.
 
-### 내외부 연계 모듈 구현하기(아래)
-- Hello World MVC 프로젝트에서 src/test/java 패키지에 OpenApi.java 클래스로  통합과정 실업자훈련 목록 API모듈구현.
-- 콘솔창에서 xml 이쁘게 출력하기 위해서 위 패키지에 XmlUtils.java 클래스 추가.
-- 아래 2개의 소스를 합쳐서 5초마다 원격데이터를 가져오는 결과를 만든다.
+### UI 저작도구 활용하기(아래)
+- 교사가 제시한 UI디자인 & Development개발 가이드 파일 검토(아래URL).
+- https://drive.google.com/file/d/1JsAIwUItL2phlsXEwQ7yK-BOA7mbizJ-/view?usp=sharing
 
-```
-//외부연계  소스
-BufferedReader br = null;
-    try{            
-        String urlstr = "http://www.hrd.go.kr/jsp/HRDP/HRDPO00/HRDPOA40/HRDPOA40_1.jsp"
-                + "?authKey=발급받은인증키&returnType=XML&outType=1&pageNum=1"
-                + "&pageSize=10&srchTraStDt=20200101&srchTraEndDt=20200631&sort=ASC&sortCol=TR_NM_i";
-        URL url = new URL(urlstr);
-        HttpURLConnection urlconnection = (HttpURLConnection) url.openConnection();
-        urlconnection.setRequestMethod("GET");
-        //br = new BufferedReader(new InputStreamReader(urlconnection.getInputStream(),"UTF-8"));
-        br = new BufferedReader(new InputStreamReader(urlconnection.getInputStream(),"euc-kr"));
-        String result = "";
-        String line;
-        while((line = br.readLine()) != null) {
-            result = result + line + "\n";
-        }
-        //System.out.println(result);
-        String formatXml = XmlUtils.formatXml(result.toString());
-        System.out.println(formatXml);
-    }catch(Exception e){
-        System.out.println(e.getMessage());
-    }
-    
-//연계주기(반복실행) 소스
-	// 실행간격 지정(5초)
-    	int sleepSec = 5;
-    	// 주기적인 작업을 위한 
-    	final ScheduledThreadPoolExecutor exec = new ScheduledThreadPoolExecutor(1);
-    	exec.scheduleAtFixedRate(new Runnable(){ 
-    		public void run(){ 
-    			try { 
-    				// 콘솔에 현재 시간 출력
-		         Calendar cal = Calendar.getInstance();
-				System.out.println(cal.getTime()); 
-    			} catch (Exception e) { 
-    				e.printStackTrace(); 
-    				// 에러 발생시 Executor를 중지시킨다 
-    				exec.shutdown(); 
-    				} 
-    			} 
-    		}, 0, sleepSec, TimeUnit.SECONDS); 
-```
-
+### UI 제작하기(아래)
+- 위에서 교사가 제시한 UI디자인 & Development개발 가이드 파일 검토 후 스프링 MVC웹프로젝트에 제작(퍼블리싱)한다. 
+- 교사가 제시한 단위테스트 사항들을 크롬웹브라우저에서 수행한다.
 
 ### 참고자료 출처(아래)
 - 위에 사용된 소프트웨어는 자유SW 또는 GNU / LGPL / MIT license 입니다.
-- HRD-Net 오픈API(정부3.0서비스): http://www.hrd.go.kr/hrdp/ap/papao/PAPAO0100D.do
-- [연계시스템 예시_원격모니터링시스템_Agent(중계)시스템이해 PDF보기](/git_img/example.pdf)
-- eclipse xmlutil pretty print(콘솔창에서 xml 이쁘게 출력)방법 : https://bryan7.tistory.com/83
+- 위 작업시 사용된 이미지는 픽사베이 무료이미지만 사용한다 : https://pixabay.com/
