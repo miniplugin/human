@@ -100,7 +100,7 @@
 - 스프링
 #### 참고자료: https://github.com/miniplugin/edu_ora/blob/master/spring5.md
 #### 예제소스: https://github.com/madvirus/spring5fs
-#### 강사자료: http://blog.daum.net/_blog/search.do?coll_range=1&query1=%EC%8A%A4%ED%94%84%EB%A7%81+%EC%9B%B9%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8+%EC%97%B0%EC%8A%B5&searchtype=%24%7Bsearchtype%7D&page=%2Fsearch%2Fmy%2FsearchBlog.vm&frombn=2&searchpage=&sort=&blogid=0FnMj&articleno=&recommend=N&sortType=recency&enddate=&begindate=&period=&category=0&target=all
+#### 강사자료: http://blog.daum.net/web_design/search/%EC%8A%A4%ED%94%84%EB%A7%81%20%EC%9B%B9%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%20%EC%97%B0%EC%8A%B5
 ---
 
 --- 
