@@ -34,7 +34,8 @@ HTML/CSS, JavaScript, 웹 접근성(Web Accessibility), 웹 호환성(Cross Brow
 - 위 벤치마킹 사이트1 콘텐츠를 본인 것으로 대체할 이미지를 준비한다.( https://pixabay.com/ko/ 무료이미지를 사용 )
 - 위 벤치마킹 사이트1 기준으로 본인의 콘텐츠를 html로 제작하여 구조화 시킨다.( Hello World MVC 프로젝트 home.jsp기준 )
 - 벤치마킹 웹 사이트2: http://edu19.dothome.co.kr/metro/sub.php/CATEGORY/2/MENU_CODE/001001007
-- 위 벤치마킹 웹사이트2 기준으로 CSS와 자바스크립트를 이용하여 퍼블리싱 한다.
+- 벤치마킹 웹 사이트3: http://edu19.dothome.co.kr/study_response4.html
+- 위 벤치마킹 웹사이트3 기준으로 CSS와 자바스크립트를 이용하여 퍼블리싱 한다.
 
 ### 참고자료 출처(아래)
 
