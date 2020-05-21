@@ -26,8 +26,13 @@ header, container, footer, color, UI 설계 검토, UI 구현 표준, UI 저작�
 - https://drive.google.com/file/d/1JsAIwUItL2phlsXEwQ7yK-BOA7mbizJ-/view?usp=sharing
 
 ### UI 저작도구 활용하기(아래)
-- 교사가 제시한 UI디자인 & Development개발 가이드 파일 검토(아래URL).
-- https://drive.google.com/file/d/1JsAIwUItL2phlsXEwQ7yK-BOA7mbizJ-/view?usp=sharing
+- 교사가 제시한 UI디자인 & Development개발 가이드를 적용할 Home사용자페이지 다운로드 합니다(아래 소스 다운로드).
+- 소스: [download this](git_img/home.zip) 다운로드 후 압축을 풀고 webapp/resources 폴더에 넣어 줍니다. 
+- 교사가 제시한 Admin관리자페이지는  부트스트랩기반 반응형 Admin-LTE free템플릿 사용(아래 URL).
+- URL: https://adminlte.io/ (메인페이지에서 DOWNLOAD 버튼 사용 또는 깃에서 다운로드 https://github.com/ColorlibHQ/AdminLTE )
+- Admin-LTE 다운로드 받은 것을 압축풀고 webapp/resources 폴더에 넣어 줍니다.
+- 교사가 제시한 부트스트랩 디자인 프레임웍을 다운로드합니다(아래 소스 다운로드).
+- 소스: [download this](git_img/bootstrap.zip) 다운로드 후 압축을 풀고 webapp/resources 폴더에 넣어 줍니다.
 
 ### UI 제작하기(아래)
 - 위에서 교사가 제시한 UI디자인 & Development개발 가이드 파일 검토 후 스프링 MVC웹프로젝트에 제작(퍼블리싱)한다. 
