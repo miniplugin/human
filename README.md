@@ -44,3 +44,89 @@ HTML/CSS, JavaScript, 웹 접근성(Web Accessibility), 웹 호환성(Cross Brow
 - [카카오오븐-화면설계 온라인 툴] 무료회원가입필요 https://ovenapp.io/
 - [픽사베이-무료이미지 사용] https://pixabay.com/ko/
 - [강사자료] http://edu19.dothome.co.kr/metro/index.html
+- html 기본태그 연습(아래)
+
+```
+<!-- head 태그 안에 들어가는 내용 시작 -->
+<head>
+<meta charset="UTF-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scaleable=no">
+<title>html5 테스트 입니다.</title>
+<link rel="stylesheet" type="text/css" href="/resources/css/reset.css">
+<style></style>
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script>
+//위 jquery 자바스크립트 사용 기본형식(아래)
+$(document).ready(function($) {
+	alert();//여기에 사용자 액션 내용을 입력하시면 됩니다.
+})
+</script>
+</head>
+<!-- head 태그 안에 들어가는 내용 끝 -->
+<!-- body 태그 안에 들어가는 내용 시작 -->
+<body>
+	<h1>HTML 이란?</h1>
+	<h2>HTML 의 역사</h2>
+	<h3>팀 버너스리에 대해</h3>
+	<h4>HTML 의 태그</h4>
+	<h5>HTML 의 태그</h5>
+	<a href="www.conol.tistory.com"> conol 티스토리로 가자! </a>
+	<img src="/images/conol.jpg" alt="">
+	<p>
+		<strong>이것은</strong> 문단입니다.<br> <b>이것은</b> 문단입니다.
+	</p>
+	<p>
+		이것은&nbsp;&nbsp;&nbsp;&nbsp; &amp; &lt; &gt; &gt; &copy; &nbsp;&nbsp;&nbsp;&nbsp;문단입니다.
+	<hr>
+	이것은 문단입니다.
+	</p>
+	<ul>
+		<li>리스트 1</li>
+		<li>리스트 2</li>
+	</ul>
+	<ol>
+		<li>리스트 1</li>
+		<li>리스트 2</li>
+	</ol>
+	<div>
+		<h2>회원가입폼 입니다.</h2>
+		<form method="GET" action="http://localhost:8080/"
+			class="adminlogin_form">
+			성별을 선택해 주세요
+			<select name="score">
+				<option value="M">남자</option>
+				<option value="F">여자</option>
+			</select> 
+			<br>
+			<input type="text" name="userid" preholder="user ID"> <input
+				type="password" name="password" preholder="user password"> <input
+				type="file"> <br> 본인소개글 작성:
+			<textarea name="contents" cols="100" rows="5">여기에 글을 입력</textarea>
+			<input type="submit" name="submit" value="회원가입" class="login">
+		</form>
+	</div>
+	<br>
+	<br>
+	<br>
+	<table summary="00학교 00반 성적표" style="border: 1px solid black">
+		<!-- 인라인 스타일 주기 -->
+		<caption>이 테이블은 학생들의 성적표 입니다.</caption>
+		<tr>
+			<th>이름</th>
+			<th>성적</th>
+		</tr>
+		<tr>
+			<td>김일국</td>
+			<td>15</td>
+		</tr>
+		<tr>
+			<td colspan="2">BBB</td>
+		</tr>
+		<tr>
+			<td>CCC</td>
+			<td>C</td>
+		</tr>
+	</table>
+</body>
+```
