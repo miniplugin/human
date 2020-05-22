@@ -44,7 +44,7 @@ HTML/CSS, JavaScript, 웹 접근성(Web Accessibility), 웹 호환성(Cross Brow
 - [카카오오븐-화면설계 온라인 툴] 무료회원가입필요 https://ovenapp.io/
 - [픽사베이-무료이미지 사용] https://pixabay.com/ko/
 - [강사자료] http://edu19.dothome.co.kr/metro/index.html
-- html 기본태그 연습(아래)
+- html 기본태그 연습(아래) https://conol.tistory.com/24
 
 ```
 <!-- head 태그 안에 들어가는 내용 시작 -->
@@ -77,7 +77,7 @@ $(document).ready(function($) {
 		<strong>이것은</strong> 문단입니다.<br> <b>이것은</b> 문단입니다.
 	</p>
 	<p>
-		이것은&nbsp;&nbsp;&nbsp;&nbsp; &amp; &lt; &gt; &gt; &copy; &nbsp;&nbsp;&nbsp;&nbsp;문단입니다.
+		이것은&nbsp;&nbsp;&nbsp;&nbsp; &amp; &lt; &gt; &copy; &nbsp;&nbsp;&nbsp;&nbsp;문단입니다.
 	<hr>
 	이것은 문단입니다.
 	</p>
