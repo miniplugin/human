@@ -32,7 +32,7 @@ Language), DCL(Data Control Language), 인덱스(Index)
 - SQL Development 에서 아래 2줄 명령어 실행 후 OK
 - SELECT DBMS_XDB.GETHTTPPORT() FROM DUAL;
 - EXEC DBMS_XDB.SETHTTPPORT(9000);
--(참고) 오라클 DB의 문자설정 확인: select * from v$nls_parameters where parameter like '%CHARACTERSET%';
+- (참고) 오라클 DB의 문자설정 확인: select * from v$nls_parameters where parameter like '%CHARACTERSET%';
 - 실습에 필요한 오라클 구글드라이브링크: 
 - 실습에 필요한 SQL디벨러퍼(Java포함버전)구글드라이브링크:  
 - 학습모듈: https://ncs.go.kr/unity/th03/ncsSearchMain.do 20.정보통신 > 01.정보기술 > 02.정보기술개발 > 04.DB엔지니어링
