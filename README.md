@@ -15,11 +15,6 @@
 무결성(Referential Integrity), 트랜잭션(Transaction), DDL(Data Definition Language), DML(Data Manipulation
 Language), DCL(Data Control Language), 인덱스(Index)
 
-### UI 디자인 가이드 이해(아래)
-- 교사가 제시한 나라장터의 제안요청서 파일 검토(아래URL).
-- http://www.g2b.go.kr/pt/menu/selectSubFrame.do?framesrc=http://www.g2b.go.kr:8340/search.do?category=TGONG&kwd=%C0%CF%C7%D0%BD%C0%BA%B4%C7%E0%C1%A6
-- 기타 교사가 제시한 디자인 제안서 2가지 확인(구글드라이브) 
-
 ### 기본 SQL 작성하기(아래)
 - DDL활용: 교사가 제시한 스프링 웹프로젝트에서 사용되는 스키마생성 DDL 파일 검토.
 - DCL활용: 교사가 제시한 스프링 웹프로젝트에서 사용되는 스키마변경 DCL 파일 검토.
