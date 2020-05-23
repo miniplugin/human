@@ -29,9 +29,9 @@ Language), DCL(Data Control Language), 인덱스(Index)
 - 개발PC에 오라클 11g EX 교육용Free: https://www.oracle.com/database/technologies/oracle-database-software-downloads.html
 - 개발PC에 오라클 SQL Development 설치: https://www.oracle.com/tools/downloads/sqldev-v192-downloads.html (JDK포함버전으로)
 - 오라클 설치 후 8080포트변경: Get Started With Oracle Database 11g Express Edition 웹 툴에서 사용하는 포트와 톰캣서버가 충돌 때문에.(아래)
-- SQL Development 에서 아래 명령어 실행 후 OK
-  SELECT DBMS_XDB.GETHTTPPORT() FROM DUAL;
-  EXEC DBMS_XDB.SETHTTPPORT(9000);
+- SQL Development 에서 아래 2줄 명령어 실행 후 OK
+- SELECT DBMS_XDB.GETHTTPPORT() FROM DUAL;
+- EXEC DBMS_XDB.SETHTTPPORT(9000);
 -(참고) 오라클 DB의 문자설정 확인: select * from v$nls_parameters where parameter like '%CHARACTERSET%';
 - 실습에 필요한 오라클 구글드라이브링크: 
 - 실습에 필요한 SQL디벨러퍼(Java포함버전)구글드라이브링크:  
