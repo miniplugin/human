@@ -1,72 +1,43 @@
-## 커리큘럼
+## SQL활용 (v7.0.0)
  
 ---
 
-- [목차를 보는 방법](https://github.com/miniplugin/human)
-- 깃허브 태그(tag) 클릭: [v1.0.0] NCS능력단위 (코드번호)  
+- [학습목차](https://github.com/miniplugin/human)
+- 능력단위 요소: LM2001020413_16v3
 
 ---
 
-### [v1.0.0](https://github.com/miniplugin/human/tree/v1.0.0) 응용SW기초기술활용 (2001020216_15v3)
+### 학습목표(아래)
+- 관계형 데이터베이스에서 SQL을 사용하여 목적에 적합한 데이터를 정의하고, 조작하며, 제어할 수 있다.
 
-- 1주차
+### 핵심키워드(아래)
+- 테이블(Table), 기본키(Primary Key), 외래키(Foreign Key), 무결성 제약 조건(Integrity Constraint), 참조
+무결성(Referential Integrity), 트랜잭션(Transaction), DDL(Data Definition Language), DML(Data Manipulation
+Language), DCL(Data Control Language), 인덱스(Index)
 
-### [v2.0.0](https://github.com/miniplugin/human/tree/v2.0.0) 화면설계 (2001020224_16v4)
+### UI 디자인 가이드 이해(아래)
+- 교사가 제시한 나라장터의 제안요청서 파일 검토(아래URL).
+- http://www.g2b.go.kr/pt/menu/selectSubFrame.do?framesrc=http://www.g2b.go.kr:8340/search.do?category=TGONG&kwd=%C0%CF%C7%D0%BD%C0%BA%B4%C7%E0%C1%A6
+- 기타 교사가 제시한 디자인 제안서 2가지 확인(구글드라이브) 
 
-- 2주차
+### 기본 SQL 작성하기(아래)
+- DDL활용: 교사가 제시한 스프링 웹프로젝트에서 사용되는 스키마생성 DDL 파일 검토.
+- DCL활용: 교사가 제시한 스프링 웹프로젝트에서 사용되는 스키마변경 DCL 파일 검토.
+- DML활용: 교사가 제시한 스프링 웹프로젝트에서 사용되는 mybatis 쿼리매퍼 DML 파일 검토.
 
-### [v3.0.0](https://github.com/miniplugin/human/tree/v3.0.0) 화면구현 (2001020225_16v4)
+### 고급 SQL 작성하기(아래)
+- 교사가 제시한 인덱스 활용.
+- 교사가 제시한 뷰테이블 활용.
+- 교사가 제시한 다중테이블 검색(테이블조인) 활용.
 
-- 3주차
-
-### [v4.0.0](https://github.com/miniplugin/human/tree/v4.0.0) 프로그래밍언어활용 (2001020215_15v3)
-
-- 4주차
-
-### [v5.0.0](https://github.com/miniplugin/human/tree/v5.0.0) 통합구현 (2001020206_16v4)
-
-- 5주차
-
-### [v6.0.0](https://github.com/miniplugin/human/tree/v6.0.0) UI구현 (2001020708_17v2)
-
-- 6주차
-
-### [v7.0.0](https://github.com/miniplugin/human/tree/v7.0.0) SQL활용 (2001020413_16v3)
-
-- 7주차
-
-### [v8.0.0](https://github.com/miniplugin/human/tree/v8.0.0) 서버프로그램 구현 (2001020211_16v4)
-
-- 8주차
-
-### [v9.0.0](https://github.com/miniplugin/human/tree/v9.0.0) 인터페이스 구현 (2001020212_16v4)
-
-- 9주차
-
-### [v10.0.0](https://github.com/miniplugin/human/tree/v10.0.0) 요구사항 확인 (2001020201_16v3)
-
-- 10주차
-
-### [v11.0.0](https://github.com/miniplugin/human/tree/v11.0.0) 애플리케이션 설계 (2001020221_16v4)
-
-- 11주차
-
-### [v12.0.0](https://github.com/miniplugin/human/tree/v12.0.0) 애플리케이션 테스트 수행 (2001020227_16v4)
-
-- 12주차
-
-### [v13.0.0](https://github.com/miniplugin/human/tree/v13.0.0) 펌웨어 구현 (2001020314_17v5)
-
-- 13주차
-
-### [v14.0.0](https://github.com/miniplugin/human/tree/v14.0.0) 디바이스 드라이버 구현 (2001020320_17v5)
-
-- 14주차
-
-### [v15.0.0](https://github.com/miniplugin/human/tree/v15.0.0) 임베디드 애플리케이션 구현 (2001020324_17v5)
-
-- 15주차
-
-### [v16.0.0](https://github.com/miniplugin/human/tree/v16.0.0) 네트워크 프로그래밍 구현 (2001020508_14v2)
-
-- 16주차
+### 참고자료 출처(아래)
+- 개발PC에 오라클 11g EX 교육용Free: https://www.oracle.com/database/technologies/oracle-database-software-downloads.html
+- 개발PC에 오라클 SQL Development 설치: https://www.oracle.com/tools/downloads/sqldev-v192-downloads.html (JDK포함버전으로)
+- 오라클 설치 후 8080포트변경: Get Started With Oracle Database 11g Express Edition 웹 툴에서 사용하는 포트와 톰캣서버가 충돌 때문에.(아래)
+- SQL Development 에서 아래 명령어 실행 후 OK
+  SELECT DBMS_XDB.GETHTTPPORT() FROM DUAL;
+  EXEC DBMS_XDB.SETHTTPPORT(9000);
+-(참고) 오라클 DB의 문자설정 확인: select * from v$nls_parameters where parameter like '%CHARACTERSET%';
+- 실습에 필요한 오라클 구글드라이브링크: 
+- 실습에 필요한 SQL디벨러퍼(Java포함버전)구글드라이브링크:  
+- 학습모듈: https://ncs.go.kr/unity/th03/ncsSearchMain.do 20.정보통신 > 01.정보기술 > 02.정보기술개발 > 04.DB엔지니어링
