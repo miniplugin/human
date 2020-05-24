@@ -1,72 +1,36 @@
-## 커리큘럼
+## 애플리케이션 설계 (v11.0.0)
  
 ---
 
-- [목차를 보는 방법](https://github.com/miniplugin/human)
-- 깃허브 태그(tag) 클릭: [v1.0.0] NCS능력단위 (코드번호)  
+- [학습목차](https://github.com/miniplugin/human)
+- 능력단위 요소: LM2001020221__16v4
 
 ---
 
-### [v1.0.0](https://github.com/miniplugin/human/tree/v1.0.0) 응용SW기초기술활용 (2001020216_15v3)
+### 학습목표(아래)
+- 요구사항 확인을 통한 상세 분석 결과, 소프트웨어 아키텍처 가이드라인 및 소프트웨어 아키텍처 산출물에 의거하여 이에 따른 애플리케이션 구현을 수행하기 위해 공통 모듈 설계, 타 시스템 연동에 대하여 상세 설계할 수 있다.
 
-- 1주차
+### 핵심키워드(아래)
+- 공통 모듈, 기능 명세, 화면 설계, 로직 설계, UML, 모듈화, 아키텍처, 시스템 연동, 미들웨어
 
-### [v2.0.0](https://github.com/miniplugin/human/tree/v2.0.0) 화면설계 (2001020224_16v4)
+### 공통 모듈 설계하기(아래)
+- 공통 모듈 식별 및 명세: 재사용성 확보와 중복개발을 회피하기 위하여, 전체 시스템 차원과 단위 시스템 차원의 공통 부분을 식별하여 이에 대한 상세 명세를 확인한다.(아래 참고 자료)
+- 참고자료: [표준프레임워크개요 PDF보기](git_img/02.pdf)
+- 공통 모듈 설계: 표준프레임워크에서 공통컴포넌트활용 파일 검토.(아래 참고 자료)
+- 참고자료: [공통컴포넌트활용 PDF보기](git_img/01.pdf)
+- 공통 모듈 인덱스 및 기능 코드 설계.(아래 참고 자료)
+- 표준프레임워크 공통컴포넌트 v3.9 가이드: https://www.egovframe.go.kr/wiki/doku.php?id=egovframework:com:v3.9:init
 
-- 2주차
+### 타 시스템 연동설계하기(아래)
+- 아키텍처를 고려한 타 시스템 연동 설계.(아래 참고 자료)
+- HRD-Net 오픈API 사이트 http://www.hrd.go.kr/hrdp/ap/papco/PAPCO0700T.do 에서 모든 오픈 API  데이터 연동 정보 확인.
+- 예)전송정보: [요청 파라미터 보기](git_img/03.jpg)
+- 예2)교사 깃북 작업결과: https://www.gitbook.com/
+- 미들웨어 솔루션 명세 작성: 학습모듈 서식을 참조하여 데이터베이스(DB), 웹애플리케이션서버(WAS), JDK정보등 확인.
+- 오류 예측 및 대응방안 제시: 연동 오류시 소프트웨어, 하드웨어 적인 방법 확인.
 
-### [v3.0.0](https://github.com/miniplugin/human/tree/v3.0.0) 화면구현 (2001020225_16v4)
-
-- 3주차
-
-### [v4.0.0](https://github.com/miniplugin/human/tree/v4.0.0) 프로그래밍언어활용 (2001020215_15v3)
-
-- 4주차
-
-### [v5.0.0](https://github.com/miniplugin/human/tree/v5.0.0) 통합구현 (2001020206_16v4)
-
-- 5주차
-
-### [v6.0.0](https://github.com/miniplugin/human/tree/v6.0.0) UI구현 (2001020708_17v2)
-
-- 6주차
-
-### [v7.0.0](https://github.com/miniplugin/human/tree/v7.0.0) SQL활용 (2001020413_16v3)
-
-- 7주차
-
-### [v8.0.0](https://github.com/miniplugin/human/tree/v8.0.0) 서버프로그램 구현 (2001020211_16v4)
-
-- 8주차
-
-### [v9.0.0](https://github.com/miniplugin/human/tree/v9.0.0) 인터페이스 구현 (2001020212_16v4)
-
-- 9주차
-
-### [v10.0.0](https://github.com/miniplugin/human/tree/v10.0.0) 요구사항 확인 (2001020201_16v3)
-
-- 10주차
-
-### [v11.0.0](https://github.com/miniplugin/human/tree/v11.0.0) 애플리케이션 설계 (2001020221_16v4)
-
-- 11주차
-
-### [v12.0.0](https://github.com/miniplugin/human/tree/v12.0.0) 애플리케이션 테스트 수행 (2001020227_16v4)
-
-- 12주차
-
-### [v13.0.0](https://github.com/miniplugin/human/tree/v13.0.0) 펌웨어 구현 (2001020314_17v5)
-
-- 13주차
-
-### [v14.0.0](https://github.com/miniplugin/human/tree/v14.0.0) 디바이스 드라이버 구현 (2001020320_17v5)
-
-- 14주차
-
-### [v15.0.0](https://github.com/miniplugin/human/tree/v15.0.0) 임베디드 애플리케이션 구현 (2001020324_17v5)
-
-- 15주차
-
-### [v16.0.0](https://github.com/miniplugin/human/tree/v16.0.0) 네트워크 프로그래밍 구현 (2001020508_14v2)
-
-- 16주차
+### 참고자료 출처(아래)
+- 학습모듈: https://ncs.go.kr/unity/th03/ncsSearchMain.do 20.정보통신 > 01.정보기술 > 02.정보기술개발 > 02.응용SW엔지니어링
+- 구글 프레젠테이션 도구사용: https://docs.google.com/presentation/u/0/?tgif=d
+- 전자정부표준프레임웍 심플홈페이지 템플릿 프로젝트 실행해 보기(아래 레포지토리필요)
+- 레포지토리폴더에 추가: [압축파일다운로드](git_img/egovframework_add_repository.zip)
