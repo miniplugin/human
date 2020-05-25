@@ -164,6 +164,7 @@ http://blog.daum.net/_blog/search.do?coll_range=1&query1=WiringPi&searchtype=&pa
 - 다음카페 도움말: https://cs.daum.net/faq/36/4417.html?faqId=32547
 - 과제물제출처: 교사 다음카페 ( http://cafe.daum.net/human20 ) 학생 카페가입 후 교사가 정회원처리 후 이용가능.
 - 유스케이스 실습자료: [download this](git_img/usecase.jpg)
+- 교사PC화면공유SW설치: https://drive.google.com/file/d/1H5efmROpNFm2zY33RgSx5jsETLI795Ga/view?usp=sharing
 
 #### [변경전]매주 월요일 마다 학생 본인 좌측 으로 자리 이동. ->[변경 후]매달 초 자리바꾸기 공개용프로그램 자리이동.
 - 변경기준: 자리바꾸기 공개용프로그램-주최자:교사(아래)
