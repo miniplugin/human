@@ -84,7 +84,7 @@ ALTER TABLE `tbl_reply`
 COMMIT;
 ```
 - Mysql용 테이블 구조 및 제약조건 확인 명령: DESC 테이블명,SELECT * FROM information_schema.table_constraints;
-- 오라클용 테이블 구조 및 제약조건 확인 명령: SELECT * FROM ALL_CONSTRAINTS WHERE TABLE_NAME='테이믈명' 
+- 오라클용 테이블 구조 및 제약조건 확인 명령: SELECT * FROM ALL_CONSTRAINTS WHERE TABLE_NAME='테이블명' 
 
 - DML활용: 아래 스프링 웹프로젝트에서 사용되는Mysql용 mybatis 쿼리매퍼 Insert구문을 오라클용으로 변경 및 오라클용으로 더미데이터 입력 확인.
 
