@@ -170,6 +170,7 @@ ROLLBACK;
 
 ### 고급 SQL 작성하기(아래)
 - 실습자료 오라클용 ERD 파일 다운로드: [download this](git_img/oracle_xe.dmd) 
+- 실습자료 오라클용 sql 더미 데이터 다운로드: [download this](git_img/edu_oracle.sql)
 - SQL DEVELOPER 에서 위에서 생성한 오라클용 테이블의 인덱스 확인.
 
 - 게시물별 댓글 갯수를 표시하는 뷰테이블 생성.
