@@ -83,7 +83,7 @@ CREATE SEQUENCE BNO_SEQ
   MINVALUE 1
   NOCYCLE;
 --
--- 댓글 테이블의 제약사항
+-- 오라클 전용 시퀸스 방식 댓글 시퀸스
 --
 CREATE SEQUENCE RNO_SEQ
   START WITH 1
