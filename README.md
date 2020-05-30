@@ -16,87 +16,96 @@
 Language), DCL(Data Control Language), 인덱스(Index)
 
 ### 기본 SQL 작성하기(아래)
-- DDL활용: 아래 스프링 웹프로젝트에서 사용되는 Mysql 스키마 4개의 테이블 DDL문을 오라클용으로 변경 확인.
+- DDL활용: 아래 스프링 웹프로젝트에서 사용되는 스키마에서 4개의 테이블 DDL문을 오라클용으로 변경 확인.
 
 ```
 --
--- 첨부파일 테이블 구조
+-- 게시판 테이블 구조
 --
-CREATE TABLE `tbl_attach` (
-  `full_name` varchar(150) NOT NULL,
-  `bno` int(11) NOT NULL,
-  `regdate` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
-  PRIMARY KEY (`full_name`),
-  KEY `fk_board_attach` (`bno`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+CREATE TABLE tbl_board (
+  bno NUMBER(11) NOT NULL,
+  title varchar(200) NOT NULL,
+  content CLOB,
+  writer varchar(50) NOT NULL,
+  regdate timestamp DEFAULT SYSDATE NOT NULL,
+  update_date DATE DEFAULT SYSDATE NOT NULL,
+  view_count NUMBER(11) DEFAULT 0,
+  reply_count NUMBER(11) DEFAULT 0,
+  CONSTRAINT BOARD_PK PRIMARY KEY (bno)
+);
 --
--- 게시판 테이블 구조 
+-- 첨부파일 테이블 구조 
 --
-CREATE TABLE `tbl_board` (
-  `bno` int(11) NOT NULL AUTO_INCREMENT,
-  `title` varchar(200) NOT NULL,
-  `content` text,
-  `writer` varchar(50) NOT NULL,
-  `regdate` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  `update_date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-  `view_count` int(11) DEFAULT '0',
-  `reply_count` int(11) DEFAULT '0',
-  PRIMARY KEY (`bno`)
-) ENGINE=InnoDB AUTO_INCREMENT=226 DEFAULT CHARSET=utf8;
+CREATE TABLE tbl_attach (
+  full_name varchar(150) NOT NULL,
+  bno number(11) NOT NULL,
+  regdate DATE DEFAULT SYSDATE,
+  CONSTRAINT ATTACH_PK PRIMARY KEY (full_name),
+  CONSTRAINT fk_board_attach FOREIGN KEY(bno)
+         REFERENCES tbl_board(bno) ON DELETE CASCADE
+);
 --
 -- 회원가입 테이블 구조
 --
-CREATE TABLE `tbl_member` (
-  `user_id` varchar(50) NOT NULL,
-  `user_pw` varchar(255) NOT NULL,
-  `user_name` varchar(50) NOT NULL,
-  `email` varchar(100) DEFAULT NULL,
-  `point` int(11) NOT NULL DEFAULT '0',
-  `enabled` tinyint(1) NOT NULL DEFAULT '0',
-  `level` varchar(50) NOT NULL DEFAULT 'ROLE_USER',
-  `reg_date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '등록일',
-  `update_date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-  PRIMARY KEY (`user_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+CREATE TABLE tbl_member (
+  user_id varchar(50) NOT NULL,
+  user_pw varchar(255) NOT NULL,
+  user_name varchar(50) NOT NULL,
+  email varchar(100) DEFAULT NULL,
+  point NUMBER(11) DEFAULT 0 NOT NULL,
+  enabled NUMBER(1) DEFAULT 0 NOT NULL,
+  levels varchar(50) DEFAULT 'ROLE_USER' NOT NULL,
+  reg_date DATE DEFAULT SYSDATE NOT NULL,
+  update_date DATE DEFAULT SYSDATE NOT NULL,
+  CONSTRAINT MEMBER_PK PRIMARY KEY (user_id)
+);
 --
 -- 댓글 테이블 구조
 --
-CREATE TABLE `tbl_reply` (
-  `rno` int(11) NOT NULL AUTO_INCREMENT,
-  `bno` int(11) NOT NULL DEFAULT '0',
-  `replytext` varchar(1000) NOT NULL,
-  `replyer` varchar(50) NOT NULL,
-  `regdate` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  `update_date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-  PRIMARY KEY (`rno`),
-  KEY `fk_board` (`bno`)
-) ENGINE=InnoDB AUTO_INCREMENT=20 DEFAULT CHARSET=utf8;
+CREATE TABLE tbl_reply (
+  rno NUMBER(11) NOT NULL,
+  bno NUMBER(11) DEFAULT 0 NOT NULL ,
+  replytext varchar(1000) NOT NULL,
+  replyer varchar(50) NOT NULL,
+  reg_date DATE DEFAULT SYSDATE NOT NULL,
+  update_date DATE DEFAULT SYSDATE NOT NULL,
+  CONSTRAINT REPLY_PK PRIMARY KEY (rno),
+  CONSTRAINT fk_board FOREIGN KEY(bno)
+         REFERENCES tbl_board(bno) ON DELETE CASCADE
+);
 --
--- 첨부파일 테이블의 제약사항 
+-- 오라클 전용 시퀸스 방식 게시판 시퀸스
 --
-ALTER TABLE `tbl_attach`
-  ADD CONSTRAINT `fk_board_attach` FOREIGN KEY (`bno`) REFERENCES `tbl_board` (`bno`);
+CREATE SEQUENCE BNO_SEQ
+  START WITH 215
+  INCREMENT BY 1
+  MAXVALUE 10000
+  MINVALUE 1
+  NOCYCLE;
 --
 -- 댓글 테이블의 제약사항
 --
-ALTER TABLE `tbl_reply`
-  ADD CONSTRAINT `fk_board` FOREIGN KEY (`bno`) REFERENCES `tbl_board` (`bno`);
-COMMIT;
+CREATE SEQUENCE RNO_SEQ
+  START WITH 1
+  INCREMENT BY 1
+  MAXVALUE 10000
+  MINVALUE 1
+  NOCYCLE;
 ```
 - Mysql용 테이블 구조 및 제약조건 확인 명령: DESC 테이블명,SELECT * FROM information_schema.table_constraints;
-- 오라클용 테이블 구조 및 제약조건 확인 명령: SELECT * FROM ALL_CONSTRAINTS WHERE TABLE_NAME='테이블명' 
+- 오라클용 테이블 구조 및 제약조건 확인 명령: SELECT * FROM ALL_CONSTRAINTS WHERE TABLE_NAME='테이블명(대문자)' 
 
 - DML활용: 아래 스프링 웹프로젝트에서 사용되는Mysql용 mybatis 쿼리매퍼 Insert구문을 오라클용으로 변경 및 오라클용으로 더미데이터 입력 확인.
 
 ```
-<!-- 게시판 입력 쿼리 -->
+<!-- Mysql용 게시판 입력 쿼리 -->
 <insert id="create">
 	 insert into tbl_board (title, content, writer) 
 	 values(#{title},#{content}, #{writer})
  </insert>
 INSERT INTO `tbl_board` (`bno`, `title`, `content`, `writer`, `regdate`, `update_date`, `view_count`, `reply_count`) VALUES
 (1, '새로운 글입니다.', '입력 테스트 ', 'user00', '2019-10-10 03:20:01', '2019-10-10 03:20:01', 0, 0);
-<!-- 댓글 입력 쿼리 -->
+<!-- Mysql용 댓글 입력 쿼리 -->
 <insert id="insertReply">
 	insert into tbl_reply (bno, replytext, replyer)
 	values (#{bno},#{replytext},#{replyer})
@@ -105,23 +114,84 @@ INSERT INTO `tbl_reply` (`rno`, `bno`, `replytext`, `replyer`, `regdate`, `updat
 (1, 1, '1:댓글 입력', 'user02', '2019-10-17 02:39:01', '2019-10-18 01:52:51');
 ```
 
+```
+<!-- 오라클용 추가 ibatis
+	<selectKey keyProperty="id" resultClass="int" order="BEFORE"> 
+	오라클용 추가 Mybatis
+	<selectKey keyProperty="bno" resultType="int" order="BEFORE">
+	SELECT BNO_SEQ.nextval From DUAL
+-->
+<insert id="create">
+	<selectKey keyProperty="bno" resultType="int" order="BEFORE">
+        select BNO_SEQ.nextval from dual  
+   </selectKey>
+ insert into tbl_board (bno, title, content, writer) 
+ values(#{bno},#{title},#{content}, #{writer})
+ </insert>
+ 쿼리: INSERT INTO tbl_board VALUES (1, '수정된 글입니다.', '수정 테스트 ', 'user00', SYSDATE, SYSDATE, 0, 0);
+ <!-- 
+	오라클용 추가 ibatis
+	<selectKey keyProperty="id" resultClass="int" order="BEFORE"> 
+	오라클용 추가 Mybatis
+	<selectKey keyProperty="rno" resultType="int" order="BEFORE">
+	SELECT RNO_SEQ.nextval From DUAL
+	</selectKey>
+-->
+<insert id="insertReply">
+    <selectKey keyProperty="rno" resultType="int" order="BEFORE">
+		SELECT RNO_SEQ.nextval From DUAL
+	</selectKey>
+	insert into tbl_reply (rno, bno, replytext, replyer)
+	values (#{rno},#{bno},#{replytext},#{replyer})
+</insert>
+INSERT INTO tbl_reply VALUES (1, 215, '1:댓글을 수정   MOD', 'user02', SYSDATE, SYSDATE);
+INSERT INTO tbl_reply VALUES (2, 215, '2:댓글을 수정   MOD', 'user02', SYSDATE, SYSDATE);
+INSERT INTO tbl_reply VALUES (3, 214, '2:댓글을 수정   MOD', 'user02', SYSDATE, SYSDATE);
+```
+
 - DCL활용: 위 입력 값으로 Mysql 트랜잭션 자동커밋 과 오라클 트랜잭션 수동커밋  내용 확인.(트랜잭션: 커밋과 커밋사이)
 
 ```
 --
 -- 현재 트랜잭션 수준 파악 REPETABLE READ, READ COMMITTED = 최종 커밋된 결과만 조회가 가능하다. 명령어 commit, rollback 
 -- Mysql 워크벤치에서는 자동commit이기 때문에 위 insert문 자료가 최종 결과물로 인식 합니다.
--- 오라클 SQL디벨러퍼에서는 commit 명령어 사용하기 전까지 위 insert문 자료가 없는것이 최종 결과물로 인식 합니다.
+-- 오라클 SQL디벨러퍼에서는 commit 명령어 사용하기 전까지 위 insert문 자료가 없는것이 최종 결과물로 인식 합니다.(주의)
 -- 롤백 명령은 최종 COMMIT 명령의 결과를 없던 것으로 되돌 립니다.  
 --
+NSERT INTO tbl_board VALUES (256, '256번글입니다.', '수정 테스트 ', 'user00', SYSDATE, SYSDATE, 0, 0);
+INSERT INTO tbl_board VALUES (257, '2571번글입니다.', '수정 테스트2 ', 'user00', SYSDATE, SYSDATE, 0, 0);
+SAVEPOINT S1;
+INSERT INTO tbl_board VALUES (258, '258번글입니다.. ', '새로운 글을 넣습니다. ', 'user00', SYSDATE, SYSDATE, 0, 0);
+ROLLBACK TO S1;
+SELECT * FROM tbl_board ORDER BY bno DESC; 
 COMMIT;
 ROLLBACK;
 ```
 
 ### 고급 SQL 작성하기(아래)
-- 교사가 제시한 인덱스 활용.
-- 교사가 제시한 뷰테이블 활용.
-- 교사가 제시한 다중테이블 검색(테이블조인) 활용.
+- 실습자료 오라클용 ERD 파일 다운로드: [download this](git_img/oracle_xe.dmd) 
+- SQL DEVELOPER 에서 위에서 생성한 오라클용 테이블의 인덱스 확인.
+
+- 게시물별 댓글 갯수를 표시하는 뷰테이블 생성.
+
+```
+CREATE VIEW REPLY_CNT_VIEW
+AS SELECT BOD.bno, BOD.title, COUNT(REP.bno) AS CNT 
+FROM tbl_board BOD
+INNER JOIN tbl_reply REP ON REP.bno = BOD.bno
+GROUP BY BOD.bno, BOD.title
+ORDER BY BOD.bno;
+```
+
+- 게시물별 첨부파일 갯수를 검색하는 쿼리를 테이블 조인을 이용해서 작성.
+
+```
+SELECT BOD.bno, BOD.title, COUNT(ATTA.bno) AS CNT 
+FROM tbl_board BOD
+INNER JOIN tbl_attach ATTA ON ATTA.bno = BOD.bno
+GROUP BY BOD.bno, BOD.title
+ORDER BY BOD.bno DESC;
+```
 
 ### 참고자료 출처(아래)
 - 개발PC에 오라클 11g EX 교육용Free: https://www.oracle.com/database/technologies/oracle-database-software-downloads.html
