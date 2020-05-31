@@ -141,8 +141,14 @@ http://blog.daum.net/_blog/search.do?coll_range=1&query1=WiringPi&searchtype=&pa
 ---
 - 아두이노
 #### 예제소스: http://www.kwangmoonkag.co.kr/sub3/sub3_1.html?target=Board_List&DB=sub3_1&Mode=View&Num=852&page=1&S=S&val=0&Word=&Board_TYPE=&PHPSESSID=03901ac7ddf268e8562dfba0413f5f1a
+#### 실습에 사용될 NODE MCU ESP8266보드 확인: http://makeshare.org/bbs/board.php?bo_table=project&wr_id=201
+#### CP210x USB to UART Bridge 드라이버 설치하기(윈7용): http://www.iamamaker.kr/ko/tutorials/cp210x-usb-to-uart-%EB%93%9C%EB%9D%BC%EC%9D%B4%EB%B2%84-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0/
+#### 윈7용 UART드라이버 다운로드: https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers
+#### 아두이노 IDE(통합개발환경) 설치 파일 다운로드: https://www.arduino.cc/
+#### NODE MCU개발환경구축하기: https://blog.naver.com/PostView.nhn?blogId=roboholic84&logNo=221187841348
+#### LED_BUILTIN 깜박이기: https://developer.ibm.com/kr/cloud/internet-of-things/2017/07/30/esp8266-iot-arduino-ide-nodemcu-basic/
+#### 참고사항 NODE MCU보드 강좌: https://blog.naver.com/PostSearchList.nhn?SearchText=NodeMCU+%EA%B0%95%EC%A2%8C&blogId=roboholic84
 #### 강사자료(아두이노메가2560): http://blog.daum.net/_blog/search.do?coll_range=1&query1=%EC%95%84%EB%91%90%EC%9D%B4%EB%85%B8&searchtype=%24%7Bsearchtype%7D&page=%2Fsearch%2Fmy%2FsearchBlog.vm&frombn=2&searchpage=&sort=&blogid=0FnMj&articleno=&recommend=N&sortType=recency&enddate=&begindate=&period=&category=0&target=all
-#### 참고자료1(아두이노미니): https://deneb21.tistory.com/325 , https://deneb21.tistory.com/393
 ---
 
 ---
