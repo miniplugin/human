@@ -140,6 +140,7 @@
 #### 한글 깨져보인는 버그처리: 터미널에서 sudo apt-get install fonts-unfonts-core 여기까지 하고 reboot.
 #### 한글 입력 않되는 버그처리: 터미널에서 sudo apt-get install fcitx 다음 sudo apt-get install fcitx-hangul
 #### 한글 입력기가 나오지않는 버그처리: 터미널에서 im-config -n fcitx 후 reboot(기술참고: http://blog.naver.com/PostView.nhn?blogId=linuxni&logNo=221497654453 ) 
+#### SSH, VNC 활성화 후 학생PC에서 접속해 보기. PC에 VNC뷰어설치 https://www.realvnc.com/download/viewer/
 ---
 
 ---
