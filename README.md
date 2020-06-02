@@ -178,6 +178,7 @@
 - 교사PC화면공유SW설치: https://drive.google.com/file/d/1H5efmROpNFm2zY33RgSx5jsETLI795Ga/view?usp=sharing
 - UI디자인 & Development개발 가이드 샘플: https://drive.google.com/file/d/1JsAIwUItL2phlsXEwQ7yK-BOA7mbizJ-/view
 - 학생작업샘플다운로드: https://drive.google.com/file/d/1TWohmhcdzOqY0P9mX1SmfmXVYcZTnrJo/view?usp=sharing 
+- 화면구현 프로젝트 관리자단 home.html 디자인시안 : [보기](git_img/AdminLte_home.jpg)
 
 #### [변경전]매주 월요일 마다 학생 본인 좌측 으로 자리 이동. ->[변경 후]매달 초 자리바꾸기 공개용프로그램 자리이동.
 - 변경기준: 자리바꾸기 공개용프로그램-주최자:교사(아래)
