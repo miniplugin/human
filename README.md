@@ -161,8 +161,6 @@
 #### 참고자료: https://ncs.go.kr/unity/th03/ncsSearchMain.do :/정보통신/정보기술/정보기술개발
 #### 전자정부표준프레임웍3.9버전 개발환경 다운로드(아래 배포사이트) 
  https://www.egovframe.go.kr/EgovDevEnvRelease_300.jsp?menu=3&submenu=2&leftsub=2
-#### 전자정부표준프레임웍3.9버전 개발환경 다운로드(아래 구글드라이브) 
- https://drive.google.com/open?id=1RT45WJLQMpy4Mzuh5zfJupQB5Q4YQxX3
 #### 참고자료: Hello World MVC프로젝트 생성시 템플릿확인(아래) 
 #### 참고자료: 템플릿:https://dist.springsource.com/release/STS/help/org.springframework.templates.mvc-3.2.2.zip
 #### 참고자료: 위 템플릿 동시접속 문제로 보이지 않을때 다른 주소: http://timespace12.dothome.co.kr/org.springframework.templates.mvc-3.2.2.zip
