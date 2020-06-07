@@ -27,7 +27,7 @@
 ### 하드웨어 테스트 SW 구현하기(아래)
 - 아두이노 IDE에서 blink예제  프로그램을 실행 및 깜박이는 시간 변경
 - 위 설계되면 결과대로 Node MCU 아두이노에서 LED를 1초 단위로 On/Off 시키는 프로그램을 구현
-- Delay를 어셈블리로 구현
+- Delay를 어셈블리로 구현 참조: http://cholla.mmto.org/esp8266/xtensa.html
 - 결과예시 : [보기](git_img/result2.jpg)
 
 ### 부트로더 구현하기(아래)
