@@ -1,75 +1,39 @@
-## 인터페이스 구현 (v9.0.0)
+## 요구사항 확인 (v10.0.0)
  
 ---
 
 - [학습목차](https://github.com/miniplugin/human)
-- 능력단위 요소: 2001020212_16v4
+- 능력단위 요소: 2001020201_16v3
 
 ---
 
 ### 학습목표(아래)
 
-- 모듈 간의 분산이 이루어진 경우를 포함하여 단위 모듈 간의 데이터 관계를 분석하고 이를 기반으로 한 메커니즘을 통해 모듈 간의 효율적인 연계를 구현하고 검증할 수 있다.
+- 업무 분석가가 수집 ․ 분석 ․ 정의한 요구사항과 이에 따른 분석모델에 대해서 확인과 현행 시스템에 대해 분석할 수 있다.
 
 ### 핵심키워드(아래)
 
-- 인터페이스 공통 기능, 인터페이스 표준, 인터페이스 예외 처리, 인터페이스 보안 기능, 인터페이스 검증, 인터페이스 오류 처리, 인터페이스 보고서 
+- 요구공학, 비즈니스 분석, UML 활용 능력
 
-### 인터페이스 설계서 확인하기(아래)
+### 현행 시스템 분석하기(아래)
 
-- 외부, 내부 모듈 간 공통 기능 및 데이터 인터페이스 확인.
-- 외부 및 내부 모듈 연계를 위한 인터페이스 기능 식별.
-- 외부 및 내부 모듈 간 인터페이스 데이터 표준 확인.
-- 기존 소스 확인 및 내용 추가
+- 기존 시스템: 전자정부표준프레임워크 템플릿 확인 (심플홈페이지기준) https://www.egovframe.go.kr/wiki/doku.php?id=egovframework:let:function
+- 현행 시스템 파악: 교사가 제시한 제안요청서(RFP)를 분석 .
+- 개발 기술 환경 정의: 교사가 제시한 제안요청서(RFP)를 분석해서 제안서작성[download this](git_img/project_rfp.pptx). 
+- 참고: 조달청 나라장터의 모든 제안요청서는 모두 아래한글(hwp)로 작성되었음. 
+  (확인: 구글검색 > 나라장터 > 통합검색항목 > [스마트 직업교육훈련 플랫폼] 으로 검색)
+  (또는 온라인으로 확인: https://www.smu.ac.kr/flexer/index.jsp?ftype=hwp&attachNo=457355 )
+### 요구사항 확인하기(아래)
 
-```
-Junit 테스트 사용
-탐식기에서 이클립스 workspace 폴더로 이동한 후
-탐색기 상단경로에서 CMD 워크스페이스 폴더경로 엔터
-git clone https://github.com/miniplugin/Dbinterface.git
-이클립스에서 프로젝트 Import 실행
-이 후 강사와 수업 함께 진행.
-작업순서1: member테이블과 매칭되는 MemberVO 클래스 제작 > Mapper쿼리작성 > IF와 매칭되는 구현클래스 생성
-작업순서2: IF클래스에 아래 3개의 메서드 추가 후 구현클래스 자동 생성 후 구현클래스에서 쿼리 호출
-public void insertMember(MemberVO vo) throws Exception;//학생 실습용 추가
-public void delete(String userid) throws Exception;//학생 실습용 추가
-public List<MemberVO> listMember() throws Exception;//학생실습용 추가
-구현클래스 쿼리 추가 핵심(구현 SampleMapper 클래스에 아래 @inject 추가
-@Inject
-	private SqlSession sqlSession;
-log4jdbc 설정추가
-```
+- 요구사항 정의: 전자정부표준프레임웍 UI 템플릿 기능에 최신 트렌드를 반영하는 고도화(오픈소스정책적용).
+- 요구사항의 시스템화 타당성 분석: 기존 유료 솔루션 검색해서 분석.
 
-### 인터페이스 기능 구현하기(아래)
+### 분석모델 확인하기(아래)
 
-- 인터페이스 기능 구현 정의.
-- 인터페이스 구현.
-- 인터페이스 예외 처리 방안 정의.
-- 인터페이스 보안 기능 적용.
-- 기존 Mysql용 인터페이스 프로젝트를 Oracle용으로 변환
-
-```
-오라클용 root-context.xml 설정 추가.
-오라클용 으로 테이블 쿼리 변경 및 오라클용 외부 ojdbc6.jar 라이브러리 추가.
-create table member
-	(
-	 userid varchar(50) not null
-	    ,userpw varchar(50) not null
-	    ,username varchar(50) not null
-	    ,email varchar(100)
-	    ,regdate DATE DEFAULT SYSDATE NOT NULL
-	    ,updatedate DATE DEFAULT SYSDATE NOT NULL
-	    ,CONSTRAINT MEMBERS_PK PRIMARY KEY (userid)
-	)
-    INSERT INTO member VALUES ('user2','1234','kimilguk','user02@test.com',SYSDATE,SYSDATE);
-```
-
-### 인터페이스 구현 검증하기(아래)
-
-- 인터페이스 구현 검증.
-- 인터페이스 오류 처리 확인 및 보고서 작성.
+- 분석모델 검증: 기존 전자정부프레임웍의 템플릿 기능 확인.
+- 분석모델의 시스템화 타당성 분석: 프로그램 커스터마이징 가능성 분석.
 
 ### 참고자료 출처(아래)
 
 - 위에 사용된 소프트웨어는 자유SW 또는 GNU / LGPL / MIT license 입니다.
-- [NCS학습모듈] https://ncs.go.kr/unity/th03/ncsSearchMain.do :/정보통신/정보기술/정보기술개발/응용SW엔지니어링/인터페이스 구현
+- [NCS학습모듈] https://ncs.go.kr/unity/th03/ncsSearchMain.do :/정보통신/정보기술/정보기술개발/응용SW엔지니어링/요구사항 확인
