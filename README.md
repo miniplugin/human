@@ -112,6 +112,14 @@ int main(void)
   }
   return 0;
 }
+
+//소스코드 컴파일
+pwd -> /home/pi/code 현재경로 확인
+mkdir gpio-led
+nano gpio-led.c
+sudo gcc -o gpio-led gpio-led.c -lwiringPi
+//실행
+sudo ./gpio-led
 ```
 
 ### 디바이스 통신 드라이버 소스코드 실행하기(아래)
