@@ -50,18 +50,84 @@ sudo systemctl disable hciuart //블루투스가 Serial을 사용하도록 한�
 sudo reboot //라즈베리파이에서 블루투스가 않보이는 것을 확인
 ```
 
+### 디바이스 LED 켜고 끄는 프로그램 실행하기(아래)
+
+```
+//핀 연결과 사용 함수
+GPIO29(pin40번), Ground pin34번
+
+#define
+매크로 정의하기 #define은 특정 값에 이름을 붙이거나 코드를 조합하여 함수 형태로 만들 수 있다. 
+매크로를 사용하면 전처리기를 거쳐 내부적으로 소스 코드가 일괄 변환된다.
+
+pinMode
+특정 핀을 입력 또는 출력으로 동작하도록 설정
+
+digitalWrite
+특정 핀을 HIGH(켬) 또는 LOW(끔) 으로 만드는 함수
+
+delay
+매개변수에 정한 시간(밀리 초) 동안 프로그램 멈추게 하는 역할을 한다(1초는 1000 밀리 초).
+
+```
+
+```
+#include <stdio.h>
+#include <wiringPi.h>
+
+#define LED1 29 //LED1을 28핀으로 지정
+
+int main(void)
+{
+  int input;
+  int cnt;
+
+  if(wiringPiSetup() == -1) return 1;
+
+  pinMode(LED1, OUTPUT) ;           //LED1을 출력으로 설정
+
+  while(1)                          //무한반복
+  {
+	  printf("1or2or3 입력 : 0 입력시 종료\n");
+	  scanf("%d",&input);                 //입력받는 값을 input에 저장
+	
+	  for(cnt=0; cnt<=3; cnt++)           //세번 반복
+	  {
+		  if(input==1)                    //input이 1일경우
+		  {
+			  printf("LED HIGH\n");
+			  digitalWrite(LED1, HIGH);  //LED1번을 켬
+			  delay(1000);               //1초간
+			
+			  printf("LED LOW\n");
+			  digitalWrite(LED1,LOW);   //LED1번을 끔
+			  delay(1000);              //1초간
+		  }
+	  }
+	
+	  if(n==0){
+		  digitalWrite(LED1, LOW);
+		  break;                        //n에 0이 입력될 경우 while문을 탈출
+	  }
+  }
+  return 0;
+}
+```
+
+### 디바이스 통신 드라이버 소스코드 실행하기(아래)
+
 ```
 //소스코드 컴파일
 pwd -> /home/pi/code 현재경로 확인
 mkdir gpio-uart
-nano gpio-uart.c (내용은 아래 소스코드 인스펙션하기 복사)
+nano gpio-uart.c (내용은 아래 디바이스 통신 드라이버 소스코드 인스펙션하기 복사)
 sudo gcc -o gpio-uart gpio-uart.c -lwiringPi
 //실행
 sudo ./gpio-uart
 
 ```
 
-### 디바이스 드라이버 소스코드 인스펙션하기(아래)
+### 디바이스 통신 드라이버 소스코드 인스펙션하기(아래)
 
 - 드라이버 구현 핀 연결, 함수
 
