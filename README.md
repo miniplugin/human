@@ -88,7 +88,7 @@ int main(void)
 
   while(1)                          //무한반복
   {
-	  printf("1or2or3 입력 : 0 입력시 종료\n");
+	  printf("1 입력시 깜박임시작 : 0 입력시 종료\n");
 	  scanf("%d",&input);                 //입력받는 값을 input에 저장
 	
 	  for(cnt=0; cnt<=3; cnt++)           //세번 반복
