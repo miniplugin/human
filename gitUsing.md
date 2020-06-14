@@ -6,6 +6,7 @@
 - git checkout tags/v1.0.0
 - git clone -b <tag> <repository> 
 - 사용예 : git clone -b v1.0.0 https://github.com/miniplugin/human.git
+- 로컬변경사항이 잘못된 경우 원격상태로 재설정: git reset --hard origin/master
 
 ---
 
