@@ -19,29 +19,42 @@
 ### 디바이스 드라이버구현하기(아래)
 
 - 워밍업: C언어 은행입출금, 학점처리, 구구단 프로그램 코드 실행(구름IDE 사용)
-- GCC컴파일버전확인: sudo apt-get install gcc (버전확인: gcc --version)
+- GCC컴파일버전확인: gcc --version ( 설치않되어 있을때 sudo apt-get install gcc )
+- Git버전확인: git --version ( 설치않되어 있을때 sudo apt-get install git-core )
 - C언어로 GPIO사용준비: wiringPi 라이브러리 사용가능 확인(아래코드)
 
 ```
-//라즈베리에 Git설치
-sudo apt-get install git-core
 //wiringPi 다운로드
-sudo mkdir code
+mkdir code
 cd code
-sudo git clone https://github.com/WiringPi/WiringPi
-cd wiringPi
-sudo ./build
+git clone https://github.com/WiringPi/WiringPi
+cd WiringPi
+./build
 //와이어링파이 설치 확인
 gpio -v
 //C언어에서 사용가능한 와이어링파이 gpio 포트확인
 gpio readall 
 ```
+- PC와 연결: PC드라이버PL-2303HX설치 http://www.ifamilysoftware.com/news37.html(윈7에서 않될 수 있음-아래 참조에서 다운로드)
+	참조: http://www.jkelec.co.kr/img/arm/cortex-m3/rabbit_stm32_lqfp64/stm32f10x_pl2303_usbdriver.html
+- [download this](git_img/pl2303.zip)
+- 설계된 디바이스 드라이버구현 : https://cccding.tistory.com/93
+블루투스 사용중지필요: 이유는 Bluetooth와 UART가 같은 포트를 사용하여 둘중 한가지만 사용가능하기 때문입니다.(아래코드로 처리)
 
-- 설계된 디바이스 드라이버구현
+```
+sudo nano /boot/config.txt //파일을 열고 아래2줄을 추가합니다.
+#disable bluetooth
+dtoverlay=pi3-disable-bt
+//========================
+sudo systemctl disable hciuart //블루투스가 Serial을 사용하도록 한다.
+sudo reboot //라즈베리파이에서 블루투스가 않보이는 것을 확인
+```
 
 ```
 //소스코드 컴파일
+pwd -> /home/pi/code 현재경로 확인
 mkdir gpio-uart
+nano gpio-uart.c (내용은 아래 소스코드 인스펙션하기 복사)
 sudo gcc -o gpio-uart gpio-uart.c -lwiringPi
 //실행
 sudo ./gpio-uart
@@ -53,7 +66,7 @@ sudo ./gpio-uart
 - 드라이버 구현 핀 연결, 함수
 
 ```
-//pin4-red , pin6-black, pin8-white, pin10-green 
+//pin4-red(어댑터전원있으면 연결하지 마세요) , pin6-black(어댑터전원있으면 연결하지 마세요), pin8(TX)-white, pin10(RX)-green 
 //디바이스 드라이버 구현을 위해 필요한 소스 및 함수
 #include <wiringPi.h> //GPIO핀 사용을 위한 와이어링파이 헤더파일 호출
 #include <wiringSerial.h> //시리얼 통신을 위한 헤더파일 호출
@@ -66,10 +79,13 @@ serialPutchar(fd, ch); //uart포트로 데이터를 전송해 주는 함수 (인
 
 ```
 #include <stdio.h>
-#include<string.h> //문자열 처리
-#include<errno.h>
-#include<wiringPi.h> //GPIO 출력
-#include<wiringSerial.h> //시리얼 통신
+#include <string.h> //문자열 처리
+#include <errno.h>
+#include <wiringPi.h> //GPIO 출력
+#include <wiringSerial.h> //시리얼 통신
+//Implicit declaration of function ‘close'에러 때문에 아래 2줄 추가
+#include <fcntl.h> // for open
+#include <unistd.h> // for close
 
 void uart_ch(char ch);
 void uart_str(char *str);
@@ -110,20 +126,14 @@ void uart_str(char *txStr) //RX에 데이터가 들어오면 while문 실행하�
 	while(*txStr) uart_ch(*txStr++); //RX에 데이터가 들어오면  uart포트로 검사 후 1문자를 TX전송해 주는 [사용자함수]호출
 }
 ```
+### 결과확인(아래)
+![ex_screenshot](./git_img/result.jpg)
 
 ### 참고자료 출처(아래)
 - 학습모듈: https://ncs.go.kr/unity/th03/ncsSearchMain.do 20.정보통신 > 01.정보기술 > 02.정보기술개발 > 03.임베디드SW 엔지니어링
 - 작업준비: 라즈베리파이 3 B, 5V어댑터, HDMI모니터케이블(DVI젠더), UART케이블
 - C언어에서 GPIO 사용하기: https://infinitt.tistory.com/20
 - 라즈베리 블루투스가 Serial을 사용하도록 설정
-
-```
-sudo nano /boot/config.txt
-#disable bluetooth
-dtoverlay=pi3-disable-bt //이 밑의 두문장을 지운다.
-sudo systemctl enable hciuart //블루투스가 Serial을 사용하도록 한다.
-reboot //블루투스가 연결된 것을 확인
-```
 
 - 수행순서
 
@@ -137,10 +147,8 @@ reboot //블루투스가 연결된 것을 확인
 7. 실행 결과 갭쳐
 개선 사항
 
-```
-
-```
-//아래는 필요없음
+Ps. 참고사항
+//아래는 윈도우PC가 아닌 리눅스PC에서 퍼티로 접속할때 사용-필요없음
 //라즈베리에 Putty 설치 (설치 후 Local echo Force on / Local line eding Force on 설정체크)
 sudo apt-get install putty //PC 퍼티에서 Serial line 속도를 115200 으로 포트도 맞춰준다.
 ```
