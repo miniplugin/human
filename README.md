@@ -54,7 +54,7 @@ sudo reboot //라즈베리파이에서 블루투스가 않보이는 것을 확�
 
 ```
 //핀 연결과 사용 함수
-GPIO29(pin40번), Ground pin34번
+GPIO21(pin40번), Ground pin39번
 
 #define
 매크로 정의하기 #define은 특정 값에 이름을 붙이거나 코드를 조합하여 함수 형태로 만들 수 있다. 
@@ -75,7 +75,7 @@ delay
 #include <stdio.h>
 #include <wiringPi.h>
 
-#define LED1 29 //LED1을 28핀으로 지정
+#define LED1 21 //LED1을 21핀으로 지정
 
 int main(void)
 {
