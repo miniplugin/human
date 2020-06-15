@@ -114,7 +114,8 @@ gcc -o gpio-led gpio-led.c -lwiringPi
 	참조: http://www.jkelec.co.kr/img/arm/cortex-m3/rabbit_stm32_lqfp64/stm32f10x_pl2303_usbdriver.html
 - [download this](git_img/pl2303.zip)
 - 설계된 디바이스 드라이버구현 : https://cccding.tistory.com/93
-블루투스 사용중지필요: 이유는 Bluetooth와 UART가 같은 포트를 사용하여 둘중 한가지만 사용가능하기 때문입니다.(아래코드로 처리)
+- 라즈베리 블루투스가 Serial을 사용하지 않도록 설정
+  블루투스 사용중지필요: 이유는 Bluetooth와 UART가 같은 포트를 사용하여 둘중 한가지만 사용가능하기 때문입니다.(아래코드로 처리)
 
 ```
 sudo nano /boot/config.txt //파일을 열고 아래2줄을 추가합니다.
@@ -210,9 +211,7 @@ void uart_str(char *txStr) //RX에 데이터가 들어오면 while문 실행하�
 - 학습모듈: https://ncs.go.kr/unity/th03/ncsSearchMain.do 20.정보통신 > 01.정보기술 > 02.정보기술개발 > 03.임베디드SW 엔지니어링
 - 작업준비: 라즈베리파이 3 B, 5V어댑터, HDMI모니터케이블(DVI젠더), UART케이블
 - C언어에서 GPIO 사용하기: https://infinitt.tistory.com/20
-- 라즈베리 블루투스가 Serial을 사용하도록 설정
-
-- 수행순서
+- 수행순서(아래)
 
 ```
 1. 장비 목록 갭쳐
