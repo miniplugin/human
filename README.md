@@ -15,10 +15,10 @@
 
 - 교차 개발 환경, 디바이스 드라이버, 소스코드 인스펙션
 
-
 ### 디바이스 드라이버구현하기(아래)
 
 - 워밍업: C언어 은행입출금, 학점처리, 구구단 프로그램 코드 실행(구름IDE 사용)
+- 설계도면 샘플다운로드: Fritzing프리징(Free버전)프로그램 > 부품 > core > Computer > RPi3 선택
 - GCC컴파일버전확인: gcc --version ( 설치않되어 있을때 sudo apt-get install gcc )
 - Git버전확인: git --version ( 설치않되어 있을때 sudo apt-get install git-core )
 - C언어로 GPIO사용준비: wiringPi 라이브러리 사용가능 확인(아래코드)
@@ -35,26 +35,12 @@ gpio -v
 //C언어에서 사용가능한 와이어링파이 gpio 포트확인
 gpio readall 
 ```
-- PC와 연결: PC드라이버PL-2303HX설치 http://www.ifamilysoftware.com/news37.html(윈7에서 않될 수 있음-아래 참조에서 다운로드)
-	참조: http://www.jkelec.co.kr/img/arm/cortex-m3/rabbit_stm32_lqfp64/stm32f10x_pl2303_usbdriver.html
-- [download this](git_img/pl2303.zip)
-- 설계된 디바이스 드라이버구현 : https://cccding.tistory.com/93
-블루투스 사용중지필요: 이유는 Bluetooth와 UART가 같은 포트를 사용하여 둘중 한가지만 사용가능하기 때문입니다.(아래코드로 처리)
-
-```
-sudo nano /boot/config.txt //파일을 열고 아래2줄을 추가합니다.
-#disable bluetooth
-dtoverlay=pi3-disable-bt
-//========================
-sudo systemctl disable hciuart //블루투스가 Serial을 사용하도록 한다.
-sudo reboot //라즈베리파이에서 블루투스가 않보이는 것을 확인
-```
 
 ### 디바이스 LED 켜고 끄는 프로그램 실행하기(아래)
 
 ```
 //핀 연결과 사용 함수
-GPIO21(pin40번), Ground pin39번
+GPIO29(pin40번), Ground pin39번
 
 #define
 매크로 정의하기 #define은 특정 값에 이름을 붙이거나 코드를 조합하여 함수 형태로 만들 수 있다. 
@@ -75,7 +61,7 @@ delay
 #include <stdio.h>
 #include <wiringPi.h>
 
-#define LED1 21 //LED1을 21핀으로 지정
+#define LED1 29 //LED1을 29핀으로 지정
 
 int main(void)
 {
@@ -120,6 +106,23 @@ nano gpio-led.c
 gcc -o gpio-led gpio-led.c -lwiringPi
 //실행
 ./gpio-led
+```
+
+### 디바이스 통신 드라이버 개발환경 준비하기 (아래)
+
+- PC와 연결: PC드라이버PL-2303HX설치 http://www.ifamilysoftware.com/news37.html(윈7에서 않될 수 있음-아래 참조에서 다운로드)
+	참조: http://www.jkelec.co.kr/img/arm/cortex-m3/rabbit_stm32_lqfp64/stm32f10x_pl2303_usbdriver.html
+- [download this](git_img/pl2303.zip)
+- 설계된 디바이스 드라이버구현 : https://cccding.tistory.com/93
+블루투스 사용중지필요: 이유는 Bluetooth와 UART가 같은 포트를 사용하여 둘중 한가지만 사용가능하기 때문입니다.(아래코드로 처리)
+
+```
+sudo nano /boot/config.txt //파일을 열고 아래2줄을 추가합니다.
+#disable bluetooth
+dtoverlay=pi3-disable-bt
+//========================
+sudo systemctl disable hciuart //블루투스가 Serial을 사용하도록 한다.
+sudo reboot //라즈베리파이에서 블루투스가 않보이는 것을 확인
 ```
 
 ### 디바이스 통신 드라이버 소스코드 실행하기(아래)
