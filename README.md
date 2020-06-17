@@ -25,7 +25,7 @@
 ```
 탐식기에서 이클립스 workspace 폴더로 이동한 후
 탐색기 상단경로에서 CMD 워크스페이스 폴더경로 엔터
-git clone https://github.com/miniplugin/Dbinterface.git
+git clone https://github.com/miniplugin/Dbinterface_ora.git
 이클립스에서 프로젝트 Import 실행
 이 후 강사와 수업 함께 진행.
 작업순서1: member테이블과 매칭되는 MemberVO 클래스 제작 [/src/main/java/org/edu/vo/MemberVO.java]
