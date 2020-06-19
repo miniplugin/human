@@ -78,3 +78,18 @@ BufferedReader br = null;
 - HRD-Net 오픈API(정부3.0서비스): http://www.hrd.go.kr/hrdp/ap/papao/PAPAO0100D.do
 - [연계시스템 예시_원격모니터링시스템_Agent(중계)시스템이해 PDF보기](/git_img/example.pdf)
 - eclipse xmlutil pretty print(콘솔창에서 xml 이쁘게 출력)방법 : https://bryan7.tistory.com/83
+
+```
+- <!-- 2020.06.19 에러 처리 (아래) 
+    1. DailyRollingFileAppender 에서 로그파일 날짜 형식은 MaxMaxFileSize, MaxBackupIndex의 옵션이 적용되지 않는다.
+	기존 log4j 1.2.15버전의 버그(Log4j : ERROR Failed to rename 기존로그파일 to 신규로그파일명 )
+	- 이유: Log4J를 여러 인스턴스가 공유해서 사용할 경우
+	log4j-1.3alpha-8 스타일로 변경 - 패키지 변경 및 policy 처리로 구조 변경 됨 
+	기술참조: https://www.egovframe.go.kr/wiki/doku.php?id=egovframework:rte:fdl:logging&s%5B%5D=log4j
+	라이브러리: http://archive.apache.org/dist/logging/log4j/
+	2. log4jdbc 드라이버 사용에러는 /src/main/resources/log4jdbc.log4j2.properties 생성필요함.
+	3. 메이븐 업데이트시 자바버전 1.6으로 변경되는 문제 -> pom.xml build 항목의 1.6을 1.8로 변경.
+-->
+```
+
+- 위에서 log4j 1.2.15버전 -> log4j-1.3alpha-8버전으로 바꿀때, 다운로드 속도가 느릴때 [download this](git_img/log4j-1.3alpha-8.jar)
