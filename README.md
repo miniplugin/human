@@ -54,9 +54,9 @@
 -  노드MCU 프로그램 제작하기(SamrtNodeMCU.ino)
 
 ```
-// 업로드시 와이파이보드 RX, TX핀을 제거하고 업로드
-char rxVal;//스마트폰->노드MCU 전송값 변수 선언
-int LED_USER = 14;//외부 LED 변수 선언
+//주) 노드MCU 보드에 업로드시 와이파이보드 RX, TX핀을 제거하고 업로드
+char rxVal;//스마트폰->노드MCU보드 전송값 변수 선언
+int LED_USER = 14;//외부 LED 변수 선언 GPIO14번=프린팅된번호D5
 void setup() //프로그램 초기 1회만 실행됨
 {
   //시리얼 모니터 설정(아래)
@@ -66,7 +66,7 @@ void setup() //프로그램 초기 1회만 실행됨
   Serial.println();//자바의 System.out.println()과 같음
   //노드MCU 보드 핀 설정(아래)
   pinMode(LED_BUILTIN, OUTPUT);//MCU보드의 하단 led 켜기 선언
-  pinMode(14, OUTPUT);//외부 led 켜기 선언 GPIO14번=D5
+  pinMode(LED_USER, OUTPUT);//외부 led 켜기 선언
   digitalWrite(LED_BUILTIN, LOW);//MCU보드의 하단 led OFF
   digitalWrite(LED_USER, LOW);//외부 led OFF
 }//End setup()
@@ -138,7 +138,6 @@ void loop()                 //MCU보드 전원이 꺼질때까지 무한 실행�
   }// End switch문
  }// End if문
 }// End loop문
-
 ```
 
 - 안드로이드 스튜디오를 사용해서 앱만들기 핵심파일3개(아래)
