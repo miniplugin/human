@@ -142,9 +142,9 @@ void loop()                 //MCU보드 전원이 꺼질때까지 무한 실행�
 ```
 
 - 안드로이드 스튜디오를 사용해서 앱만들기 핵심파일3개(아래)
- [앱 명세파일 download this](git_img/AndroidManifest.xml)
- [화면처리파일 download this](git_img/activity_main.xml)
- [자바프로그램처리 download this](git_img/MainActivity.java)
+- [앱 명세파일 download this](git_img/AndroidManifest.xml)
+- [화면처리파일 download this](git_img/activity_main.xml)
+- [자바프로그램처리 download this](git_img/MainActivity.java)
   
 ```
 앱 명세파일 : AndroidManifest.xml
