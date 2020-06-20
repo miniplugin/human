@@ -20,9 +20,9 @@
 
 - 아두이노 IDE 개발툴 사용해서 스케치프로그램 작성
 - 안드로이드 스튜디오 IDE 개발툴 사용(세부명세는 AndroidManifest.xml 에 명시)
-- <uses-sdk android:minSdkVersion="12" />
-- <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
-- <uses-permission android:name="android.permission.BLUETOOTH"/>
+- uses-sdk android:minSdkVersion="12"
+- uses-permission android:name="android.permission.BLUETOOTH_ADMIN"
+- uses-permission android:name="android.permission.BLUETOOTH"
 - 자바호환버전: 1.8: build.gradle 파일에 명시
 - 수행작업확인(아래)
 
