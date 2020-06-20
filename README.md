@@ -51,7 +51,7 @@
 
 ### 애플리케이션 구현하기(아래)
 
--  노드MCU 프로그램 제작하기(SamrtNodeMCU.ino)
+-  노드MCU 프로그램 제작하기(파일명:SamrtNodeMCU.ino)
 
 ```
 //주) 노드MCU 보드에 업로드시 와이파이보드 RX, TX핀을 제거하고 업로드
