@@ -40,7 +40,7 @@
 5.  github에 저장소를 만들고 add, commit 및 push 명령어를 이용하여 저장소에 소스코드를 
    업로드하시오.
 6. github에 v2.0.0 이라는 태그를 만들고 해당 태그에 소스코드를 업로드하시오.
-7. 디바이스 드라이브가 실행되는 결과  2개 이상을 캡쳐 하시오(하드웨어)
+7. 디바이스 드라이브가 실행되는 결과를 캡쳐 하시오(하드웨어 2개 이상)
 ```
 
 ### 애플리케이션 개발 환경 구축하기(아래)
@@ -49,6 +49,7 @@
 - 아두이노 IDE 설치 및 PC와 연결확인: UART통신
 - 안드로이드 스튜디오 설치: https://developer.android.com/studio/install (아래 내용대로 진행 합니다.)
 - 교육효과를 높이기 위해 다운받아서 설치하지 않고, 교사가 제공하는 안드로이드스튜디오 압축버전과 SDK버전 받아서 작업합니다. 
+- 안드로이드 스튜디오 IDE로 HelloWorld프로젝트 만들어보기.(이 프로젝트를 가지고 실제 앱을 구현합니다.) 
 
 ### 애플리케이션 구현하기(아래)
 
@@ -57,88 +58,91 @@
 ```
 //주) 노드MCU 보드에 업로드시 와이파이보드 RX, TX핀을 제거하고 업로드
 char rxVal;//스마트폰->노드MCU보드 전송값 변수 선언
-int LED_USER = 14;//외부 LED 변수 선언 GPIO14번=프린팅된번호D5
+//int LED_USER = 14;//외부(하단) LED 변수 선언 GPIO 14번=프린팅된번호D5
+int LED_USER = 16;//외부(하단) LED 변수 선언 GPIO 16번=프린팅된번호D0
+//주) 노드MCU는 LOW 와 HIGH 가 일반 아두이노와 반대
+int ON = 0; //HIGH
+int OFF = 1; //LOW
+
 void setup() //프로그램 초기 1회만 실행됨
 {
   //시리얼 모니터 설정(아래)
-  Serial.begin(9600);//디버그용 통신연결-아두이노내장 시리얼모니터에서 사용
-  Serial1.begin(9600);//불루투스보드와 통신연결-전송속도9600으로 해도 스트링문자열 전송정상입니다.
-  Serial.write("스마트노드MCU 프로젝트");//디버그용 시리얼모니터에 제목출력
+  Serial.begin(9600);//불루투스보드와 통신연결-아두이노내장 시리얼모니터에서 사용.
   Serial.println();//자바의 System.out.println()과 같음
   //노드MCU 보드 핀 설정(아래)
-  pinMode(LED_BUILTIN, OUTPUT);//MCU보드의 하단 led 켜기 선언
-  pinMode(LED_USER, OUTPUT);//외부 led 켜기 선언
-  digitalWrite(LED_BUILTIN, LOW);//MCU보드의 하단 led OFF
-  digitalWrite(LED_USER, LOW);//외부 led OFF
+  pinMode(LED_BUILTIN, OUTPUT);//MCU보드의 상단 led 켜기 선언
+  pinMode(LED_USER, OUTPUT);//외부(하단) led 켜기 선언
+  digitalWrite(LED_BUILTIN, OFF);//MCU보드의 상단 led OFF
+  digitalWrite(LED_USER, OFF);//외부(하단) led OFF
 }//End setup()
 
 void loop()                 //MCU보드 전원이 꺼질때까지 무한 실행됨
 {
  static boolean flag = true;// flag 가 참일 경우
- if(Serial1.available())//불루투스보드와 통신연결이 되었을때 if 실행
+ if(Serial.available())//불루투스보드와 통신연결이 되었을때 if 실행
  {
-  rxVal = Serial1.read();                          
+  rxVal = Serial.read();                          
   Serial.println(int(rxVal));   //Serial Monitor로 수신값 출력
   switch(rxVal)
   {
     case '1' :                  // rxVal 이 1 일 경우
        for(int i=0; i<3; i++)   // 0부터 2까지 3회 반복
          {
-          digitalWrite(LED_BUILTIN, HIGH);// MCU보드의 하단 led ON
+          digitalWrite(LED_BUILTIN, ON);// MCU보드의 상단 led ON
           delay(500);           // 0.5초 기다림
-          digitalWrite(LED_BUILTIN, LOW); // MCU보드의 하단 led OFF
+          digitalWrite(LED_BUILTIN, OFF); // MCU보드의 상단 led OFF
           delay(500);
          }
          break;                 // switch문 종료
     case '2' :                  // rxVal 이 2 일 경우
        for(int i=0; i<3; i++)   // 0부터 2 까지 3회 반복
          {
-          digitalWrite(LED_BUILTIN, HIGH);// MCU보드의 하단 led ON
+          digitalWrite(LED_BUILTIN, ON);// MCU보드의 상단 led ON
           delay(3000);          // 3초 동안 기다림
-          digitalWrite(LED_BUILTIN, LOW); // MCU보드의 하단 led OFF
+          digitalWrite(LED_BUILTIN, OFF); // MCU보드의 상단 led OFF
           delay(3000);          // 3초 동안 기다림
          }
          break;                 // switch문 종료
-    case '3' :                  // rxVal 이 3 일 경우
-         digitalWrite(LED_BUILTIN, HIGH);  // MCU보드의 하단 led ON
-         delay(30);             // 0.03초 동안 기다림
-         digitalWrite(LED_BUILTIN, LOW);  // MCU보드의 하단 led OFF
-         break;                 // switch문 종료
-    case '4' :                  // rxVal 이 4 일 경우 - 토글Toogle기능(똑딱이)
+    case '3' :                  // rxVal 이 4 일 경우 - 토글Toogle기능(똑딱이)
         {
           switch(flag)          // flag 가 참이면 
           {
-            case true;
-              digitalWrite(LED_BUILTIN, HIGH);// MCU보드의 하단 led ON
+            case true:
+              digitalWrite(LED_BUILTIN, ON);// MCU보드의 상단 led ON
               flag=false;           // flag 변수에 거짓값 저장
               break;                // 내부 switch문 종료
             case false:            // flag가 거짓이면
-              digitalWrite(LED_BUILTIN, LOW);// MCU보드의 하단 led OFF
+              digitalWrite(LED_BUILTIN, OFF);// MCU보드의 상단 led OFF
               flag=true;           // flag 변수에 참값 저장
               break;               // 내부 switch문 종료
          }
          break;                   // switch문 종료
        }
-    case'5' :                     //rxVal 이 5 이면
+    case'4' :                     //rxVal 이 5 이면
         for(int i=0; i<3; i++)    // 0부터 2 까지 3회 반복
          {
-          digitalWrite(LED_USER, LOW);  // 외부 led OFF
-          digitalWrite(LED_BUILTIN, HIGH);  // MCU보드의 하단 led ON
+          digitalWrite(LED_USER, OFF);  // 외부(하단) led OFF
+          digitalWrite(LED_BUILTIN, ON);  // MCU보드의 상단 led ON
           delay(500);                   // 0.5 초 후 
-          digitalWrite(LED_USER, HIGH);  // 외부 led ON
-          digitalWrite(LED_BUILTIN, LOW);   // MCU보드의 하단 led OFF
+          digitalWrite(LED_USER, ON);  // 외부(하단) led ON
+          digitalWrite(LED_BUILTIN, OFF);   // MCU보드의 상단 led OFF
           delay(500);                  // 0.5초 후 반복 (x 3회)
          }                             // 3회 후 반목분 종료
-        digitalWrite(LED_USER, LOW);   // 외부 led OFF
-        digitalWrite(LED_BUILTIN, LOW);// MCU보드의 하단 led OFF
+        digitalWrite(LED_USER, OFF);   // 외부(하단) led OFF
+        digitalWrite(LED_BUILTIN, OFF);// MCU보드의 상단 led OFF
         break;                         // switch문 종료
-    case 's' :                         //rxVal 이 s 일 경우 모든 led 꺼짐
-        digitalWrite(LED_USER, LOW);   // 외부 led OFF
-        digitalWrite(LED_BUILTIN, LOW);// MCU보드의 하단 led OFF 
+    case '8' :                         //rxVal 이 s 일 경우 모든 led 꺼짐
+        digitalWrite(LED_USER, ON);   // 외부(하단)`                                                                                                                                                                                      led OFF
+        digitalWrite(LED_BUILTIN, ON);// MCU보드의 상단 led OFF 
+        break;                         // switch문 종료
+    case '9' :                         //rxVal 이 s 일 경우 모든 led 꺼짐
+        digitalWrite(LED_USER, OFF);   // 외부(하단)`                                                                                                                                                                                      led OFF
+        digitalWrite(LED_BUILTIN, OFF);// MCU보드의 상단 led OFF 
         break;                         // switch문 종료
   }// End switch문
  }// End if문
 }// End loop문
+
 ```
 
 - 안드로이드 스튜디오를 사용해서 앱만들기 핵심파일3개(아래)
@@ -152,9 +156,20 @@ void loop()                 //MCU보드 전원이 꺼질때까지 무한 실행�
 자바프로그램처리: MainActivity.java
 ```
 
-### 결과확인(준비중)
-
+### 결과확인(아래)
+- 하드웨어 구성
+![ex_screenshot](./git_img/result1.jpg)
+- 소프트웨어 구성
+![ex_screenshot](./git_img/result2.jpg)
+- [앱프로그램소스 download this](git_img/SmartBlue.zip)
 
 ### 참고자료 출처(아래)
 - 학습모듈: https://ncs.go.kr/unity/th03/ncsSearchMain.do 20.정보통신 > 01.정보기술 > 02.정보기술개발 > 03.임베디드SW 엔지니어링
 - 노드MUC보드 참고자료: https://s3.ap-northeast-2.amazonaws.com/mechaimage/book/NodeMCU.pdf
+- CPU가 NX 지원 + 바이오스에서 VT-x enable 이 되어 있어야함.(교육생PC에서 지원 않하는 PC가 있기 때문에 안드로이드 버추어 디바이스(AVD)는 사용하지 않고, 실제 휴대폰을 PC에 연결하여서 앱을 빌드 합니다.)
+기술참조: https://bonobono-no1.tistory.com/5
+CPU확인SW: https://docs.microsoft.com/ko-kr/sysinternals/downloads/coreinfo
+- 안드로이드폰(갤럭시) 설정에서 블루투스 검색 및 찾기
+https://blog.naver.com/PostView.nhn?blogId=eduino&logNo=221121406317
+- 블루투스 연결 확인 앱(Bluetooth Terminal) 본인이 작업한 앱 실행전 블루투스 연결 확인용
+https://play.google.com/store/apps/details?id=ptah.apps.bluetoothterminal&hl=ko
