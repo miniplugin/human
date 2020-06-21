@@ -41,3 +41,5 @@ header, container, footer, color, UI 설계 검토, UI 구현 표준, UI 저작�
 ### 참고자료 출처(아래)
 - 위에 사용된 소프트웨어는 자유SW 또는 GNU / LGPL / MIT license 입니다.
 - 위 작업시 사용된 이미지는 픽사베이 무료이미지만 사용한다 : https://pixabay.com/
+- 관리자페이지 중 회원관리 페이지 제작예시(아래)
+![ex_screenshot](./git_img/member_admin.jpg)
