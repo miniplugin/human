@@ -43,3 +43,5 @@ header, container, footer, color, UI 설계 검토, UI 구현 표준, UI 저작�
 - 위 작업시 사용된 이미지는 픽사베이 무료이미지만 사용한다 : https://pixabay.com/
 - 관리자페이지 중 회원관리 페이지 제작예시(아래)
 ![ex_screenshot](./git_img/member_admin.jpg)
+- 관리자페이지 중 게시판관리 페이지 제작예시(아래)
+![ex_screenshot](./git_img/board_admin.jpg)
