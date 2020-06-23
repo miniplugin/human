@@ -41,6 +41,25 @@ header, container, footer, color, UI 설계 검토, UI 구현 표준, UI 저작�
 ### 참고자료 출처(아래)
 - 위에 사용된 소프트웨어는 자유SW 또는 GNU / LGPL / MIT license 입니다.
 - 위 작업시 사용된 이미지는 픽사베이 무료이미지만 사용한다 : https://pixabay.com/
+- 20200623 메뉴선택시 선택부분만 활성화: 자바스크립트(JQuery)로 처리-학생실습(아래)
+
+```
+<!-- footer.jsp 하단에 저장 : 아래 [클래스명을입력]부분을 학생이 채우세요... -->
+<script>
+$(document).ready(function() {
+    var current = location.pathname;
+    $('클래스명을입력 li a').each(function(){
+        var $this = $(this);
+        if($this.attr('href').includes(current) == true){
+            $this.addClass('active');
+        }else{
+        	$this.removeClass('active');
+        }
+    })
+ });
+</script>
+```
+
 - 관리자페이지 중 회원관리 페이지 제작예시(아래)
 ![ex_screenshot](./git_img/member_admin.jpg)
 - 관리자페이지 중 게시판관리 페이지 제작예시(아래)
