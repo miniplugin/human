@@ -43,6 +43,7 @@
 
 ### 결과확인(아래)
 - 캡쳐
+![ex_screenshot](./git_img/work.jpg)
 ![ex_screenshot](./git_img/device.png)
 - [앱프로그램소스 download this](git_img/ChatApp.zip)
 
