@@ -188,3 +188,42 @@
 - 이클립스 메뉴에서 Window>Preferences>Team>Git>Configuration 에서 결과확인
 - 이전과 동일하게 학생 본인 작업 시작
 ---
+
+#### 스프링에서 사용된 용어 설명(미리보기)
+```
+======================================
+@RequestMapping 을 매서드상단에 붙이면 HTTP 요청을 받아들이는 매서드임을 나타냄.
+@Autowired (스프링용) = @Inject-주입하다(자바용): 
+ - DI(디펜던시인젝션)컨테이너(등록된 Bean-스프링에서 관리하는 클래스)가 의존성 주입 해야할 클래스.
+ - 스프링 4.3버전 이상 부터 즉, 스프링부트2.x(스프링5.x) 부터는 @Autowired 애노테이션을 사용하지 않아도 DI가 가능합니다.
+@ComponentScan : 프로젝트에서 생성한 빈(Bean)클래스를 자동으로 DI컨테이너에 자동등록@SpringBootApplication (신)에서는 필요없음.
+@Component, @Controller, @Service, @Repository 등 : 
+ - 스프링 에서 DI컨테이너(등록된 Bean들)에 자동 등록될 빈(Bean) 클래스 지정.
+- @Controller : 스프링 웹MVC 컨트롤러를 의미. 
+  웹URI 등록에 사용. 위에 언급한 @RestController (RestFull용)참조.
+  jsp와 @Service서비스연결해주는 View 프리젠테이션 레이어 클래스.
+- @Service : 도메인(domain=VO,Value Object멤버변수) 와
+  DAO(데이터엑세스Repository)를 연결해 주는 비지니스(서비스) 로직 레이어 클래스.
+- @Repository : 서비스(비지니스)와 DB엑세스(DAO) 를 연결해 주는 레이어 클래스.
+==============================================================================
+스프링 웹 프로젝트 코딩 순서는 아래와 같습니다.
+==============================================================================
+1. DB ERD 작업 및 스키마 및 테이블 생성(이전 포스트 참조)
+2. 스프링 Legacy 프로젝트 생성 POM파일+스프링설정(root-context.xml)  및 패키지 구조 정의(이전 포스트 참조)
+3. 자바 코딩 시작(아래 나열된 순서대로 작업 합니다.)
+   아래 대표 @애노테이션 이름이 있습니다.
+ - VO (Db 클래스 멤버변수 정의)파일 생성.
+ - DAO(Db엑세스 인터페이스)파일 생성, Implement 구현클래스(@Repository) 파일 생성.
+ - db SQL쿼리 구문 Mapper xml 파일 생성.(DAO에서 사용하는 이름태그: <mapper namespace="org.edu.mapper.BoardMapper">)
+ - Biz(비지니즈-@Service) 인터페이스 파일 생성, Implement 구현클래스(@Service) 파일 생성
+ - JUnit 테스트(@Test)로 Biz(비지니스) CRUD 테스트.
+===============================================================================
+
+AOP기능 추가시 사용된 파일목록: 
+1.pom.xml (디펜던시추가), 
+2.root-context.xml 에 설정내용추가, 
+3. org.edu.aop 패키지 클래스 상단에 @Aspect지정,@Component 로 지정
+4. 클래스내부 메서드 상단에 @Around로 감싸줌
+@Around("execution(* org.edu.service.MemberService*.*(..))")//해당서비스명칭 변경
+5. log4j.xml 설정을 info -> debug 로 변경해줌.
+```
