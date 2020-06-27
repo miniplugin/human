@@ -17,6 +17,49 @@
 
 ### 개발환경 분석하기(기술 명세 검토 아래)
 
+- 기존 스프링웹프로젝트에 RestController를 추가하여 DB와 연동시켜서 로그인과 회원 삭제를 처리하는 스마트폰앱 작성.(HelloWorld 프로젝트부터 시작)
+- 안드로이드 스튜디오 IDE 개발툴 사용(세부명세는 AndroidManifest.xml 에 명시)
+- uses-permission android:name="android.permission.INTERNET"
+
+### 기능구현하기 + 프로그램 디버깅 + 최적화하기(애플리케이션제작 아래)
+
+- 수행순서(아래)
+
+```
+1. 이전에 작업한 스프링MVC프로젝트에서 @RestController사용하여 스마트 폰(안드로이드)에서 사용할 JSON데이터를 생성 하는 클래스 작업.
+2. 작성한 RESTFULL프로그램을 테스트하는 크롬 부메랑 츨러그인을 사용하여 제대로 실행되는지 확인하시오.
+3. 안드로이드 스튜디오에서 로그인과 로그인 후 화면 UI를 제작하시오.
+4. 안드로이드 스튜디오에서 JSON데이터를 받아서 로그인 처리하고, 파싱해서 로그인 후 화면에 회원정보를 LivsView로 구현하시오.
+5. 스마트폰앱의 회원목록에서 회원을 삭제하는 기능을 추가하시오.
+6. github에 저장소를 만들고 add, commit 및 push 명령어를 이용하여 저장소에 소스코드를 
+   업로드하시오.
+7. 안드로이드용 자원관리를 위한 HSQL 데이터베이스를 실행하고 캡쳐 하시오.
+8. 효율적인 자원관리를 위하여 HSQL에이전트(Agent)를 설명하시오.(pom.xml 설정 설명)
+9. 효과적인 트래픽 분석을 위하여 네트워크 QoS 를 안드로이드 스튜디오 모니터링 툴로 확인 하시오.
+10. AdroidSpringDb 앱이 실행되는 결과를 캡쳐 하시오.
+```
+
+### 작업순서확인(아래)
+- 캡쳐
+![ex_screenshot](./git_img/01spring_work.jpg)
+![ex_screenshot](./git_img/02chrome_before_after.jpg)
+![ex_screenshot](./git_img/03android_work.jpg)
+![ex_screenshot](./git_img/04login_after.png)
+![ex_screenshot](./git_img/05login_before.png)
+- [앱프로그램소스 download this](git_img/AndroidSpringDb.zip)
+
+
+### 참고자료 출처(아래)
+- 학습모듈: https://ncs.go.kr/unity/th03/ncsSearchMain.do 20.정보통신 > 01.정보기술 > 02.정보기술개발 > 05.NW엔지니어링
+
+- 개선하기(키패드로 인해 UI를 가리는 부분): https://superwony.tistory.com/4
+- 최적화하기(채팅창스크롤): https://dev.re.kr/43
+- 안드로이드프로젝트이름바꾸기: https://dotworks.tistory.com/4
+
+================  아래 내용은 선택항목임. 여유 시간이 남는 학생만 하세요.  ===============
+
+### 개발환경 분석하기(기술 명세 검토 아래)
+
 - 채팅 서버/클라이언트 프로그램 작성.(HelloWorld 프로젝트부터 시작)
 - 안드로이드 스튜디오 IDE 개발툴 사용(세부명세는 AndroidManifest.xml 에 명시)
 - uses-permission android:name="android.permission.INTERNET"
@@ -47,7 +90,3 @@
 ![ex_screenshot](./git_img/device.png)
 - [앱프로그램소스 download this](git_img/ChatApp.zip)
 
-### 참고자료 출처(아래)
-- 학습모듈: https://ncs.go.kr/unity/th03/ncsSearchMain.do 20.정보통신 > 01.정보기술 > 02.정보기술개발 > 05.NW엔지니어링
-- 개선하기(키패드로 인해 UI를 가리는 부분): https://superwony.tistory.com/4
-- 최적화하기(채팅창스크롤): https://dev.re.kr/43
