@@ -51,6 +51,7 @@
 
 ### 참고자료 출처(아래)
 - 학습모듈: https://ncs.go.kr/unity/th03/ncsSearchMain.do 20.정보통신 > 01.정보기술 > 02.정보기술개발 > 05.NW엔지니어링
+- 교사자료: http://blog.daum.net/web_design/search/R&D%202016%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B83
 
 - 개선하기(키패드로 인해 UI를 가리는 부분): https://superwony.tistory.com/4
 - 최적화하기(채팅창스크롤): https://dev.re.kr/43
