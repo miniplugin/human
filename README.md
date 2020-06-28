@@ -118,3 +118,16 @@ public void testJobMethod() throws Exception;
 
 ### 참고자료 출처(아래)
 - 학습모듈: https://ncs.go.kr/unity/th03/ncsSearchMain.do 20.정보통신 > 01.정보기술 > 02.정보기술개발 > 02.응용SW엔지니어링
+- 배치프로그램 적용기술 참조:(아래)
+ 
+```
+https://offbyone.tistory.com/256 ( spring_quartz.zip )
+
+https://minwoohi.tistory.com/89
+https://minwoohi.tistory.com/88?category=833256
+
+https://blog.naver.com/PostView.nhn?blogId=p952973&logNo=221011408841
+https://blog.naver.com/PostView.nhn?blogId=p952973&logNo=221011723832&parentCategoryNo=&categoryNo=&viewDate=&isShowPopularPosts=false&from=postView
+
+https://cheese10yun.github.io/spring-batch-basic/
+```
