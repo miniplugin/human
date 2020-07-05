@@ -130,6 +130,7 @@
 
 ---
 - 임베디드 리눅스
+#### 임베디드 프로그램으로 할 수 있는 작업 예: https://www.youtube.com/watch?v=WayCRcelbTU 동영상 2분06초 부분에 내용 있음.
 #### 안드로이드 스튜디오 + SDK 구글드라이브에서 다운로드: https://drive.google.com/file/d/17y9mVdJ6Isgom1AQKpoFi5WIPQkDvWN4/view?usp=sharing
 #### 예제소스: [download this](git_img/Embeded-System-2019-2.zip)
 #### 라즈베리 GPIO사용 하드웨어 제어: GCC컴파일 + wiringPi 라이브러리 사용 / http://blog.daum.net/ejleep1/search/wiringPi 
