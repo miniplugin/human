@@ -68,33 +68,29 @@ $(document).ready(function() {
 
 ### JQuery 연습(아래)
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">1. jQuery 개요</p>
+<h3>1. jQuery 개요</h3>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">&nbsp; -개요 : 자바 스크립트 라이브러리 중 대표적임.</p>
+<p>&nbsp; -개요 : 자바 스크립트 라이브러리 중 대표적임.</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">&nbsp;- DOM엘리먼트 하나하나 접근하여 작업을 수행</p>
+<p>&nbsp;- DOM엘리먼트 하나하나 접근하여 작업을 수행</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">&nbsp;&nbsp;&nbsp;&nbsp;-페이지에 강력한 CSS를 추가</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;-페이지에 강력한 CSS를 추가</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">&nbsp; &nbsp; -엘리먼트 속성 변경, 엘리먼트를 추가</p>
+<p>&nbsp; &nbsp; -엘리먼트 속성 변경, 엘리먼트를 추가</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);"></p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">&nbsp; -특징 : DOM 엘리먼트셀렉터(DOM: HTML, XML을 제어)</p>
+<p>&nbsp; -특징 : DOM 엘리먼트셀렉터(DOM: HTML, XML을 제어)</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">&nbsp;html태그선택&nbsp;: $(&quot;a&quot;),$(&quot;div&quot;)</p>
+<p>&nbsp;html태그선택&nbsp;: $(&quot;a&quot;),$(&quot;div&quot;)</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">&nbsp;CSS클래스선택 : $(&quot;.클래스명&quot;), $(&quot;태그, 클래스명&quot;)</p>
+<p>&nbsp;CSS클래스선택 : $(&quot;.클래스명&quot;), $(&quot;태그, 클래스명&quot;)</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">&nbsp;CSS ID선택&nbsp;: $(&quot;#id&quot;) --&gt; document.getElementById(&quot;id&quot;)와 같다</p>
+<p>&nbsp;CSS ID선택&nbsp;: $(&quot;#id&quot;) --&gt; document.getElementById(&quot;id&quot;)와 같다</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">&nbsp;중첩구조 : $(&quot;#id&quot;).find(&quot;li&quot;) =&gt; $(&quot;#id li&quot;)</p>
+<p>&nbsp;중첩구조 : $(&quot;#id&quot;).find(&quot;li&quot;) =&gt; $(&quot;#id li&quot;)</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);"><span style="-webkit-font-smoothing: subpixel-antialiased; font-family: Verdana; font-size: 14pt;">&nbsp;jquery 사용법 시작부분</span></p>
+<p><span style="-webkit-font-smoothing: subpixel-antialiased; font-family: Verdana; font-size: 14pt;">&nbsp;jquery 사용법 시작부분</span></p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);"></p>
-
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);"></p>
 
 <div class="code notranslate" style="-webkit-font-smoothing: subpixel-antialiased; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: verdana, helvetica, arial, sans-serif; border-width: 1px; border-style: solid; border-color: rgb(212, 212, 212); padding: 5px; background-color: rgb(229, 238, 204); margin: 0px; width: 622px; text-size-adjust: auto;">
 <div style="-webkit-font-smoothing: subpixel-antialiased; border-width: 1px; border-style: solid; border-color: rgb(212, 212, 212); padding: 4px; background-color: rgb(255, 255, 255); width: 612px; font-family: &quot;courier new&quot;; font-size: 13px;">&lt;script type=&quot;text/javascript&quot; src=&quot;jquery.js&quot;&gt;&lt;/script&gt;</div>
@@ -102,167 +98,130 @@ $(document).ready(function() {
 
 <p style="-webkit-font-smoothing: subpixel-antialiased; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: verdana, helvetica, arial, sans-serif; background-color: rgb(249, 249, 249); text-size-adjust: auto;">&lt;head&gt; 태그 안쪽에 사용 &lt;/head&gt;</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);"><br style="-webkit-font-smoothing: subpixel-antialiased;" />
+<p><br style="-webkit-font-smoothing: subpixel-antialiased;" />
 &nbsp;-Ajax 지원 (현재 진행중인 스프링프로젝트 댓글 기능에 사용할 예정)</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">&nbsp;-사용법(아래)</p>
+<p>&nbsp;-사용법(아래)</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);"></p>
+<p>&nbsp;*$(document).ready(callback)</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">&nbsp;*$(document).ready(callback)</p>
+<p>&nbsp; &nbsp;단축형:&nbsp;jQuery(callback)/$(callback)&nbsp;</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">&nbsp; &nbsp;단축형:&nbsp;jQuery(callback)/$(callback)&nbsp;</p>
+<p>&nbsp; $(document).ready(function(){</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);"></p>
+<p>&nbsp; &nbsp;//사용자 소스 영역</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">&nbsp; $(document).ready(function(){</p>
+<p>&nbsp; });</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">&nbsp; &nbsp;//사용자 소스 영역</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">&nbsp; });</p>
+<p>&nbsp; $(function() {</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);"></p>
+<p>&nbsp;&nbsp;//사용자 소스 영역</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">&nbsp; $(function() {</p>
+<p>&nbsp; });</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">&nbsp;&nbsp;//사용자 소스 영역</p>
+<p>&nbsp; jQuery(document).ready(function() {</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">&nbsp; });</p>
+<p>&nbsp;&nbsp;//사용자 소스 영역</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);"></p>
+<p>&nbsp; });</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">&nbsp; jQuery(document).ready(function() {</p>
+<p>&nbsp; jQuery(function() {</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">&nbsp;&nbsp;//사용자 소스 영역</p>
+<p>&nbsp;&nbsp;//사용자 소스 영역</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">&nbsp; });</p>
+<p>&nbsp; });</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);"></p>
+<h3><span style="-webkit-font-smoothing: subpixel-antialiased; font-family: Verdana; font-size: 14pt;">2. Core</span></h3>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">&nbsp; jQuery(function() {</p>
+<p>&nbsp; -jquery의 핵심이 되는것을 의미한다 core를 표현하면 &#39;$()&#39; 이렇게 된다</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">&nbsp;&nbsp;//사용자 소스 영역</p>
+<h3>&nbsp; 1) jQuery( expression, context )</h3>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">&nbsp; });</p>
+<p>&nbsp; &nbsp; &nbsp;expression는 String로 표현되고 특정 태그를 찾을때 사용되며, context는 Element나 jQuery으로 인자 값으로 받는다.</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);"></p>
+<p>&nbsp; &nbsp; &nbsp;즉, $(&quot;input:radio&quot;, document.forms[0]); 이와 같이 사용된다. ==&nbsp;<code style="margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; font-family: Consolas, Menlo, Monaco, &quot;Lucida Console&quot;, &quot;Liberation Mono&quot;, &quot;DejaVu Sans Mono&quot;, &quot;Bitstream Vera Sans Mono&quot;, &quot;Courier New&quot;, monospace, sans-serif; vertical-align: baseline; box-sizing: inherit; white-space: inherit;"><span class="pln" style="margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; font-family: inherit; vertical-align: baseline; box-sizing: inherit; color: var(--black-750);">$</span><span class="pun" style="margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; font-family: inherit; vertical-align: baseline; box-sizing: inherit; color: var(--black-750);">(</span><span class="str" style="margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; font-family: inherit; vertical-align: baseline; box-sizing: inherit; color: var(--red-800);">&#39;</span></code>document.forms[0]<code style="margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; font-family: Consolas, Menlo, Monaco, &quot;Lucida Console&quot;, &quot;Liberation Mono&quot;, &quot;DejaVu Sans Mono&quot;, &quot;Bitstream Vera Sans Mono&quot;, &quot;Courier New&quot;, monospace, sans-serif; vertical-align: baseline; box-sizing: inherit; white-space: inherit;"><span class="str" style="margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; font-family: inherit; vertical-align: baseline; box-sizing: inherit; color: var(--red-800);">&#39;</span><span class="pun" style="margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; font-family: inherit; vertical-align: baseline; box-sizing: inherit; color: var(--black-750);">).</span><span class="pln" style="margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; font-family: inherit; vertical-align: baseline; box-sizing: inherit; color: var(--black-750);">find</span><span class="pun" style="margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; font-family: inherit; vertical-align: baseline; box-sizing: inherit; color: var(--black-750);">(</span><span class="str" style="margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; font-family: inherit; vertical-align: baseline; box-sizing: inherit; color: var(--red-800);">&#39;input:radio&#39;</span><span class="pun" style="margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; font-family: inherit; vertical-align: baseline; box-sizing: inherit; color: var(--black-750);">)</span></code></p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);"></p>
+<h3>&nbsp; 2) jQuery( html )</h3>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);"><span style="-webkit-font-smoothing: subpixel-antialiased; font-family: Verdana; font-size: 14pt;">2. Core</span></p>
+<p>&nbsp; &nbsp; &nbsp;jQuery는 인자값으로 html 태그를 받아 그 태그를 HTML페이지에 추가를 할 수가 있다.</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">&nbsp; -jquery의 핵심이 되는것을 의미한다 core를 표현하면 &#39;$()&#39; 이렇게 된다</p>
+<p>&nbsp; &nbsp; &nbsp;즉, 이렇게 $(&quot;&lt;div&gt;&lt;p&gt;제이쿼리&lt;/p&gt;&lt;/div&gt;&quot;).appendTo(&quot;body&quot;) 사용이 되기도 하고, &nbsp;</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);"></p>
+<p>&nbsp; &nbsp; &nbsp;$(&quot;&lt;input/&gt;&quot;).attr(&quot;type&quot;, &quot;checkbox&quot;); 이렇게 사용되기도 한다</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">&nbsp; 1) jQuery( expression, context )</p>
+<h3>&nbsp; 3) jQuery( elements )</h3>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">&nbsp; &nbsp; &nbsp;expression는 String로 표현되고 특정 태그를 찾을때 사용되며, context는 Element나 jQuery으로 인자 값으로 받는다.</p>
+<p>&nbsp; &nbsp; &nbsp;DOM element(s) 를 인자로 받아 그 지역의 elements를 설정할 수가 있다.(한개 혹은 다수를 지정할 수가 있다.)</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">&nbsp; &nbsp; &nbsp;즉, $(&quot;input:radio&quot;, document.forms[0]); 이와 같이 사용된다. ==&nbsp;<code style="margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; font-family: Consolas, Menlo, Monaco, &quot;Lucida Console&quot;, &quot;Liberation Mono&quot;, &quot;DejaVu Sans Mono&quot;, &quot;Bitstream Vera Sans Mono&quot;, &quot;Courier New&quot;, monospace, sans-serif; vertical-align: baseline; box-sizing: inherit; white-space: inherit;"><span class="pln" style="margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; font-family: inherit; vertical-align: baseline; box-sizing: inherit; color: var(--black-750);">$</span><span class="pun" style="margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; font-family: inherit; vertical-align: baseline; box-sizing: inherit; color: var(--black-750);">(</span><span class="str" style="margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; font-family: inherit; vertical-align: baseline; box-sizing: inherit; color: var(--red-800);">&#39;</span></code>document.forms[0]<code style="margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; font-family: Consolas, Menlo, Monaco, &quot;Lucida Console&quot;, &quot;Liberation Mono&quot;, &quot;DejaVu Sans Mono&quot;, &quot;Bitstream Vera Sans Mono&quot;, &quot;Courier New&quot;, monospace, sans-serif; vertical-align: baseline; box-sizing: inherit; white-space: inherit;"><span class="str" style="margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; font-family: inherit; vertical-align: baseline; box-sizing: inherit; color: var(--red-800);">&#39;</span><span class="pun" style="margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; font-family: inherit; vertical-align: baseline; box-sizing: inherit; color: var(--black-750);">).</span><span class="pln" style="margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; font-family: inherit; vertical-align: baseline; box-sizing: inherit; color: var(--black-750);">find</span><span class="pun" style="margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; font-family: inherit; vertical-align: baseline; box-sizing: inherit; color: var(--black-750);">(</span><span class="str" style="margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; font-family: inherit; vertical-align: baseline; box-sizing: inherit; color: var(--red-800);">&#39;input:radio&#39;</span><span class="pun" style="margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; font-family: inherit; vertical-align: baseline; box-sizing: inherit; color: var(--black-750);">)</span></code></p>
+<p>&nbsp; &nbsp; &nbsp;$(document.body).css( &quot;background&quot;, &quot;black&quot; ); -&gt; HTML 배경색을 검정색으로 바꾼다.</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);"></p>
+<p>&nbsp; &nbsp; &nbsp;$(myForm.elements).hide() -&gt; myForm의 이름을 가진 form안의 elements을 숨긴다.</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">&nbsp; 2) jQuery( html )</p>
+<h3>&nbsp; 4) jQuery( callback ) 인자값을 함수로 지정을 할 수가 있다</h3>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">&nbsp; &nbsp; &nbsp;jQuery는 인자값으로 html 태그를 받아 그 태그를 HTML페이지에 추가를 할 수가 있다.</p>
+<p>&nbsp; &nbsp; &nbsp;&quot;$(document).ready(function(){....};)&quot;</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">&nbsp; &nbsp; &nbsp;즉, 이렇게 $(&quot;&lt;div&gt;&lt;p&gt;제이쿼리&lt;/p&gt;&lt;/div&gt;&quot;).appendTo(&quot;body&quot;) 사용이 되기도 하고, &nbsp;</p>
+<p>&nbsp; 5) each( callback ) 해당 오브젝트에서 어떤 함수처리를 하고 싶을 경우 사용된다</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">&nbsp; &nbsp; &nbsp;$(&quot;&lt;input/&gt;&quot;).attr(&quot;type&quot;, &quot;checkbox&quot;); 이렇게 사용되기도 한다</p>
+<p>&nbsp; &nbsp; &nbsp;$(function() {</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);"></p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; $(document.body).click(function(){</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">&nbsp; 3) jQuery( elements )</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; $(&quot;div&quot;).each(function(args) {</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">&nbsp; &nbsp; &nbsp;DOM element(s) 를 인자로 받아 그 지역의 elements를 설정할 수가 있다.(한개 혹은 다수를 지정할 수가 있다.)</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;//....</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">&nbsp; &nbsp; &nbsp;$(document.body).css( &quot;background&quot;, &quot;black&quot; ); -&gt; HTML 배경색을 검정색으로 바꾼다.</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; });</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">&nbsp; &nbsp; &nbsp;$(myForm.elements).hide() -&gt; myForm의 이름을 가진 form안의 elements을 숨긴다.</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; });</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);"></p>
+<p>&nbsp; &nbsp;});</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">&nbsp; 4) jQuery( callback ) 인자값을 함수로 지정을 할 수가 있다</p>
+<h3>&nbsp; 6) size() 해당 오브젝트의 Elements의 수를 알고자 할 때 사용된다.</h3>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">&nbsp; &nbsp; &nbsp;&quot;$(document).ready(function(){....};)&quot;</p>
+<p>&nbsp; &nbsp; &nbsp;$(document.body).click(function () {</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);"></p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; $(document.body).append($(&quot;&lt;div&gt;&quot;));</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">&nbsp; 5) each( callback ) 해당 오브젝트에서 어떤 함수처리를 하고 싶을 경우 사용된다</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; var n = $(&quot;div&quot;).size();</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">&nbsp; &nbsp; &nbsp;$(function() {</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; $(&quot;span&quot;).text(&quot;There are &quot; + n + &quot; divs.&quot; + &quot;Click to add more.&quot;);</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">&nbsp; &nbsp; &nbsp; &nbsp; $(document.body).click(function(){</p>
+<p>&nbsp; &nbsp; }).click(); // trigger the click to start</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; $(&quot;div&quot;).each(function(args) {</p>
-
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;//....</p>
-
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; });</p>
-
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">&nbsp; &nbsp; &nbsp; &nbsp; });</p>
-
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">&nbsp; &nbsp;});</p>
-
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);"></p>
-
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">&nbsp; 6) size() 해당 오브젝트의 Elements의 수를 알고자 할 때 사용된다.</p>
-
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">&nbsp; &nbsp; &nbsp;$(document.body).click(function () {</p>
-
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">&nbsp; &nbsp; &nbsp; &nbsp; $(document.body).append($(&quot;&lt;div&gt;&quot;));</p>
-
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">&nbsp; &nbsp; &nbsp; &nbsp; var n = $(&quot;div&quot;).size();</p>
-
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">&nbsp; &nbsp; &nbsp; &nbsp; $(&quot;span&quot;).text(&quot;There are &quot; + n + &quot; divs.&quot; + &quot;Click to add more.&quot;);</p>
-
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">&nbsp; &nbsp; }).click(); // trigger the click to start</p>
-
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);"><br style="-webkit-font-smoothing: subpixel-antialiased;" />
+<p><br style="-webkit-font-smoothing: subpixel-antialiased;" />
 &nbsp; 7) length() 해당 오브젝트의 Elements의 수를 알고자 할 때 사용된다. size()와 동일하다.</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">&nbsp; &nbsp; &nbsp; $(document.body).click(function () {</p>
+<p>&nbsp; &nbsp; &nbsp; $(document.body).click(function () {</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;$(document.body).append($(&quot;&lt;div&gt;&quot;));</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;$(document.body).append($(&quot;&lt;div&gt;&quot;));</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;var n = $(&quot;div&quot;).length;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;var n = $(&quot;div&quot;).length;</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;$(&quot;span&quot;).text(&quot;There are &quot; + n + &quot; divs.&quot; + &quot;Click to add more.&quot;);</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;$(&quot;span&quot;).text(&quot;There are &quot; + n + &quot; divs.&quot; + &quot;Click to add more.&quot;);</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">&nbsp; &nbsp; &nbsp; }).trigger(&#39;click&#39;); // trigger the click to start</p>
+<p>&nbsp; &nbsp; &nbsp; }).trigger(&#39;click&#39;); // trigger the click to start</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);"></p>
+<h3>&nbsp; 8) get()해당 태그의 Elements 들을 Array형태로 리턴한다. 즉, &#39;$(&quot;div&quot;).get()&#39; 하면 모든 div태그 들을 Array 형태로 리턴한다.</h3>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);"></p>
+<p>&nbsp; &nbsp; &nbsp;한마디로 하면 DOM의 Elements를 배열로 리턴하는 것이다</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">&nbsp; 8) get()해당 태그의 Elements 들을 Array형태로 리턴한다. 즉, &#39;$(&quot;div&quot;).get()&#39; 하면 모든 div태그 들을 Array 형태로 리턴한다.</p>
+<p>&nbsp; &nbsp; &nbsp; function disp(divs) {</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">&nbsp; &nbsp; &nbsp;한마디로 하면 DOM의 Elements를 배열로 리턴하는 것이다</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; var a = [];</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);"></p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; for (var i = 0; i &lt; divs.length; i++) {</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">&nbsp; &nbsp; &nbsp; function disp(divs) {</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;a.push(divs[i].innerHTML);</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; var a = [];</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; for (var i = 0; i &lt; divs.length; i++) {</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; $(&quot;span&quot;).text(a.join(&quot; &quot;));</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;a.push(divs[i].innerHTML);</p>
+<p>&nbsp; &nbsp; &nbsp; }</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }</p>
-
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; $(&quot;span&quot;).text(a.join(&quot; &quot;));</p>
-
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">&nbsp; &nbsp; &nbsp; }</p>
-
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">&nbsp; &nbsp; &nbsp; disp( $(&quot;div&quot;).get().reverse() ); // div태그의 값들을 읽어 와서 그 값의 순서를 뒤집는다.</p>
-
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);"></p>
-
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);"></p>
-
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);"></p>
+<p>&nbsp; &nbsp; &nbsp; disp( $(&quot;div&quot;).get().reverse() ); // div태그의 값들을 읽어 와서 그 값의 순서를 뒤집는다.</p>
 
 <h2 style="-webkit-font-smoothing: subpixel-antialiased; font-variant-numeric: normal; font-variant-east-asian: normal; font-weight: normal; font-stretch: normal; font-size: 19px; line-height: normal; font-family: verdana, helvetica, arial, sans-serif; margin-top: 10px; margin-bottom: 10px; text-size-adjust: auto;"></h2>
 
@@ -321,189 +280,155 @@ $(document).ready(function() {
 	</tbody>
 </table>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);"></p>
+<p>//CSS ID</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">//CSS ID</p>
+<p>$(&quot;#div1&quot;).css(&quot;border&quot;, &quot;3px solid red&quot;);</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">$(&quot;#div1&quot;).css(&quot;border&quot;, &quot;3px solid red&quot;);</p>
+<p></p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);"></p>
+<p>//태그 element</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">//태그 element</p>
+<p>$(&quot;p&quot;).css(&quot;color&quot;,&quot;blue&quot;);</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">$(&quot;p&quot;).css(&quot;color&quot;,&quot;blue&quot;);</p>
+<p>//CSS class</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);"></p>
+<p>$(&quot;.test&quot;).css(&quot;color&quot;, &quot;green&quot;);</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">//CSS class</p>
+<p>//*: 모든요소</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">$(&quot;.test&quot;).css(&quot;color&quot;, &quot;green&quot;);</p>
+<p>$(&quot;*&quot;).css(&quot;font-size&quot;, &quot;15pt&quot;);</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);"></p>
+<p>//계층적(조상 -&nbsp;모든 자손)</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">//*: 모든요소</p>
+<p>$(&quot;form input&quot;).css(&quot;border&quot;, &quot;2px solid blue&quot;);</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">$(&quot;*&quot;).css(&quot;font-size&quot;, &quot;15pt&quot;);</p>
+<p>//계층적(조상의 1단계 자손만)</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);"></p>
+<p>$(&quot;#main &gt; *&quot;).css(&quot;border&quot;, &quot;3px double red&quot;);</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">//계층적(조상 -&nbsp;모든 자손)</p>
+<p>E 태그명이 E인 요소(예를 들면 게시판의&nbsp;tr태그)</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">$(&quot;form input&quot;).css(&quot;border&quot;, &quot;2px solid blue&quot;);</p>
+<p>E:nth-child(n) 부모 요소를 기준으로 n번째 위치한 요소</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);"></p>
+<p>E:first-child 부모 요소를 기준으로 첫번째 위차한 요소</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">//계층적(조상의 1단계 자손만)</p>
+<p>E:last-child 부모 요소를 기준으로 마지막에 위치한 요소</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">$(&quot;#main &gt; *&quot;).css(&quot;border&quot;, &quot;3px double red&quot;);</p>
+<p>E:checked checked 속성을 갖는 요소.</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);"></p>
+<p>E:selected selected 속성을 갖는 요소</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);"></p>
+<p>E:even 짝수 번째인 요소를</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">E 태그명이 E인 요소(예를 들면 게시판의&nbsp;tr태그)</p>
+<p>$(&quot;tr:even&quot;).css(&quot;background&quot;, &quot;#00FF00&quot;);</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">E:nth-child(n) 부모 요소를 기준으로 n번째 위치한 요소</p>
+<p>:odd 홀수 번째인 요소를</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">E:first-child 부모 요소를 기준으로 첫번째 위차한 요소</p>
+<p>$(&quot;tr:odd&quot;).css(&quot;background&quot;, &quot;#FF0000&quot;);</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">E:last-child 부모 요소를 기준으로 마지막에 위치한 요소</p>
+<p>:eq(n) 또는 :nth(n) n번째에 해당하는 요소</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">E:checked checked 속성을 갖는 요소.</p>
+<p>$(&quot;tr:eq(2)&quot;).css(&quot;color&quot;, &quot;silver&quot;);</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">E:selected selected 속성을 갖는 요소</p>
+<p>:gt(n) n+1번째 보다 큰 요소</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">E:even 짝수 번째인 요소를</p>
+<p>$(&quot;tr:gt(3)&quot;).css(&quot;color&quot;, &quot;red&quot;);</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">$(&quot;tr:even&quot;).css(&quot;background&quot;, &quot;#00FF00&quot;);</p>
+<p>:lt(n) n+1번째 보다 작은 요소</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">:odd 홀수 번째인 요소를</p>
+<p>:first 또는 :eq(0) 첫번째 요소</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">$(&quot;tr:odd&quot;).css(&quot;background&quot;, &quot;#FF0000&quot;);</p>
+<p>$(&quot;tr:first&quot;).css(&quot;background&quot;, &quot;#FFFF00&quot;).css(&quot;color&quot;, &quot;blue&quot;);</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">:eq(n) 또는 :nth(n) n번째에 해당하는 요소</p>
+<p>:last 마지막 요소</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">$(&quot;tr:eq(2)&quot;).css(&quot;color&quot;, &quot;silver&quot;);</p>
+<p>$(&quot;tr:last&quot;).css(&quot;background&quot;, &quot;#00FFFF&quot;);</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">:gt(n) n+1번째 보다 큰 요소</p>
+<p>:parent 대상 요소의 부모 요소</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">$(&quot;tr:gt(3)&quot;).css(&quot;color&quot;, &quot;red&quot;);</p>
+<p>:contains(&#39;문자열&#39;) text 노드값에 &#39;문자열&#39;을 포함하는 요소</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">:lt(n) n+1번째 보다 작은 요소</p>
+<p>$(&quot;tr:contains(&#39;홍&#39;)&quot;).css(&quot;border&quot;, &quot;solid 3px green&quot;);</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">:first 또는 :eq(0) 첫번째 요소</p>
+<p><span style="-webkit-font-smoothing: subpixel-antialiased; font-family: Verdana; font-size: 14pt;">4. Attributes(속성)</span></p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">$(&quot;tr:first&quot;).css(&quot;background&quot;, &quot;#FFFF00&quot;).css(&quot;color&quot;, &quot;blue&quot;);</p>
+<p>$(&quot;#btn2&quot;).click(function(){ &nbsp;// 속성 확인하기&nbsp;</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">:last 마지막 요소</p>
+<p>&nbsp; &nbsp; var str=$(&quot;#name&quot;).attr(&quot;type&quot;);</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">$(&quot;tr:last&quot;).css(&quot;background&quot;, &quot;#00FFFF&quot;);</p>
+<p>&nbsp; &nbsp; alert(str);</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">:parent 대상 요소의 부모 요소</p>
+<p>});</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">:contains(&#39;문자열&#39;) text 노드값에 &#39;문자열&#39;을 포함하는 요소</p>
+<p></p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">$(&quot;tr:contains(&#39;홍&#39;)&quot;).css(&quot;border&quot;, &quot;solid 3px green&quot;);</p>
+<p>$(&quot;#btn3&quot;).click(function(){ &nbsp;// 속성 추가하기</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);"><span style="-webkit-font-smoothing: subpixel-antialiased; font-family: Verdana; font-size: 14pt;">4. Attributes(속성)</span></p>
+<p>&nbsp; &nbsp; $(&quot;#name&quot;).attr(&quot;disabled&quot;,&quot;disabled&quot;); //버튼을 클릭하면 변경불가속성 추가...</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">$(&quot;#btn2&quot;).click(function(){ &nbsp;// 속성 확인하기&nbsp;</p>
+<p>});</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">&nbsp; &nbsp; var str=$(&quot;#name&quot;).attr(&quot;type&quot;);</p>
+<p></p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">&nbsp; &nbsp; alert(str);</p>
+<p>$(&quot;#btn4&quot;).click(function(){ &nbsp;// 속성 삭제하기</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">});</p>
+<p>&nbsp; &nbsp; $(&quot;#name&quot;).removeAttr(&quot;disabled&quot;);</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);"></p>
+<p>});</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">$(&quot;#btn3&quot;).click(function(){ &nbsp;// 속성 추가하기</p>
+<p>$(&quot;#btn5&quot;).click(function(){ &nbsp;</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">&nbsp; &nbsp; $(&quot;#name&quot;).attr(&quot;disabled&quot;,&quot;disabled&quot;); //버튼을 클릭하면 변경불가속성 추가...</p>
+<p>&nbsp; &nbsp; $(&quot;p:even&quot;).removeClass(&quot;blue&quot;);&nbsp;//짝수번째 클래스 삭제</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">});</p>
+<p>&nbsp; &nbsp; $(&quot;p:first&quot;).addClass(&quot;under&quot;); //p태그 첫번째...라인 삽입</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);"></p>
+<p>});</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">$(&quot;#btn4&quot;).click(function(){ &nbsp;// 속성 삭제하기</p>
+<p>$(&quot;p&quot;).click(function(){</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">&nbsp; &nbsp; $(&quot;#name&quot;).removeAttr(&quot;disabled&quot;);</p>
+<p>&nbsp; &nbsp; $(this).toggleClass(&quot;bk&quot;); //토글주기... p태그의 bk스타일 토글&nbsp;</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">});</p>
+<p>});</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);"></p>
+<p>$(&quot;#btn6&quot;).click(function(){ &nbsp;</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">$(&quot;#btn5&quot;).click(function(){ &nbsp;</p>
+<p>&nbsp; &nbsp; var s = $(&quot;#div1&quot;).html(); &nbsp;//html태그 가져오기.</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">&nbsp; &nbsp; $(&quot;p:even&quot;).removeClass(&quot;blue&quot;);&nbsp;//짝수번째 클래스 삭제</p>
+<p>});</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">&nbsp; &nbsp; $(&quot;p:first&quot;).addClass(&quot;under&quot;); //p태그 첫번째...라인 삽입</p>
+<p>$(&quot;#btn7&quot;).click(function(){ &nbsp;</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">});</p>
+<p>&nbsp; &nbsp; var s = $(&quot;#div1&quot;).html(&quot;&lt;input type=&#39;text&#39;/&gt;&quot;); &nbsp; //html input태그 변경</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);"></p>
+<p>});</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);"></p>
+<p><span style="-webkit-font-smoothing: subpixel-antialiased; font-family: Verdana; font-size: 14pt;">5. Manipulation(조작)</span></p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">$(&quot;p&quot;).click(function(){</p>
+<h3>&nbsp;내부삽입</h3>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">&nbsp; &nbsp; $(this).toggleClass(&quot;bk&quot;); //토글주기... p태그의 bk스타일 토글&nbsp;</p>
+<h3>&nbsp;1.append(content) - 모든 요소 내부에 컨텐츠를 추가한다.</h3>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">});</p>
+<p>&nbsp; &nbsp; $(&quot;p:first&quot;).append(&quot;&lt;b&gt;hello&lt;/b&gt;&quot;);</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);"></p>
+<h3>&nbsp;2.appendTo(content) - 요소의 내용을 다른 요소에 추가한다.</h3>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);"></p>
+<p>&nbsp; &nbsp; $(&quot;span&quot;).appendTo(&quot;#div1&quot;);</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">$(&quot;#btn6&quot;).click(function(){ &nbsp;</p>
+<h3>&nbsp;3.prepend(content) - 모든 요소 내부의 선두에 컨텐츠를 삽입한다.</h3>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">&nbsp; &nbsp; var s = $(&quot;#div1&quot;).html(); &nbsp;//html태그 가져오기.</p>
+<p>&nbsp; &nbsp; $(&quot;p&quot;).prepend(&quot;&lt;b&gt;앱&lt;/b&gt;&quot;);</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">});</p>
+<h3>&nbsp;&nbsp;외부삽입</h3>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);"></p>
+<h3>&nbsp;1.after(content) - 각 요소의 뒤로 컨텐츠를 삽입한다</h3>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">$(&quot;#btn7&quot;).click(function(){ &nbsp;</p>
+<h3>&nbsp;2.before(content) - 각 요소의 전에 컨텐츠를 삽입한다.</h3>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">&nbsp; &nbsp; var s = $(&quot;#div1&quot;).html(&quot;&lt;input type=&#39;text&#39;/&gt;&quot;); &nbsp; //html input태그 변경</p>
+<h3>&nbsp; 삭제</h3>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">});</p>
+<h3>&nbsp;1.empty() - 요소 집합으로부터 모든 아이 요소를 삭제한다.</h3>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);"></p>
-
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);"></p>
-
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);"></p>
-
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);"><span style="-webkit-font-smoothing: subpixel-antialiased; font-family: Verdana; font-size: 14pt;">5. Manipulation(조작)</span></p>
-
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">&nbsp;내부삽입</p>
-
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">&nbsp;1.append(content) - 모든 요소 내부에 컨텐츠를 추가한다.</p>
-
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">&nbsp; &nbsp; $(&quot;p:first&quot;).append(&quot;&lt;b&gt;hello&lt;/b&gt;&quot;);</p>
-
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">&nbsp;2.appendTo(content) - 요소의 내용을 다른 요소에 추가한다.</p>
-
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">&nbsp; &nbsp; $(&quot;span&quot;).appendTo(&quot;#div1&quot;);</p>
-
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">&nbsp;3.prepend(content) - 모든 요소 내부의 선두에 컨텐츠를 삽입한다.</p>
-
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">&nbsp; &nbsp; $(&quot;p&quot;).prepend(&quot;&lt;b&gt;앱&lt;/b&gt;&quot;);</p>
-
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">&nbsp;&nbsp;외부삽입</p>
-
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">&nbsp;1.after(content) - 각 요소의 뒤로 컨텐츠를 삽입한다</p>
-
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">&nbsp;2.before(content) - 각 요소의 전에 컨텐츠를 삽입한다.</p>
-
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">&nbsp; 삭제</p>
-
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">&nbsp;1.empty() - 요소 집합으로부터 모든 아이 요소를 삭제한다.</p>
-
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">&nbsp;2.remove([expr]) - DOM으로부터 지정 조건에 합치하는 요소를 모두 삭제한다.</p>
-
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);"></p>
+<h3>&nbsp;2.remove([expr]) - DOM으로부터 지정 조건에 합치하는 요소를 모두 삭제한다.</h3>
 
 <h2 style="-webkit-font-smoothing: subpixel-antialiased; font-variant-numeric: normal; font-variant-east-asian: normal; font-weight: normal; font-stretch: normal; font-size: 19px; line-height: normal; font-family: verdana, helvetica, arial, sans-serif; margin-top: 10px; margin-bottom: 10px; text-size-adjust: auto;">jQuery css() Method</h2>
 
@@ -517,21 +442,12 @@ $(document).ready(function() {
 	<li style="-webkit-font-smoothing: subpixel-antialiased;">css({<i style="-webkit-font-smoothing: subpixel-antialiased;">properties</i>}) - Set multiple CSS properties and values</li>
 </ul>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);"></p>
-
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);"></p>
-
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);"></p>
-
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);"></p>
-
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);"></p>
 
 <h2 style="-webkit-font-smoothing: subpixel-antialiased; font-variant-numeric: normal; font-variant-east-asian: normal; font-weight: normal; font-stretch: normal; font-size: 19px; line-height: normal; font-family: verdana, helvetica, arial, sans-serif; margin-top: 10px; margin-bottom: 10px; text-size-adjust: auto;">6. jQuery Events(아래 내용중 * 부분이 자주 사용됩니다.)</h2>
 
 <p style="-webkit-font-smoothing: subpixel-antialiased; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: verdana, helvetica, arial, sans-serif; background-color: rgb(249, 249, 249); text-size-adjust: auto;"></p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);"></p>
+<h3></p>
 
 <table class="reference" style="border-style: solid; border-color: rgb(195, 195, 195); -webkit-font-smoothing: subpixel-antialiased; background-color: rgb(255, 255, 255); width: 633px; border-collapse: collapse; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: verdana, helvetica, arial, sans-serif; text-size-adjust: auto;">
 	<tbody style="-webkit-font-smoothing: subpixel-antialiased;">
@@ -564,128 +480,115 @@ $(document).ready(function() {
 </table>
 &nbsp;
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">&nbsp; $(&quot;#btn1&quot;).bind(&quot;click&quot;, function(event){</p>
+<p>&nbsp; $(&quot;#btn1&quot;).bind(&quot;click&quot;, function(event){</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">&nbsp; &nbsp; alert(&quot;안녕!!&quot;);</p>
+<p>&nbsp; &nbsp; alert(&quot;안녕!!&quot;);</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">&nbsp; })</p>
+<p>&nbsp; })</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);"></p>
+<p>&nbsp; .bind(&quot;mouseover&quot;, function(event){</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">&nbsp; .bind(&quot;mouseover&quot;, function(event){</p>
+<p>&nbsp; &nbsp; alert(&quot;안녕!!&quot;);</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">&nbsp; &nbsp; alert(&quot;안녕!!&quot;);</p>
+<p>&nbsp; });</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">&nbsp; });</p>
+<p>&nbsp; //이미지위에 마우스가 올려졌을때 그림이 바뀐다</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);"></p>
+<p>&nbsp; $(&quot;#img1&quot;).mouseover(function(){</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">&nbsp; //이미지위에 마우스가 올려졌을때 그림이 바뀐다</p>
+<p>&nbsp; &nbsp; $(this).attr(&quot;src&quot;,&quot;&lt;%=cp%&gt;/img/2.jpg&quot;);</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">&nbsp; $(&quot;#img1&quot;).mouseover(function(){</p>
+<p>&nbsp; });</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">&nbsp; &nbsp; $(this).attr(&quot;src&quot;,&quot;&lt;%=cp%&gt;/img/2.jpg&quot;);</p>
+<p>&nbsp; //이미지위에 올린 마우스를 떼면 원상태로 돌아간다</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">&nbsp; });</p>
+<p>&nbsp; $(&quot;#img1&quot;).mouseout(function(){</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);"></p>
+<p>&nbsp; &nbsp; $(this).attr(&quot;src&quot;,&quot;&lt;%=cp%&gt;/img/1.jpg&quot;);</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">&nbsp; //이미지위에 올린 마우스를 떼면 원상태로 돌아간다</p>
+<p>&nbsp; });</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">&nbsp; $(&quot;#img1&quot;).mouseout(function(){</p>
+<p>&nbsp; //이벤트가 한번 실행되고 해제</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">&nbsp; &nbsp; $(this).attr(&quot;src&quot;,&quot;&lt;%=cp%&gt;/img/1.jpg&quot;);</p>
+<p>&nbsp; $(&quot;#btn3&quot;).one(&quot;click&quot;,function(){</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">&nbsp; });</p>
+<p>&nbsp; &nbsp; alert(&quot;..............&quot;);</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);"></p>
+<p>&nbsp; });</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">&nbsp; //이벤트가 한번 실행되고 해제</p>
+<p>//요소에서 포커스를 잃을 경우에 발생하는 이벤트 입니다.</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">&nbsp; $(&quot;#btn3&quot;).one(&quot;click&quot;,function(){</p>
+<p>&nbsp; .blur()&nbsp;&nbsp;</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">&nbsp; &nbsp; alert(&quot;..............&quot;);</p>
+<p>// &lt;input /&gt;, &lt;textarea /&gt;, &lt;select /&gt; 요소의 값 변경시 발생하는 이벤트 입니다.</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">&nbsp; });</p>
+<p>&nbsp;.change()</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">//요소에서 포커스를 잃을 경우에 발생하는 이벤트 입니다.</p>
+<p>// *마우스 클릭 시 발생하는 이벤트 입니다.</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);"></p>
+<p>&nbsp;.click()</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);"></p>
+<p>//&nbsp;마우스를 더블클릭 했을 경우 발생하는 이벤트 입니다.</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">&nbsp; .blur()&nbsp;&nbsp;</p>
+<p>&nbsp;.dblclick()</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">// &lt;input /&gt;, &lt;textarea /&gt;, &lt;select /&gt; 요소의 값 변경시 발생하는 이벤트 입니다.</p>
+<p>// 요소에 포커스 되었을 때 발생하는 이벤트 입니다.</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">&nbsp;.change()</p>
+<p>&nbsp;.focus()</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">// *마우스 클릭 시 발생하는 이벤트 입니다.</p>
+<p>// 마우스가 요소 위에 위치했을 때 발생하는 이벤트 입니다.</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">&nbsp;.click()</p>
+<p>&nbsp;.hover()</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">//&nbsp;마우스를 더블클릭 했을 경우 발생하는 이벤트 입니다.</p>
+<p>// 키 입력 시 발생되는 이벤트이며, 모든 키에 대해 적용이 됩니다.</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">&nbsp;.dblclick()</p>
+<p>&nbsp;.keydown()</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">// 요소에 포커스 되었을 때 발생하는 이벤트 입니다.</p>
+<p>//&nbsp;keydown 이벤트와 동일하게 키 입력 시 발생이 되지만&nbsp;&nbsp;enter, tab등의 특수키에는 이벤트가 발생되지 않습니다</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">&nbsp;.focus()</p>
+<p>&nbsp;.keypress()</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">// 마우스가 요소 위에 위치했을 때 발생하는 이벤트 입니다.</p>
+<p>//&nbsp;키 입력 후 발생되는 이벤트 입니다.</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">&nbsp;.hover()</p>
+<p>&nbsp;.keyup()</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">// 키 입력 시 발생되는 이벤트이며, 모든 키에 대해 적용이 됩니다.</p>
+<p>//&nbsp;마우스 클릭 시 발생하는 이벤트입니다.</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">&nbsp;.keydown()</p>
+<p>&nbsp;.mousedown()</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">//&nbsp;keydown 이벤트와 동일하게 키 입력 시 발생이 되지만&nbsp;&nbsp;enter, tab등의 특수키에는 이벤트가 발생되지 않습니다</p>
+<p>//&nbsp;선택한 요소의 영역에 마우스가 위치했을 때 발생되는 이벤트 입니다.</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">&nbsp;.keypress()</p>
+<p>&nbsp;.mouseenter()</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">//&nbsp;키 입력 후 발생되는 이벤트 입니다.</p>
+<p>&nbsp;선택한 요소의 영역에서 마우스가 벗어 났을 때 발생되는 이벤트 입니다.</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">&nbsp;.keyup()</p>
+<p>&nbsp;.mouseleave()</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">//&nbsp;마우스 클릭 시 발생하는 이벤트입니다.</p>
+<p>//&nbsp;선택한 요소의 영역에서 마우스가 벗어 났을 때 발생되는 이벤트입니다.</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">&nbsp;.mousedown()</p>
+<p>&nbsp;.mouseout()</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">//&nbsp;선택한 요소의 영역에 마우스가 위치했을 때 발생되는 이벤트 입니다.</p>
+<p>//&nbsp;마우스 클릭 후 발생되는 이벤트입니다.</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">&nbsp;.mouseenter()</p>
+<p>&nbsp;.mouseup()</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">&nbsp;선택한 요소의 영역에서 마우스가 벗어 났을 때 발생되는 이벤트 입니다.</p>
+<p>//&nbsp;*DOM화면이 모두 준비 되었을 때 발생하는 이벤트입니다.</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">&nbsp;.mouseleave()</p>
+<p>&nbsp;.ready()</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">//&nbsp;선택한 요소의 영역에서 마우스가 벗어 났을 때 발생되는 이벤트입니다.</p>
+<p>//&nbsp;*화면이 resize 될 경우 발생하는 이벤트입니다.</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">&nbsp;.mouseout()</p>
+<p>&nbsp;.resize()</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">//&nbsp;마우스 클릭 후 발생되는 이벤트입니다.</p>
+<p>//&nbsp;*HTML 문서가 스크롤 되었을 때 발생하는 이벤트입니다.</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">&nbsp;.mouseup()</p>
+<p>&nbsp;.scroll()</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">//&nbsp;*DOM화면이 모두 준비 되었을 때 발생하는 이벤트입니다.</p>
+<p>//&nbsp;선택한 개체를 마우스를 통해 선택 하였을 때 발생하는 이벤트입니다.</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">&nbsp;.ready()</p>
+<p>&nbsp;.select()</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">//&nbsp;*화면이 resize 될 경우 발생하는 이벤트입니다.</p>
+<p>// *Form개체에서 Submit이 일어날 때 발생하는 이벤트입니다.</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">&nbsp;.resize()</p>
+<p>&nbsp;.submit()</p>
 
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">//&nbsp;*HTML 문서가 스크롤 되었을 때 발생하는 이벤트입니다.</p>
-
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">&nbsp;.scroll()</p>
-
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">//&nbsp;선택한 개체를 마우스를 통해 선택 하였을 때 발생하는 이벤트입니다.</p>
-
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">&nbsp;.select()</p>
-
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">// *Form개체에서 Submit이 일어날 때 발생하는 이벤트입니다.</p>
-
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);">&nbsp;.submit()</p>
-
-<p style="-webkit-font-smoothing: subpixel-antialiased; font-family: &quot;KoPubDotum Roboto&quot;, Roboto, &quot;San Francisco Display&quot;, &quot;Helvetica Neue&quot;, Arial, &quot;KoPub Dotum&quot;, &quot;KoPub 돋움&quot;, NanumBarunGothicOTF, NanumBarunGothic, 나눔바른고딕, &quot;Malgun Gothic&quot;, &quot;맑은 고딕&quot;, &quot;Hiragino Kaku Gothic&quot;, Meiryo, Dotum, 돋움, sans-serif; font-size: 16px; background-color: rgb(249, 249, 249);"></p>
