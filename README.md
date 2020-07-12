@@ -190,8 +190,7 @@ $(document).ready(function() {
 
 <p>&nbsp; &nbsp; }).click(); // trigger the click to start</p>
 
-<p><br style="-webkit-font-smoothing: subpixel-antialiased;" />
-&nbsp; 7) length() 해당 오브젝트의 Elements의 수를 알고자 할 때 사용된다. size()와 동일하다.</p>
+<h3>&nbsp; 7) length() 해당 오브젝트의 Elements의 수를 알고자 할 때 사용된다. size()와 동일하다.</h3>
 
 <p>&nbsp; &nbsp; &nbsp; $(document.body).click(function () {</p>
 
@@ -280,29 +279,27 @@ $(document).ready(function() {
 	</tbody>
 </table>
 
-<p>//CSS ID</p>
+<h3>//CSS ID</h3>
 
 <p>$(&quot;#div1&quot;).css(&quot;border&quot;, &quot;3px solid red&quot;);</p>
 
-<p></p>
-
-<p>//태그 element</p>
+<h3>//태그 element</h3>
 
 <p>$(&quot;p&quot;).css(&quot;color&quot;,&quot;blue&quot;);</p>
 
-<p>//CSS class</p>
+<h3>//CSS class</h3>
 
 <p>$(&quot;.test&quot;).css(&quot;color&quot;, &quot;green&quot;);</p>
 
-<p>//*: 모든요소</p>
+<h3>//*: 모든요소</h3>
 
 <p>$(&quot;*&quot;).css(&quot;font-size&quot;, &quot;15pt&quot;);</p>
 
-<p>//계층적(조상 -&nbsp;모든 자손)</p>
+<h3>//계층적(조상 -&nbsp;모든 자손)</h3>
 
 <p>$(&quot;form input&quot;).css(&quot;border&quot;, &quot;2px solid blue&quot;);</p>
 
-<p>//계층적(조상의 1단계 자손만)</p>
+<h3>//계층적(조상의 1단계 자손만)</h3>
 
 <p>$(&quot;#main &gt; *&quot;).css(&quot;border&quot;, &quot;3px double red&quot;);</p>
 
@@ -478,7 +475,6 @@ $(document).ready(function() {
 		</tr>
 	</tbody>
 </table>
-&nbsp;
 
 <p>&nbsp; $(&quot;#btn1&quot;).bind(&quot;click&quot;, function(event){</p>
 
