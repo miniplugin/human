@@ -187,8 +187,9 @@ $('tbody tr').each(function (index, item) {
 	// item 과 this는 같아서 일반적으로 this를 많이 사용합니다. 
 	// $(this).addClass('li_0' + index); 
 });
-
-// 객체을 선언 (크롬 콘솔에서 실행)
+// 스프링@RestController로 리턴받은 값(JSON데이터로변환=ResponseEntity<List<BoardVO>>)
+// JSP에서 스프링@RestController로 전송받는 값, 기존 model과 비슷(JSON데이터로변환=@RequestBody BoardVO vo)
+// JSON객체배열을 선언 (크롬 콘솔에서 실행)
 var tbl_board = [ 
 {title : '글제목1', content : '글내용1'},
 {title : '글제목2', content : '글내용2'} 
@@ -206,7 +207,7 @@ $.each(tbl_board, function (index, item) {
 // 0 : 글제목1, 글내용1
 // 1 : 글제목2, 글내용2 
 
-// 객체을 선언 (크롬 콘솔에서 실행)
+// JSON객체를 선언 (크롬 콘솔에서 실행)
 var boardVO = { 
 title : '글제목1', content : '글내용1'
 }; 
