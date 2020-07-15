@@ -162,7 +162,7 @@ $(document).ready(function() {
 
 <p>&nbsp; &nbsp; &nbsp;&quot;$(document).ready(function(){....};)&quot;</p>
 
-<p>&nbsp; 5) each( callback ) 해당 오브젝트에서 어떤 함수처리를 하고 싶을 경우 사용된다</p>
+<h3>&nbsp; 5) each( callback ) 해당 오브젝트에서 어떤 함수처리를 하고 싶을 경우 사용된다</h3>
 
 <p>&nbsp; &nbsp; &nbsp;$(function() {</p>
 
