@@ -178,6 +178,51 @@ $(document).ready(function() {
 
 <p>&nbsp; &nbsp;});</p>
 
+```
+// resources/board_list.html에 동적으로 클래스 추가하기
+$('tbody tr').each(function (index, item) { 
+	// 인덱스는 0부터 시작하는 순서값이 저장되어 있음. 
+	// item 은 해당 선택자인 tr객체를 나타냅니다. 
+	$(item).addClass('tr_0' + index); 
+	// item 과 this는 같아서 일반적으로 this를 많이 사용합니다. 
+	// $(this).addClass('li_0' + index); 
+});
+
+// 객체을 선언 (크롬 콘솔에서 실행)
+var tbl_board = [ 
+{title : '글제목1', content : '글내용1'},
+{title : '글제목2', content : '글내용2'} 
+]; 
+// $.each() 메서드의 첫번째 매겨변수로 위에서 선언한 배열은 전달
+$.each(tbl_board, function (index, item) { 
+	// 두 번째 매개변수로는 콜백(호출없이실행)함수인데 콜백함수의 매개변수 중 
+	// 첫 번째 index는 배열의 키를 의미하고 
+	// 두 번째 item은 해당 키의 값을 의미합니다. 
+	var result = ''; 
+	result += index +' : ' + item.title + ', ' + item.content;
+	console.log(result); 
+});
+// 결과(아래)
+// 0 : 글제목1, 글내용1
+// 1 : 글제목2, 글내용2 
+
+// 객체을 선언 (크롬 콘솔에서 실행)
+var boardVO = { 
+title : '글제목1', content : '글내용1'
+}; 
+// $.each() 메서드의 첫번째 매겨변수로 위에서 선언한 객체를 전달
+$.each(boardVO, function (index, item) { 
+	// 첫 번째 index는 배열의 키를 의미하고 
+	// 두 번째 item은 해당 키의 값을 의미합니다. 
+	var result = ''; 
+	result += index +' : ' + item;
+	console.log(result); 
+});
+// 결과(아래)
+// title : 글제목1
+// content : 글내용2
+```
+
 <h3>&nbsp; 6) size() 해당 오브젝트의 Elements의 수를 알고자 할 때 사용된다.</h3>
 
 <p>&nbsp; &nbsp; &nbsp;$(document.body).click(function () {</p>
