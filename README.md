@@ -188,7 +188,8 @@ $('tbody tr').each(function (index, item) {
 	// $(this).addClass('li_0' + index); 
 });
 // 스프링@RestController로 리턴받은 값(JSON데이터로변환=ResponseEntity<List<BoardVO>>)
-// JSP에서 스프링@RestController로 전송받는 값, 기존 model과 비슷(JSON데이터로변환=@RequestBody BoardVO vo)
+// JSP에서 스프링@RestController로 전송받는 값(JSON데이터로변환=@RequestBody BoardVO vo)
+// entity = new ResponseEntity<>(service.selectReplies(bno) <== 기존 model역할과 비슷
 // JSON객체배열을 선언 (크롬 콘솔에서 실행)
 var tbl_board = [ 
 {title : '글제목1', content : '글내용1'},
