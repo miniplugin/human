@@ -229,3 +229,18 @@ AOP기능 추가시 사용된 파일목록:
 @Around("execution(* org.edu.service.MemberService*.*(..))")//해당서비스명칭 변경
 5. log4j.xml 설정을 info -> debug 로 변경해줌.
 ```
+
+20200715 수업내용
+
+-src\main\resources\mappers\boardMapper.xml
+	<update id="updateViewCount">
+		update tbl_board set
+		view_count = view_count + 1
+		where bno = #{bno}
+	</update>
+-src\main\java\org\edu\dao\IF_BoardDAO.java -> BoardDAOImpl.java
+ public void updateViewCount(Integer bno) throws Exception;
+
+-src\main\java\org\edu\service\BoardServiceImpl.java
+-src\main\webapp\WEB-INF\views\board\board_update.jsp
+ ... board_write.jsp + board_view.jsp
