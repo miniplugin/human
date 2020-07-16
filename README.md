@@ -231,7 +231,9 @@ AOP기능 추가시 사용된 파일목록:
 ```
 
 ### 20200717 수업예정-댓글 리스트
+### 댓글 리스트
 ```
+<!-- 댓글 목록 반복처리 : 핸들러 플러그인 사용 -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.1/handlebars.js"></script>
 <script id="template" type="text/x-handlebars-template">
 {{#each .}}
