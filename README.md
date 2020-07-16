@@ -308,7 +308,7 @@ $(document).ready(function(){
 });
 </script>
 ```
-### 댓글 수정/삭제용 모달창
+### 댓글 수정/삭제용 모달창 + 변수값 바인딩 및 이벤트
 ```
 <div id="modifyModal" class="modal modal-primary fade" role="dialog">
   <div class="modal-dialog">
