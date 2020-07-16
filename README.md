@@ -230,19 +230,46 @@ AOP기능 추가시 사용된 파일목록:
 5. log4j.xml 설정을 info -> debug 로 변경해줌.
 ```
 
-20200715 수업내용
-
--src\main\resources\mappers\boardMapper.xml
-	<update id="updateViewCount">
-		update tbl_board set
-		view_count = view_count + 1
-		where bno = #{bno}
-	</update>
--src\main\java\org\edu\dao\IF_BoardDAO.java -> BoardDAOImpl.java
- public void updateViewCount(Integer bno) throws Exception;
-
--src\main\java\org\edu\service\BoardServiceImpl.java
--src\main\webapp\WEB-INF\views\board\board_update.jsp
- ... board_write.jsp + board_view.jsp
- 
--src\main\webapp\resources\board_list.html (파일 하단에 제이쿼리 수업 실습내용 있음.)
+### 20200717 수업예정(댓글 리스트 및 입력/수정/삭제
+```
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.1/handlebars.js"></script>
+<script id="template" type="text/x-handlebars-template">
+{{#each .}}
+<div class="replyLi" data-rno={{rno}}>
+	<i class="fa fa-comments bg-blue"></i>
+	<div class="timeline-item" >
+		<span class="time">
+			<i class="fa fa-clock-o"></i>{{regdate}}
+		</span>
+		<h3 class="timeline-header">
+			<strong>{{rno}}</strong> -{{replyer}}
+		</h3>
+		<div class="timeline-body">{{replytext}}</div>
+		<div class="timeline-footer">
+			<a class="btn btn-primary btn-sm" data-toggle="modal" data-target="#modifyModal">
+			Modify
+			</a>
+		</div>
+	</div>
+</div>
+{{/each}}
+</script>
+<script>
+$(document).ready(function(){
+	var printData = function(replyArr, target, templateObject) {
+	var template = Handlebars.compile(templateObject.html());
+	var html = template(replyArr);
+	$(".replyLi").remove();
+	target.after(html);
+	}
+	var bno = ${boardVO.bno};
+	function getPage(pageInfo) {
+		$.getJSON(pageInfo, function(data) {
+			console.log(data);
+			printData(data, $("#repliesDiv"), $('#template'));
+		});
+	}
+	getPage("/reply/select/"+bno);
+});
+</script>
+```
