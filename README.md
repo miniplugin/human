@@ -230,7 +230,7 @@ AOP기능 추가시 사용된 파일목록:
 5. log4j.xml 설정을 info -> debug 로 변경해줌.
 ```
 
-### 20200717 수업예정(댓글 리스트 및 입력/수정/삭제
+### 20200717 수업예정-댓글 리스트
 ```
 <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.1/handlebars.js"></script>
 <script id="template" type="text/x-handlebars-template">
@@ -255,31 +255,66 @@ AOP기능 추가시 사용된 파일목록:
 {{/each}}
 </script>
 <script>
-$(document).ready(function(){
-	var printData = function(replyArr, target, templateObject) {
+//댓글 변수 초기화
+var bno = ${boardVO.bno};
+var printData = function(replyArr, target, templateObject) {
 	var template = Handlebars.compile(templateObject.html());
 	var html = template(replyArr);
 	$(".replyLi").remove();
 	target.after(html);
-	}
-	var bno = ${boardVO.bno};
-	function getPage(pageInfo) {
-		$.getJSON(pageInfo, function(data) {
-			console.log(data);
-			printData(data, $("#repliesDiv"), $('#template'));
-		});
-	}
+}
+function getPage(pageInfo) {
+	$.getJSON(pageInfo, function(data) {
+		//console.log(data);//디버그
+		printData(data, $("#repliesDiv"), $('#template'));
+		$("#modifyModal").modal('hide');
+	});
+}
+//댓글 리스트 실행
+$(document).ready(function(){
 	getPage("/reply/select/"+bno);
 });
 </script>
 ```
-### 댓글 모달창
+### 댓글 입력
+```
+<script>
+$(document).ready(function(){
+	//댓글 입력
+	$("#replyAddBtn").on("click",function(){
+		 var replyerObj = $("#newReplyWriter");
+		 var replytextObj = $("#newReplyText");
+		 var replyer = replyerObj.val();
+		 var replytext = replytextObj.val();
+		  $.ajax({
+				type:'post',
+				url:'/reply/insert',
+				headers: { 
+				      "Content-Type": "application/json",
+				      "X-HTTP-Method-Override": "POST" },
+				dataType:'text',
+				data: JSON.stringify({bno:bno, 
+									  replyer:replyer, 
+									  replytext:replytext}),
+				success:function(result){
+					if(result == 'SUCCESS'){
+						alert("등록 되었습니다.");
+						getPage("/reply/select/"+bno);
+						replyerObj.val("");
+						replytextObj.val("");
+					}
+			}});
+	});
+});
+</script>
+```
+### 댓글 수정/삭제용 모달창
 ```
 <div id="modifyModal" class="modal modal-primary fade" role="dialog">
   <div class="modal-dialog">
     <!-- Modal content-->
     <div class="modal-content">
-      <div class="modal-header">
+      <div class="modal-header" style="display:block;">
 	<button type="button" class="close" data-dismiss="modal">&times;</button>
 	<h4 class="modal-title"></h4>
       </div>
@@ -294,4 +329,53 @@ $(document).ready(function(){
     </div>
   </div>
 </div>
+<script>
+$(document).ready(function() {
+	//선택한 댓글 모달찯에 바인딩
+	$(".timeline").on("click", ".replyLi", function(event){
+		var reply = $(this);
+		$("#replytext").val(reply.find('.timeline-body').text());
+		$(".modal-title").html(reply.attr("data-rno"));
+	});
+	//...댓글 수정 버튼 이벤트.
+	$("#replyModBtn").on("click",function(){
+		  var rno = $(".modal-title").html();
+		  var replytext = $("#replytext").val();
+		  $.ajax({
+				type:'put',
+				url:'/reply/update/'+rno,
+				headers: { 
+				      "Content-Type": "application/json",
+				      "X-HTTP-Method-Override": "PUT" },
+				data:JSON.stringify({replytext:replytext}), 
+				dataType:'text', 
+				success:function(result){
+					console.log("댓글 수정 result: " + result);
+					if(result == 'SUCCESS'){
+						alert("수정 되었습니다.");
+						getPage("/reply/select/"+bno);
+					}
+			}});
+	});
+	//...댓글 삭제 버튼 이벤트.
+	$("#replyDelBtn").on("click",function(){
+		  var rno = $(".modal-title").html();
+		  var replytext = $("#replytext").val();
+		  $.ajax({
+				type:'delete',
+				url:'/reply/delete/'+rno,
+				headers: { 
+				      "Content-Type": "application/json",
+				      "X-HTTP-Method-Override": "DELETE" },
+				dataType:'text', 
+				success:function(result){
+					console.log("댓글 삭제 result: " + result);
+					if(result == 'SUCCESS'){
+						alert("삭제 되었습니다.");
+						getPage("/reply/select/"+bno);
+					}
+			}});
+	});	
+});
+</script>
 ```
