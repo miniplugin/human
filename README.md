@@ -244,3 +244,5 @@ AOP기능 추가시 사용된 파일목록:
 -src\main\java\org\edu\service\BoardServiceImpl.java
 -src\main\webapp\WEB-INF\views\board\board_update.jsp
  ... board_write.jsp + board_view.jsp
+ 
+-src\main\webapp\resources\board_list.html (파일 하단에 제이쿼리 수업 실습내용 있음.)
