@@ -383,7 +383,7 @@ $(document).ready(function() {
 </script>
 ```
 
-### 페이징 처리
+### 페이징 처리(게시판에 사용된 PageVO 클래스 사용-리뷰 후 아래 실습)
 ```
 <!-- 쿼리추가 -->
 <select id="selectReply" resultType="org.edu.vo.ReplyVO">
