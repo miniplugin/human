@@ -235,6 +235,7 @@ AOP기능 추가시 사용된 파일목록:
 ```
 <!-- 댓글 목록 반복처리 : 핸들러 플러그인 사용 -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.1/handlebars.js"></script>
+<!-- 댓글 리스트 빵틀 -->
 <script id="template" type="text/x-handlebars-template">
 {{#each .}}
 <div class="replyLi" data-rno={{rno}}>
