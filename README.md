@@ -230,7 +230,7 @@ AOP기능 추가시 사용된 파일목록:
 5. log4j.xml 설정을 info -> debug 로 변경해줌.
 ```
 
-### 20200717 수업예정-REST API 서버+서비스(REST FULL)댓글 처리
+### 20200717~이후 수업예정-REST API 서버+서비스(REST FULL)댓글 처리
 ### 댓글 리스트
 ```
 <!-- 댓글 목록 반복처리 : 핸들러 플러그인 사용 -->
@@ -380,4 +380,93 @@ $(document).ready(function() {
 	});	
 });
 </script>
+```
+
+### 페이징 처리
+```
+<!-- 쿼리추가 -->
+<select id="selectReply" resultType="org.edu.vo.ReplyVO">
+	select * from tbl_reply where bno = #{bno} 
+	order by regdate desc
+	limit #{startNo}, #{perPageNum}
+</select>
+<select id="countRno" resultType="int">
+	select count(bno) from tbl_reply where bno = #{bno}
+</select>
+
+<!-- DAO + Service 추가 -->
+@Override
+public List<ReplyVO> selectReply(Integer bno, PageVO pageVO) throws Exception {
+	Map<String, Object> paramMap = new HashMap<String, Object>();
+	paramMap.put("bno", bno);
+	paramMap.put("pageVO", pageVO);
+	return sqlSession.selectList(mapperQuery + ".selectReply", paramMap);
+}
+@Override
+public int countRno(Integer bno) throws Exception {
+	return sqlSession.selectOne(mapperQuery + ".countRno", bno);
+}
+
+<!-- 컨트롤러 slectReply 수정 -->
+@RequestMapping(value="/select/{bno}/{page}", method=RequestMethod.GET)
+public ResponseEntity<Map<String, Object>> selectReply(@PathVariable("bno") Integer bno, @PathVariable("page") Integer page) {
+	ResponseEntity<Map<String, Object>> entity = null;
+	try {
+		PageVO pageVO = new PageVO();
+		pageVO.setPage(page);
+		pageVO.setPerPageNum(5);
+		pageVO.setTotalCount(replyService.countRno(bno));
+		Map<String, Object> map = new HashMap<String, Object>();
+		map.put("replyList", replyService.selectReply(bno, pageVO));
+		map.put("pageVO", pageVO);
+		entity = new ResponseEntity<Map<String, Object>>(map , HttpStatus.OK);
+	} catch (Exception e) {
+		e.printStackTrace();
+		entity = new ResponseEntity<Map<String, Object>>(HttpStatus.BAD_REQUEST);
+	}
+	return entity;
+}
+
+<!-- 뷰페이지 board_view.jsp 수정 -->
+//댓글 페이지 변수 초기화
+var replyPage = 1;
+//페이징 빵틀
+var printPage = function(pageVO, target) {
+	var str = "";
+	if (pageVO.prev) {
+		str += "<li><a href='"+(pageVO.startPage - 1)+"'> << </a></li>";
+	}
+	for (var i = pageVO.startPage, len = pageVO.endPage; i <= len; i++) {
+		var strClass = pageVO.page == i ? 'active' : '';
+		str += "<li class='page-item "+strClass+"'><a class='page-link' href='"+i+"'>"+i+"</a></li>";
+	}
+	if (pageVO.next) {
+		str += "<li><a href='"+(pageVO.endPage + 1)+"'> >> </a></li>";
+	}
+	target.html(str);
+};
+//출력부분 수정
+function getPage(pageInfo) {
+	$.getJSON(pageInfo, function(data){
+		//댓글리스트 빵틀 출력
+		printData(data.replyList, $("#replyDiv"), $("#template"));//페이징 때문에 data.replyList 로 변경
+		//페이징 빵틀 출력(아래)
+		printPage(data.pageVO, $(".pagination"));
+		//getPage함수 호출시 페이지 카운터 계산 결과 넣어줌.
+		$("#reply_count").html(data.pageVO.totalCount);
+		//$("#modifyModal").modal('hide');
+	});
+}
+//댓글 리스트 출력실행
+$(document).ready(function(){
+	getPage("/reply/select/" + bno + "/" + replyPage);
+	//페이징 버튼 클릭시 이벤트 처리
+	$(".pagination").on("click", "li a", function(event){
+		event.preventDefault();
+		replyPage = $(this).attr("href");
+		getPage("/reply/select/"+bno+"/"+replyPage);
+	});
+});
+//입력,수정,삭제에서 getPage함수 호출하는 매개변수 수정
+getPage("/reply/select/"+bno + "/" + replyPage);
 ```
