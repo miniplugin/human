@@ -432,7 +432,7 @@ public ResponseEntity<Map<String, Object>> selectReply(@PathVariable("bno") Inte
 //댓글 페이지 변수 초기화
 var replyPage = 1;
 //페이징 빵틀
-var printPage = function(pageVO, target) {
+var printPageVO = function(pageVO, target) {
 	var str = "";
 	if (pageVO.prev) {
 		str += "<li><a href='"+(pageVO.startPage - 1)+"'> << </a></li>";
@@ -450,9 +450,9 @@ var printPage = function(pageVO, target) {
 function getPage(pageInfo) {
 	$.getJSON(pageInfo, function(data){
 		//댓글리스트 빵틀 출력
-		printData(data.replyList, $("#replyDiv"), $("#template"));//페이징 때문에 data.replyList 로 변경
+		printRplyList(data.replyList, $("#replyDiv"), $("#template"));//페이징 때문에 data.replyList 로 변경
 		//페이징 빵틀 출력(아래)
-		printPage(data.pageVO, $(".pagination"));
+		printPageVO(data.pageVO, $(".pagination"));
 		//getPage함수 호출시 페이지 카운터 계산 결과 넣어줌.
 		$("#reply_count").html(data.pageVO.totalCount);
 		//$("#modifyModal").modal('hide');
