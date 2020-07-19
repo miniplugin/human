@@ -389,7 +389,7 @@ $(document).ready(function() {
 <select id="selectReply" resultType="org.edu.vo.ReplyVO">
 	select * from tbl_reply where bno = #{bno} 
 	order by regdate desc
-	limit #{startNo}, #{perPageNum}
+	limit #{pageVO.startNo}, #{pageVO.perPageNum}
 </select>
 <select id="countRno" resultType="int">
 	select count(bno) from tbl_reply where bno = #{bno}
