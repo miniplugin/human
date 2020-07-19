@@ -450,7 +450,7 @@ var printPageVO = function(pageVO, target) {
 function getPage(pageInfo) {
 	$.getJSON(pageInfo, function(data){
 		//댓글리스트 빵틀 출력
-		printRplyList(data.replyList, $("#replyDiv"), $("#template"));//페이징 때문에 data.replyList 로 변경
+		printReplyList(data.replyList, $("#replyDiv"), $("#template"));//페이징 때문에 data.replyList 로 변경
 		//페이징 빵틀 출력(아래)
 		printPageVO(data.pageVO, $(".pagination"));
 		//getPage함수 호출시 페이지 카운터 계산 결과 넣어줌.
