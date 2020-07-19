@@ -437,9 +437,8 @@ var printPageVO = function(pageVO, target) {
 	if (pageVO.prev) {
 		str += "<li><a href='"+(pageVO.startPage - 1)+"'> << </a></li>";
 	}
-	for (var i = pageVO.startPage, len = pageVO.endPage; i <= len; i++) {
-		var strClass = pageVO.page == i ? 'active' : '';
-		str += "<li class='page-item "+strClass+"'><a class='page-link' href='"+i+"'>"+i+"</a></li>";
+	for (var i=pageVO.startPage;i<=pageVO.endPage;i++) {
+		str = str + "<li class='page-item " + (pageVO.page==i?'active':'') + "'><a class='page-link' href='"+i+"'>"+i+"</a></li>"; 
 	}
 	if (pageVO.next) {
 		str += "<li><a href='"+(pageVO.endPage + 1)+"'> >> </a></li>";
