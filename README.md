@@ -473,5 +473,5 @@ getPage("/reply/select/"+bno + "/" + replyPage);
 
 ### 댓글 마무리 작업전 점검사항
 - 페이징 처리 pageVO 계산식 10 으로 박혀 있는 상수 -> this.perPageNum 변수로 처리(주, 소수점 아래 변수는 (double)형으로 형변환).
-- jsp뷰페이지에서 페이징에 사용된 자바스크립트 아래쪽에 모두 모와서 정리.
+- jsp뷰페이지에서 페이징에 사용된 자바스크립트 아래쪽에 모두 모아서 정리.
 - jsp뷰페이지에 countRno 값 출력.
