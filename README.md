@@ -237,3 +237,4 @@ ORDER BY BOD.bno DESC;
 - 실습에 필요한 오라클 XE서버 구글드라이브링크: https://drive.google.com/file/d/1L2XZuH-j47PaoscLNn16kqjPxFYmhi_F/view?usp=sharing
 - 실습에 필요한 SQL디벨러퍼(Java포함버전)구글드라이브링크:  https://drive.google.com/file/d/1n7jy85OeI06ipmDjKWFYxaYpTJY16lj-/view?usp=sharing
 - 학습모듈: https://ncs.go.kr/unity/th03/ncsSearchMain.do 20.정보통신 > 01.정보기술 > 02.정보기술개발 > 04.DB엔지니어링
+- 오라클 DB에서 erd출력관련 참고자료: http://blog.daum.net/dearsky/56
