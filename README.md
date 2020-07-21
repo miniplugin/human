@@ -77,7 +77,7 @@ CREATE TABLE tbl_reply (
 -- 오라클 전용 시퀸스 방식 게시판 시퀸스
 --
 CREATE SEQUENCE BNO_SEQ
-  START WITH 215
+  START WITH 101
   INCREMENT BY 1
   MAXVALUE 10000
   MINVALUE 1
@@ -94,6 +94,38 @@ CREATE SEQUENCE RNO_SEQ
 ```
 - Mysql용 테이블 구조 및 제약조건 확인 명령: DESC 테이블명,SELECT * FROM information_schema.table_constraints;
 - 오라클용 테이블 구조 및 제약조건 확인 명령: SELECT * FROM ALL_CONSTRAINTS WHERE TABLE_NAME='테이블명(대문자)' 
+
+- 제약조건 끄고 tbl_board테이블 비우기(truncate) + 프로시저로 더미데이터 입력하기
+
+```
+-- Mysql 일때 외래키 제약조건 사용하지 않기 (아래):  SET SQL_SAFE_UPDATES = 0;
+SET FOREIGN_KEY_CHECKS = 0;
+truncate TABLE tbl_board; #AI 데이터까지 모두 지우기
+-- Mysql 더미 데이터 입력 프로시저
+CREATE PROCEDURE dummy_insert()
+BEGIN
+	DECLARE i INT DEFAULT 1;
+	WHILE i <= 100 DO
+		INSERT INTO tbl_board (bno, title, content, writer) VALUES
+		(i, '수정된 글입니다.', '수정 테스트', 'user00');
+		SET i = i + 1;
+	END WHILE;
+    -- 실행 CALL dummy_insert;
+END
+```
+
+```
+-- 오라클 일때 외래키 제약조건 사용하지 않기(아래)
+ALTER TABLE TBL_BOARD DISABLE PRIMARY KEY CASCADE;
+truncate TABLE tbl_board;
+-- 오라클 더미 데이터 입력 프로시저
+CREATE OR REPLACE PROCEDURE DUMMY_INSERT AS 
+BEGIN
+  FOR i IN 1..100 LOOP
+  INSERT INTO tbl_board (bno, title, content, writer) VALUES (i,'게시물','게시물내용','관리자');
+  END LOOP; -- 실행 CALL dummy_insert();
+END DUMMY_INSERT;
+```
 
 - DML활용: 아래 스프링 웹프로젝트에서 사용되는Mysql용 mybatis 쿼리매퍼 Insert구문을 오라클용으로 변경 및 오라클용으로 더미데이터 입력 확인.
 
@@ -144,9 +176,9 @@ INSERT INTO `tbl_reply` (`rno`, `bno`, `replytext`, `replyer`, `regdate`, `updat
 	insert into tbl_reply (rno, bno, replytext, replyer)
 	values (#{rno},#{bno},#{replytext},#{replyer})
 </insert>
-INSERT INTO tbl_reply VALUES (1, 215, '1:댓글을 수정   MOD', 'user02', SYSDATE, SYSDATE);
-INSERT INTO tbl_reply VALUES (2, 215, '2:댓글을 수정   MOD', 'user02', SYSDATE, SYSDATE);
-INSERT INTO tbl_reply VALUES (3, 214, '2:댓글을 수정   MOD', 'user02', SYSDATE, SYSDATE);
+INSERT INTO tbl_reply VALUES (1, 100, '1:댓글을 수정   MOD', 'user02', SYSDATE, SYSDATE);
+INSERT INTO tbl_reply VALUES (2, 100, '2:댓글을 수정   MOD', 'user02', SYSDATE, SYSDATE);
+INSERT INTO tbl_reply VALUES (3, 99, '2:댓글을 수정   MOD', 'user02', SYSDATE, SYSDATE);
 ```
 
 - DCL활용: 위 입력 값으로 Mysql 트랜잭션 자동커밋 과 오라클 트랜잭션 수동커밋  내용 확인.(트랜잭션: 커밋과 커밋사이)
@@ -158,7 +190,7 @@ INSERT INTO tbl_reply VALUES (3, 214, '2:댓글을 수정   MOD', 'user02', SYSD
 -- 오라클 SQL디벨러퍼에서는 commit 명령어 사용하기 전까지 위 insert문 자료가 없는것이 최종 결과물로 인식 합니다.(주의)
 -- 롤백 명령은 최종 COMMIT 명령의 결과를 없던 것으로 되돌 립니다.  
 --
-NSERT INTO tbl_board VALUES (256, '256번글입니다.', '수정 테스트 ', 'user00', SYSDATE, SYSDATE, 0, 0);
+INSERT INTO tbl_board VALUES (256, '256번글입니다.', '수정 테스트 ', 'user00', SYSDATE, SYSDATE, 0, 0);
 INSERT INTO tbl_board VALUES (257, '2571번글입니다.', '수정 테스트2 ', 'user00', SYSDATE, SYSDATE, 0, 0);
 SAVEPOINT S1;
 INSERT INTO tbl_board VALUES (258, '258번글입니다.. ', '새로운 글을 넣습니다. ', 'user00', SYSDATE, SYSDATE, 0, 0);
