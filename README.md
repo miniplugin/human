@@ -283,7 +283,7 @@ WHERE TABLE_Z.RNUM > (0/10) * 10;
 - 개발PC에 오라클 11g EX 교육용Free: https://www.oracle.com/database/technologies/oracle-database-software-downloads.html
 - 개발PC에 오라클 SQL Development 설치: https://www.oracle.com/tools/downloads/sqldev-v192-downloads.html (JDK포함버전으로)
 - 오라클 설치 후 8080포트변경: Get Started With Oracle Database 11g Express Edition 웹 툴에서 사용하는 포트와 톰캣서버가 충돌 때문에.(아래의 처리 실행)
-- SQL Development 에서 아래 2줄 명령어 실행 후 OK
+- SQL Development 에서 아래 2줄 명령어 실행 후 OK(콘솔에서는 sqlplus / as sysdba 로 접속)
 - SELECT DBMS_XDB.GETHTTPPORT() FROM DUAL;
 - EXEC DBMS_XDB.SETHTTPPORT(9000);
 - (참고) 오라클 DB의 문자설정 확인: select * from v$nls_parameters where parameter like '%CHARACTERSET%';
