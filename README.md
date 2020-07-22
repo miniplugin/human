@@ -113,6 +113,62 @@
 - 오라클
 #### 예제소스: https://github.com/gilbutITbook/006696
 #### 강사자료: http://blog.daum.net/web_design/725 (기존 스프링 웹프로젝트를 오라클용으로_1 )
+#### 사전지식: Mysql용 프로시저 생성 및 호출(실행)
+
+```
+-- 뷰테이블-댓글개수 구하기(아래)
+CREATE VIEW REPLY_CNT_VIEW
+AS SELECT BOD.bno, BOD.title, COUNT(REP.bno) AS CNT 
+FROM tbl_board BOD
+INNER JOIN tbl_reply REP ON REP.bno = BOD.bno
+GROUP BY BOD.bno, BOD.title
+ORDER BY BOD.bno;
+
+-- 프로시저-마이페이지정보 구하기(아래)
+CREATE PROCEDURE myPage(IN P_user_id text)
+BEGIN
+	select * from tbl_member where user_id = P_user_id;
+END
+SELECT * FROM reply_cnt_view; -- 뷰테이블 호출
+
+-- 함수-댓글개수 구하기(아래)
+CREATE FUNCTION FN_countRno(P_Bno int) RETURNS int(11)
+BEGIN
+declare countRno int;
+select 0 INTO countRno;
+select count(*) INTO countRno from tbl_reply where bno = P_Bno;
+RETURN countRno;
+END
+
+-- call은 프로시저 호출시 사용
+-- SELECT 함수명('매개변수=게시물번호=bno'); -- 게시물별 댓글 개수
+SELECT FN_countRno(3); -- 함수 호출
+CALL myPage('user02'); -- 프로시저 호출
+-- 로그인 체크 함수 만들기 
+-- : 조건 리턴값 Integer
+-- : 매개변수값은 P_user_id / 암호 P_user_pw
+-- : 쿼리 slect count(*) INTO AUTH from tbl_member 
+-- : where user_id = P_user_id and user_pw = P_user_pw
+-- : return AUTH;
+SELECT FN_auth('user02','$2a$10$kIqR/PTloYan/MRNiEsy6uYO6OCHVmAKR4kflVKQkJ345nqTiuGeO'); -- 함수 실행
+
+-- 그룹과 테이블조인
+-- 그룹만들기 전 데이터 구조
+{1, 게시물1-bod, 댓글번호1-rep},
+{1, 게시물1-bod, 댓글번호2-rep},
+{2, 게시물2-bod, 댓글번호3-rep},
+{2, 게시물2-bod, 댓글번호4-rep}
+-- 그룹만든 후 데이터 구조
+[1, 게시물1-bod, {댓글번호1-rep,댓글번호2-rep}],
+[2, 게시물2-bod, {댓글번호3-rep,댓글번호4-rep}]
+-- 조인과 그룹을 이용해서 댓글카운터까지 포함된 리스트 만들기(아래)
+SELECT BOD.bno, BOD.title, COUNT(REP.bno) AS CNT 
+FROM tbl_board BOD
+INNER JOIN tbl_reply REP ON REP.bno = BOD.bno
+GROUP BY BOD.bno, BOD.title
+ORDER BY BOD.bno
+```
+
 ---
 
 --- 
