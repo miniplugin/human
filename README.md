@@ -127,6 +127,45 @@ BEGIN
 END DUMMY_INSERT;
 ```
 
+### Mysql용 프로시저 생성 및 호출(실행)
+
+
+
+### 오라클용 프로시저 생성 및 호출(실행)
+
+```
+-- 프로시저 생성
+CREATE OR REPLACE PROCEDURE MYPAGE 
+(
+  P_USER_ID IN VARCHAR2,
+  P_RESULT OUT SYS_REFCURSOR
+) AS 
+BEGIN
+    OPEN P_RESULT FOR    -- 커서 열기
+    SELECT * FROM TBL_MEMBER WHERE USER_ID = P_USER_ID; 
+END MYPAGE;
+
+-- set autoprint on; -- 이쁘게 출력되지 않을때
+-- set serveroutput on; -- 출력이 되지 않을때
+-- 오라클 프로시저 실행
+var result refcursor;
+EXEC mypage('admin',:result);
+
+-- 함수 생성
+CREATE OR REPLACE FUNCTION BOARD_REPLY_CNT 
+(
+  P_BNO IN NUMBER 
+) RETURN NUMBER AS 
+V_COUNT_RNO number:=0;
+BEGIN
+  SELECT COUNT(*) INTO V_COUNT_RNO FROM TBL_REPLY WHERE BNO = P_BNO;
+  RETURN V_COUNT_RNO;
+END BOARD_REPLY_CNT;
+
+-- 오라클 함수 실행(아래)
+-- select board_reply_cnt(1) AS countRno from dual;
+```
+
 - DML활용: 아래 스프링 웹프로젝트에서 사용되는Mysql용 mybatis 쿼리매퍼 Insert구문을 오라클용으로 변경 및 오라클용으로 더미데이터 입력 확인.
 
 ```
@@ -147,7 +186,7 @@ INSERT INTO `tbl_reply` (`rno`, `bno`, `replytext`, `replyer`, `regdate`, `updat
 ```
 
 ```
-<!-- 오라클용 추가 ibatis
+<!-- 오라클용 추가 mybatis
 	<selectKey keyProperty="id" resultClass="int" order="BEFORE"> 
 	오라클용 추가 Mybatis
 	<selectKey keyProperty="bno" resultType="int" order="BEFORE">
@@ -162,7 +201,7 @@ INSERT INTO `tbl_reply` (`rno`, `bno`, `replytext`, `replyer`, `regdate`, `updat
  </insert>
  쿼리: INSERT INTO tbl_board VALUES (1, '수정된 글입니다.', '수정 테스트 ', 'user00', SYSDATE, SYSDATE, 0, 0);
  <!-- 
-	오라클용 추가 ibatis
+	오라클용 추가 mybatis
 	<selectKey keyProperty="id" resultClass="int" order="BEFORE"> 
 	오라클용 추가 Mybatis
 	<selectKey keyProperty="rno" resultType="int" order="BEFORE">
@@ -224,6 +263,20 @@ FROM tbl_board BOD
 INNER JOIN tbl_attach ATTA ON ATTA.bno = BOD.bno
 GROUP BY BOD.bno, BOD.title
 ORDER BY BOD.bno DESC;
+```
+
+### 오라클용 페이징 처리(아래)
+
+```
+-- 오라클용 페이징처리 서브쿼리 2개 사용 == Mysql용은 select * from tbl_board limit 0, 10;
+SELECT TABLE_Z.*
+FROM (
+    SELECT ROWNUM AS RNUM, TABLE_A.*
+    FROM 
+        (SELECT * FROM TBL_BOARD) TABLE_A
+    WHERE ROWNUM <= (0/10+1) * 10
+     ) TABLE_Z
+WHERE TABLE_Z.RNUM > (0/10) * 10;
 ```
 
 ### 참고자료 출처(아래)
