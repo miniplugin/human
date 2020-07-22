@@ -113,20 +113,6 @@
 - 오라클
 #### 예제소스: https://github.com/gilbutITbook/006696
 #### 강사자료: http://blog.daum.net/web_design/725 (기존 스프링 웹프로젝트를 오라클용으로_1 )
-#### 오라클용 페이징 처리
-
-```
--- 오라클용 페이징처리 서브쿼리 2개 사용 == Mysql용은 select * from tbl_board limit 0, 10;
-SELECT TABLE_Z.*
-FROM (
-    SELECT ROWNUM AS RNUM, TABLE_A.*
-    FROM 
-        (SELECT * FROM TBL_BOARD) TABLE_A
-    WHERE ROWNUM <= (0/10+1) * 10
-     ) TABLE_Z
-WHERE TABLE_Z.RNUM > (0/10) * 10;
-```
-
 ---
 
 --- 
