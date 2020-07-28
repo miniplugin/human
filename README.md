@@ -475,3 +475,9 @@ getPage("/reply/select/"+bno + "/" + replyPage);
 - 페이징 처리 pageVO 계산식 10 으로 박혀 있는 상수 -> this.perPageNum 변수로 처리(주, 소수점 아래 변수는 (double)형으로 형변환).
 - jsp뷰페이지에서 페이징에 사용된 자바스크립트 아래쪽에 모두 모아서 정리.
 - jsp뷰페이지에 countRno 값 출력.
+
+### Git에서 제공하는 도메인 사용하기 순서
+1. 포트폴리오 사이트 = Git에서 제공하는 도메인
+2. https://github.com/miniplugin(개인폴더) 
+ - 핵심은 레포지토리명을 => miniplugin.github.io (레포지토리명)
+3. https://miniplugin.github.io (호스트네임)으로 접근가능.
