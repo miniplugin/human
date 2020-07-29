@@ -238,7 +238,8 @@ INSERT INTO `tbl_reply` (`rno`, `bno`, `replytext`, `replyer`, `regdate`, `updat
 ```
 
 ```
-<!-- 오라클용 추가 mybatis
+<!-- 
+	오라클용 추가 ibatis
 	<selectKey keyProperty="id" resultClass="int" order="BEFORE"> 
 	오라클용 추가 Mybatis
 	<selectKey keyProperty="bno" resultType="int" order="BEFORE">
@@ -253,7 +254,7 @@ INSERT INTO `tbl_reply` (`rno`, `bno`, `replytext`, `replyer`, `regdate`, `updat
  </insert>
  쿼리: INSERT INTO tbl_board VALUES (1, '수정된 글입니다.', '수정 테스트 ', 'user00', SYSDATE, SYSDATE, 0, 0);
  <!-- 
-	오라클용 추가 mybatis
+	오라클용 추가 ibatis
 	<selectKey keyProperty="id" resultClass="int" order="BEFORE"> 
 	오라클용 추가 Mybatis
 	<selectKey keyProperty="rno" resultType="int" order="BEFORE">
