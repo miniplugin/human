@@ -336,7 +336,7 @@ WHERE TABLE_Z.RNUM > (0/10) * 10;
 ```
 
 ### 스프링프로젝트 오라클용 마이그레이션 마무리(관리자단-강사, 사용자단-학생)
-- 다중게시판 만들기: searchBoard 에서 사용하는 bod_type 세션으로 설정 후 사용 
+- 다중게시판 만들기: searchBoard 에서 사용하는 bod_type을 세션변수(session_bod_type)로 생성 후 사용 
 
 ```
 (매개변수:HttpServletRequest request)
