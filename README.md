@@ -76,8 +76,8 @@ CREATE TABLE tbl_reply (
 --
 -- 오라클 전용 시퀸스 방식 게시판 시퀸스
 --
-CREATE SEQUENCE BNO_SEQ
-  START WITH 101
+CREATE SEQUENCE SEQ_BNO
+  START WITH 1
   INCREMENT BY 1
   MAXVALUE 10000
   MINVALUE 1
@@ -85,7 +85,7 @@ CREATE SEQUENCE BNO_SEQ
 --
 -- 오라클 전용 시퀸스 방식 댓글 시퀸스
 --
-CREATE SEQUENCE RNO_SEQ
+CREATE SEQUENCE SEQ_RNO
   START WITH 1
   INCREMENT BY 1
   MAXVALUE 10000
@@ -122,8 +122,9 @@ truncate TABLE tbl_board;
 CREATE OR REPLACE PROCEDURE DUMMY_INSERT AS 
 BEGIN
   FOR i IN 1..100 LOOP
-  INSERT INTO tbl_board (bno, title, content, writer) VALUES (i,'게시물','게시물내용','관리자');
+  INSERT INTO tbl_board (bno, title, content, writer) VALUES (SEQ_BNO.nextval,'게시물','게시물내용','관리자');
   END LOOP; -- 실행 CALL dummy_insert();
+  COMMIT;
 END DUMMY_INSERT;
 ```
 
@@ -243,11 +244,11 @@ INSERT INTO `tbl_reply` (`rno`, `bno`, `replytext`, `replyer`, `regdate`, `updat
 	<selectKey keyProperty="id" resultClass="int" order="BEFORE"> 
 	오라클용 추가 Mybatis
 	<selectKey keyProperty="bno" resultType="int" order="BEFORE">
-	SELECT BNO_SEQ.nextval From DUAL
+	SELECT SEQ_BNO.nextval From DUAL
 -->
 <insert id="create">
 	<selectKey keyProperty="bno" resultType="int" order="BEFORE">
-        select BNO_SEQ.nextval from dual  
+        select SEQ_BNO.nextval from dual  
    </selectKey>
  insert into tbl_board (bno, title, content, writer) 
  values(#{bno},#{title},#{content}, #{writer})
@@ -258,12 +259,12 @@ INSERT INTO `tbl_reply` (`rno`, `bno`, `replytext`, `replyer`, `regdate`, `updat
 	<selectKey keyProperty="id" resultClass="int" order="BEFORE"> 
 	오라클용 추가 Mybatis
 	<selectKey keyProperty="rno" resultType="int" order="BEFORE">
-	SELECT RNO_SEQ.nextval From DUAL
+	SELECT SEQ_RNO.nextval From DUAL
 	</selectKey>
 -->
 <insert id="insertReply">
     <selectKey keyProperty="rno" resultType="int" order="BEFORE">
-		SELECT RNO_SEQ.nextval From DUAL
+		SELECT SEQ_RNO.nextval From DUAL
 	</selectKey>
 	insert into tbl_reply (rno, bno, replytext, replyer)
 	values (#{rno},#{bno},#{replytext},#{replyer})
@@ -336,6 +337,7 @@ WHERE TABLE_Z.RNUM > (0/10) * 10;
 
 ### 스프링프로젝트 오라클용 마이그레이션 마무리(관리자단-강사, 사용자단-학생)
 - 다중게시판 만들기: searchBoard 에서 사용하는 bod_type 세션으로 설정 후 사용 
+
 ```
 (매개변수:HttpServletRequest request)
 HttpSession session = request.getSession();//세션을 초기화 시켜줌.
@@ -347,6 +349,14 @@ if(pageVO.getSearchBoard() != null) {
 }
 ```
 - 게시판 리스트에 일련번호(RNUM 필드값 사용) 나타내기
+- 오라클 시작 에러 처리(아래)
+
+```
+sqlplus / as sysdba 또는 sqlplus > user-name: /as sysdba 
+> recover database; 
+> alter database open; 
+> shutdown immediate; startup;
+```
 
 ### 참고자료 출처(아래)
 - 개발PC에 오라클 11g EX 교육용Free: https://www.oracle.com/database/technologies/oracle-database-software-downloads.html
