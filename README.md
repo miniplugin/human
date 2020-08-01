@@ -358,6 +358,38 @@ sqlplus / as sysdba 또는 sqlplus > user-name: /as sysdba
 > shutdown immediate; startup;
 ```
 
+### 다중게시판 자동생성 순서(아래)
+- 오라클 ERD 에서 테이블 생성 및 릴레이션 적용(tbl_board_type테이블의 bod_type을 tbl_board의 포린키로)
+- 아이콘메뉴에서 물리DB와 싱크(필드3개, bod_type, bod_name, bod_sun)
+- 물리 테이블 싱크 후 초기값 notice, gallery 입력처리.
+- BoardTypeVO 클래스 만들기(get,set)
+- xml쿼리 만드기(기존 boardMapper.xml사용)
+- DAO, Service 만들기. 컨트롤러는 아래 어드바이스(AOP)기능으로 대체.
+- @ControllerAdvice 사용해서 컨트롤러 액션시 항상 실행되는 매서드 만들기
+- 게시판메뉴데이터를 생성해서 모델로 만든 후 jsp로 보내는 매서드 만들기(아래)
+
+```
+@ModelAttribute("boardTypeMenu")
+public List<BoardTypeVO> CommonMap(Model model, HttpServletRequest request) throws Exception {
+	List<BoardTypeVO> boardTypeMenu = boardService.selectBoardType();
+	System.out.println("==================디버그" + boardTypeMenu);
+	return boardTypeMenu;
+}
+```
+- jsp 에 forEach문으로 출력(아래-관리자,사용자페이지 모두)
+
+```
+<c:forEach items="${boardTypeMenu}" var="boardType" varStatus="status">
+	<li><a href="/board/list?searchBoard=${boardType.bod_type}">${boardType.bod_name}</a></li>
+</c:forEach>
+```
+- 관리자에 게시판 조회/생성/수정/삭제 기능 만들기
+
+### 사용자페이지 회원가입 기능 만들기
+- 기존 관리자 페이지에 있는 로직 그대로 사용
+- 사용자용 마이페이지 만들기(컨트롤러 경로, jsp 페이지)
+- resources/home/mypage.html 사용해서 mypage_write.jsp와 mypage_edit.jsp 만들기.
+
 ### 참고자료 출처(아래)
 - 개발PC에 오라클 11g EX 교육용Free: https://www.oracle.com/database/technologies/oracle-database-software-downloads.html
 - 개발PC에 오라클 SQL Development 설치: https://www.oracle.com/tools/downloads/sqldev-v192-downloads.html (JDK포함버전으로)
