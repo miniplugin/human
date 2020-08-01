@@ -362,8 +362,8 @@ sqlplus / as sysdba 또는 sqlplus > user-name: /as sysdba
 - 오라클 ERD 에서 테이블 생성 및 릴레이션 적용(tbl_board_type테이블의 bod_type을 tbl_board의 포린키로)
 - 아이콘메뉴에서 물리DB와 싱크(필드3개, bod_type, bod_name, bod_sun)
 - 물리 테이블 싱크 후 초기값 notice, gallery 입력처리.
+- xml쿼리 만들기(기존 boardMapper.xml사용, resultType="org.edu.vo.BoardTypeVO")
 - BoardTypeVO 클래스 만들기(get,set)
-- xml쿼리 만드기(기존 boardMapper.xml사용)
 - DAO, Service 만들기. 컨트롤러는 아래 어드바이스(AOP)기능으로 대체.
 - @ControllerAdvice 사용해서 컨트롤러 액션시 항상 실행되는 매서드 만들기
 - 게시판메뉴데이터를 생성해서 모델로 만든 후 jsp로 보내는 매서드 만들기(아래)
