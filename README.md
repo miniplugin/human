@@ -389,6 +389,7 @@ public List<BoardTypeVO> CommonMap(Model model, HttpServletRequest request) thro
 - 기존 관리자 페이지에 있는 로직 그대로 사용
 - 사용자용 마이페이지 만들기(컨트롤러 경로, jsp 페이지)
 - resources/home/mypage.html 사용해서 mypage_write.jsp와 mypage_edit.jsp 만들기.
+- 회원탈퇴 버튼은 삭제가 아니라, tbl_member테이블의 enabled 필드값을 0 으로 변경하는 것으로 처리.
 
 ### 참고자료 출처(아래)
 - 개발PC에 오라클 11g EX 교육용Free: https://www.oracle.com/database/technologies/oracle-database-software-downloads.html
