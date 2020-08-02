@@ -17,7 +17,7 @@
 - 아두이노의 종류와 특성 3가지: 아두이노 우노, 아두이노 메가, 노드 MCU(실습용 보드-와이파이내장) 
 - 프리징 프로그램으로 설계도면을 작성: 프리징 프로그램 free버전 ( https://sourceforge.net/projects/fritzing-portable/ )
 - 설계도면 샘플다운로드: https://fritzing.org/projects/ctas_club_20191004_demo01
-- 설계도면 결과예시 : [보기](git_img/fritzing.jpg)
+- 설계도면 결과예시 : ![ex_screenshot](./git_img/fritzing.jpg)
 
 ### 하드웨어 데이터시트 분석하기(아래)
 - 구글검색: nodemcu datasheet
@@ -28,17 +28,21 @@
 - 아두이노 IDE에서 blink예제  프로그램을 실행 및 깜박이는 시간 변경
 - 위 설계되면 결과대로 Node MCU 아두이노에서 LED를 1초 단위로 On/Off 시키는 프로그램을 구현
 - Delay를 어셈블리로 구현 참조: http://cholla.mmto.org/esp8266/xtensa.html
-- 결과예시 : [보기](git_img/result2.jpg)
+- 결과예시 : ![ex_screenshot](./git_img/result2.jpg)
 
 ### 부트로더 구현하기(아래)
 - 플래시 메모리로 전송하는 과정 요약 정리하기
 - Node MCU 아두이노에서 웹서버를 띄우고, 웹서버에서 On/Off 시키는 프로그램을 작성
-- 결과예시 : [보기](git_img/result1.jpg)
+- 결과예시 : ![ex_screenshot](./git_img/result1.jpg)
 
 ### 소스코드 인스펙션 하기(아래)
 - 위 작업한 소스 3개에 주석을 달면서 인스펙션(검사) 하기.
+- 블링크예제 [보기](git_img/01_sketch_led_asm.ino)
+- 부트로더OnOff [보기](git_img/02_sketch_led_wifi.ino)
+- 부트로더서버구현 [보기](git_img/03_sketch_led_server.ino)
 
 ### 참고자료 출처(아래)
+- 윈7용 UART드라이버 다운로드 [download this](git_img/CP210xVCPInstaller_x64.zip)
 - 학습모듈: https://ncs.go.kr/unity/th03/ncsSearchMain.do 20.정보통신 > 01.정보기술 > 02.정보기술개발 > 03.임베디드SW 엔지니어링
 - 작업준비:
  
