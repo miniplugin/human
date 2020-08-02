@@ -120,7 +120,7 @@ public class JsonDataController {
 - 캡쳐
 ![ex_screenshot](./git_img/01spring_work.jpg)
 ![ex_screenshot](./git_img/02chrome_before_after.jpg)
-- 안드로이드 앱 소스에 스프링의 VO같은 기능의 파일을 만들어서 SubActivity(자바)에서 xml(화면)과 데이터를 주고 받게 한다.(아래)
+- 안드로이드 앱 소스에 스프링의 VO같은 기능의 파일을 만들어서 SubActivity(자바)에서 xml(화면)과 데이터를 주고 받게 한다.(아래-스프링에서 DB와 get,set하듯이, 스프링에서 받은 JSON데이터와 get,set하게 처리하는 역할의 클래스)
 
 ```
 public class MemberVO {
