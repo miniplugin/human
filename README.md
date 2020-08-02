@@ -143,7 +143,7 @@ void loop()                 //MCU보드 전원이 꺼질때까지 무한 실행�
 
 ```
 
-- 안드로이드 스튜디오를 사용해서 앱만들기 핵심파일3개(아래)
+- 안드로이드 스튜디오를 사용해서 앱만들기 핵심파일3개(아래소스 참조)
 - [앱 명세파일 download this](git_img/AndroidManifest.xml)
 - [화면처리파일 download this](git_img/activity_main.xml)
 - [자바프로그램처리 download this](git_img/MainActivity.java)
@@ -152,6 +152,147 @@ void loop()                 //MCU보드 전원이 꺼질때까지 무한 실행�
 앱 명세파일 : AndroidManifest.xml
 화면처리파일: activity_main.xml
 자바프로그램처리: MainActivity.java
+```
+### 위 소스를 참고해서 교사지도아래 학생이 제작(아래)
+-화면처리파일: activity_main.xml(아래-위 소스와 틀린점은 button에 메서드명이 연결됨)
+
+```
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.app.smartbluetooth.MainActivity">
+
+    <LinearLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <Button
+            android:id="@+id/btnConnect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="fnConnect"
+            android:text="블루투스연결" />
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="fnBtn1"
+            android:text="0.5초간격으로 깝빡임" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
+```
+- 자바프로그램처리: MainActivity.java(아래)
+
+```
+package com.example.app.smartbluetooth;
+
+import android.bluetooth.BluetoothAdapter;
+import android.bluetooth.BluetoothDevice;
+import android.bluetooth.BluetoothSocket;
+import android.content.Intent;
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Toast;
+
+import java.io.IOException;
+import java.io.OutputStream;
+import java.util.Set;
+import java.util.UUID;
+
+public class MainActivity extends AppCompatActivity {
+    //클래스 변수 선언(클래스전역변수)
+    BluetoothAdapter mBluetoothAdapter;//장치(중간어댑터담당)<->앱
+    BluetoothSocket mSocket;//장치<->(소켓통신담당)앱
+    BluetoothDevice mDevice;//블루투스장치 담당
+    OutputStream mOutputStream;//앱->블루투스 데이터전송 클래스
+    String mBluetoothName = "HC-06";//블루투스 이름(장비고유값)
+    int mState;//블루투스 접속 상태 확인변수
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+    }
+
+    public void fnConnect(View view) {
+        try {
+            findBT();
+            mState = 1;
+        } catch (IOException e) {
+            mState = 0;
+            Toast.makeText(MainActivity.this,"블루투스에 연결되지 않았습니다.", Toast.LENGTH_LONG).show();
+            e.printStackTrace();
+        }
+    }
+
+    //블루투스 검색 매서드
+    void findBT() throws IOException {
+        //블루투스 검색
+        mBluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
+        if(!mBluetoothAdapter.isEnabled()) {
+            //인텐트에 데이터를 담아서 액티비티에 보낸다.
+            Intent intentEnableBluetooth = new Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE);
+            startActivityForResult(intentEnableBluetooth,1);
+        }
+        Set<BluetoothDevice> paieredDevices = mBluetoothAdapter.getBondedDevices();
+        if(paieredDevices.size() > 0) {
+            for(BluetoothDevice device : paieredDevices) {
+                if(device.getName().equals("HC-06")){
+                    mDevice = device;
+                    break;
+                }
+            }
+        }
+        UUID uuid = UUID.fromString("00001101-0000-1000-8000-00805f9b34fb");//포트아이디
+        mSocket = mDevice.createRfcommSocketToServiceRecord(uuid);
+        mSocket.connect();
+        mOutputStream = mSocket.getOutputStream();
+    }
+
+    //프로그램 종료시 변수값 메로리에서 지우기
+    @Override
+    protected void onDestroy() {
+        if(mOutputStream != null) {
+            try {
+                mOutputStream.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            mOutputStream = null;
+        }
+        if(mSocket != null) {
+            try {
+                mSocket.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            mSocket = null;
+        }
+        super.onDestroy();
+        System.exit(0);//프로그램 종료
+    }
+
+    public void fnBtn1(View view) {
+        if(mState == 1) {
+            try {
+                mOutputStream.write('1');
+            } catch (IOException e) {
+                Toast.makeText(MainActivity.this,"노드MCU 보드쪽으로 값이 전송되지 않았습니다.", Toast.LENGTH_LONG).show();
+                e.printStackTrace();
+            }
+        }else{
+            Toast.makeText(MainActivity.this,"블루투스에 연결되지 않았습니다.", Toast.LENGTH_LONG).show();
+        }
+    }
+}
 ```
 
 ### 결과확인(아래)
