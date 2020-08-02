@@ -120,8 +120,7 @@ public class JsonDataController {
 - 캡쳐
 ![ex_screenshot](./git_img/01spring_work.jpg)
 ![ex_screenshot](./git_img/02chrome_before_after.jpg)
-![ex_screenshot](./git_img/03android_work.jpg)
-- 안드로이드 앱 소스에 스프링의 VO같은 기능의 파일을 만들어서 SubActivity(자바)에서 xml(화면)과 데이터를 주고 받게 한다.
+- 안드로이드 앱 소스에 스프링의 VO같은 기능의 파일을 만들어서 SubActivity(자바)에서 xml(화면)과 데이터를 주고 받게 한다.(아래)
 
 ```
 public class MemberVO {
@@ -131,11 +130,11 @@ public class MemberVO {
     public String user_name;
     @SerializedName("email")//Json 데이터의 Key와 같은 명칭
     public String email;
-    @SerializedName("level")//Json 데이터의 Key와 같은 명칭
-    public String level;
+    @SerializedName("levels")//Json 데이터의 Key와 같은 명칭
+    public String levels;
 }
 ```
-
+![ex_screenshot](./git_img/03android_work.jpg)
 ![ex_screenshot](./git_img/04login_after.png)
 ![ex_screenshot](./git_img/05login_before.png)
 - [앱프로그램소스 download this](git_img/AndroidSpringDb.zip)
