@@ -180,5 +180,6 @@ public class MemberVO {
 - 캡쳐
 ![ex_screenshot](./git_img/work.jpg)
 ![ex_screenshot](./git_img/device.png)
+- 아래 소스는 실제 수업시 내용 수정이 있습니다. 참조용으로만 보세요.
 - [앱프로그램소스 download this](git_img/ChatApp.zip)
 
