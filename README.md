@@ -38,8 +38,8 @@
 ### 소스코드 인스펙션 하기(아래)
 - 위 작업한 소스 3개에 주석을 달면서 인스펙션(검사) 하기.
 - 블링크예제 [보기](git_img/01_sketch_led_asm.ino)
-- 부트로더OnOff [보기](git_img/02_sketch_led_wifi.ino)
-- 부트로더서버구현 [보기](git_img/03_sketch_led_server.ino)
+- 부트로더와이파이활성화 [보기](git_img/02_sketch_led_wifi.ino)
+- 부트로더OnOff서버구현 [보기](git_img/03_sketch_led_server.ino)
 
 ### 참고자료 출처(아래)
 - 윈7용 UART드라이버 다운로드 [download this](git_img/CP210xVCPInstaller_x64.zip)
@@ -47,7 +47,7 @@
 - 작업준비:
  
 ```
-   아두이노 본체 USB 연결
+   아두이노 본체 와 작업자PC USB 연결
 -> 아두이노 IDE Windows 다운로드
 -> Driver SW 업데이트 후 포트 확인
 -> Arduino IDE 기동 후 환경설정 추가적인 보드 매니저에
