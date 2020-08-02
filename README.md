@@ -251,7 +251,9 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         }
-        UUID uuid = UUID.fromString("00001101-0000-1000-8000-00805f9b34fb");//포트아이디
+        //블루투스 범용 포트아이디(Universally Unique Identifiers) 소켓생성시 필요
+        //TCP프로토콜과 같은 기능이 UUID
+        UUID uuid = UUID.fromString("00001101-0000-1000-8000-00805f9b34fb");
         mSocket = mDevice.createRfcommSocketToServiceRecord(uuid);
         mSocket.connect();
         mOutputStream = mSocket.getOutputStream();
