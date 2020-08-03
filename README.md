@@ -385,6 +385,48 @@ public List<BoardTypeVO> CommonMap(Model model, HttpServletRequest request) thro
 ```
 - 관리자에 게시판 조회/생성/수정/삭제 기능 만들기
 
+### 관리자단 회원등록시 중복ID체크하는 코딩 넣기(RestAPI 방식으로 처리)
+- 댓글에 사용된 @RestController 가 아닌 일반 @Controller에서 사용할때는
+- @RequestMapping아래쪽에 @ResponseBody 애노테이션으로 Json데이터로 리턴값을 jsp로 id 중복체크한 값을 보내줌.
+
+```
+	//id 중복 체크 컨트롤러 (resultType값 1 = 중복 / 0 = 중복아님)
+	@RequestMapping(value = "/member/idcheck", method = RequestMethod.GET)
+	@ResponseBody
+	public int idCheck(@RequestParam("user_id") String user_id) {
+		return memberService.idCheck(user_id);
+	}
+``` 
+
+- JSP 쪽 Json 데이터를 Ajax로 처리(Jquery .blur() <-> .focus() 이벤트의미 파악)
+
+```
+<span id="id_check"></span>
+<script>
+	// 아이디 중복 검사(1 = 중복 / 0 = 중복아님)
+	$("#user_id").blur(function() {
+		var user_id = $('#user_id').val();
+		$.ajax({
+				url : '/admin/member/idcheck?user_id='+ user_id,
+				type : 'get',
+				success : function(data) {
+					if (data == 1) {
+						$("#id_check").text("사용중인 아이디입니다.");
+						$("#id_check").css("color", "red");
+						$("#id_submit").attr("disabled", true);
+					} else {
+						$("#id_check").text("");
+						$("#reg_submit").attr("disabled", false);
+					}
+				},
+				error : function() {
+					alert('Rest API가 작동하지 않습니다.');
+				}
+		});
+	});
+</script>
+```
+
 ### 사용자페이지 회원가입 기능 만들기
 - 기존 관리자 페이지에 있는 로직 그대로 사용
 - 사용자용 마이페이지 만들기(컨트롤러 경로, jsp 페이지)
