@@ -387,7 +387,7 @@ public List<BoardTypeVO> CommonMap(Model model, HttpServletRequest request) thro
 
 ### 관리자단 회원등록시 중복ID체크하는 코딩 넣기(RestAPI 방식으로 처리)
 - 댓글에 사용된 @RestController 가 아닌 일반 @Controller에서 사용할때는
-- @RequestMapping아래쪽에 @ResponseBody 애노테이션으로 Json데이터로 리턴값을 jsp로 id 중복체크한 값을 보내줌.
+- @RequestMapping아래쪽에 @ResponseBody 애노테이션 역할은 리턴값을 body내용[Json데이터]만 추출해서 jsp로 보내줌.
 
 ```
 	//id 중복 체크 컨트롤러 (resultType값 1 = 중복 / 0 = 중복아님)
