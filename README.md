@@ -37,3 +37,15 @@
 
 - 위에 사용된 소프트웨어는 자유SW 또는 GNU / LGPL / MIT license 입니다.
 - [NCS학습모듈] https://ncs.go.kr/unity/th03/ncsSearchMain.do :/정보통신/정보기술/정보기술개발/응용SW엔지니어링/요구사항 확인
+
+### 강사 블로그 참고(Java기반 오픈CMS 만들기)
+
+### Ps1. 심플홈템플릿(이하 sht로 표기)을 이용한 CMS 만들기(아래)
+- https://egov-start.herokuapp.com/ 깃주소: https://github.com/miniplugin/egov
+( admin / admin**** )
+
+### Ps2. 작업한 전자정부표준프레임웍(이하 egov로 표기) 기반 CMS 에서 연동 SW 점검1 + 점검2.
+- https://egov-timespace.herokuapp.com/ 깃주소: https://github.com/miniplugin/egov-timespace
+
+### Ps3. 파스타 클라우드 사용 및 프로젝트 배포
+- 파이프라인 구성: http://blog.daum.net/web_design/578
