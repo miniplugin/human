@@ -404,7 +404,7 @@ public int memberIdCheck(@RequestParam("user_id") String user_id) throws Excepti
 }
 ``` 
 
-- JSP 쪽 Json 데이터를 Ajax로 처리(Jquery .blur() <-> .focus() 이벤트의미 파악)
+- JSP 쪽 script에서 text 데이터를  Ajax로 처리(Jquery .blur() <-> .focus() 이벤트의미 파악)
 
 ```
 <span id="id_check"></span>
