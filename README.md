@@ -403,7 +403,7 @@ public List<BoardTypeVO> CommonMap(Model model, HttpServletRequest request) thro
 			)
 		</if>
 		<if test="searchType == 'idcheck'.toString()">
-			user_id = #{searchKeyword}
+			AND user_id = #{searchKeyword}
 		</if>
 	</if>
 </sql>
