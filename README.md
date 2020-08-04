@@ -390,6 +390,23 @@ public List<BoardTypeVO> CommonMap(Model model, HttpServletRequest request) thro
 - @RequestMapping아래쪽에 @ResponseBody 애노테이션 역할은 리턴값을 body내용[text데이터]만 추출해서 jsp로 보내줌.
 
 ```
+<!-- 공통사용 검색쿼리 -->
+<sql id="sqlWhere">
+	<if test="searchType !=null">
+		<if test="searchType == 'all'.toString()">
+			AND (
+			user_name LIKE '%'||#{searchKeyword}||'%'
+			OR
+			user_id LIKE '%'||#{searchKeyword}||'%'
+			OR
+			email LIKE '%'||#{searchKeyword}||'%'
+			)
+		</if>
+		<if test="searchType == 'idcheck'.toString()">
+			user_id = #{searchKeyword}
+		</if>
+	</if>
+</sql>
 /**
  * 회원아이디 조회 입니다.
  * @throws Exception 
@@ -398,7 +415,7 @@ public List<BoardTypeVO> CommonMap(Model model, HttpServletRequest request) thro
 @ResponseBody 
 public int memberIdCheck(@RequestParam("user_id") String user_id) throws Exception {
 	PageVO pageVO = new PageVO();
-	pageVO.setSearchType("all");
+	pageVO.setSearchType("idcheck");
 	pageVO.setSearchKeyword(user_id);
 	return memberService.countUserId(pageVO);
 }
