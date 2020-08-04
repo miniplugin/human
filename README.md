@@ -481,3 +481,6 @@ getPage("/reply/select/"+bno + "/" + replyPage);
 2. https://github.com/miniplugin(개인폴더) 
  - 핵심은 레포지토리명을 => miniplugin.github.io (레포지토리명)
 3. https://miniplugin.github.io (호스트네임)으로 접근가능.
+
+### 20200803 오라클 작업용 백업파일 다운로드(아래)
+[download this](git_img/oracle_20200803.sql)
