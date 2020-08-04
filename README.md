@@ -484,3 +484,13 @@ getPage("/reply/select/"+bno + "/" + replyPage);
 
 ### 20200803 오라클 작업용 백업파일 다운로드(아래)
 [download this](git_img/oracle_20200803.sql)
+- 20200803일 작업내용 (복사)
+```
+1. src/main/java/org/edu/controller/AdminController.java
+2. src/main/java/org/edu/dao/BoardDAOImpl.java
+3. src/main/java/org/edu/dao/IF_BoardDAO.java
+4. src/main/java/org/edu/service/BoardServiceImpl.java
+5. src/main/java/org/edu/service/IF_BoardService.java
+6. src/main/resources/mappers/boardMapper.xml
+7. src/main/webapp/WEB-INF/views/admin/bodtype/bodtype_list.jsp
+```
