@@ -387,21 +387,28 @@ public List<BoardTypeVO> CommonMap(Model model, HttpServletRequest request) thro
 
 ### 관리자단 회원등록시 중복ID체크하는 코딩 넣기(RestAPI 방식으로 처리)
 - 댓글에 사용된 @RestController 가 아닌 일반 @Controller에서 사용할때는
-- @RequestMapping아래쪽에 @ResponseBody 애노테이션 역할은 리턴값을 body내용[Json데이터]만 추출해서 jsp로 보내줌.
+- @RequestMapping아래쪽에 @ResponseBody 애노테이션 역할은 리턴값을 body내용[text데이터]만 추출해서 jsp로 보내줌.
 
 ```
-	//id 중복 체크 컨트롤러 (resultType값 1 = 중복 / 0 = 중복아님)
-	@RequestMapping(value = "/member/idcheck", method = RequestMethod.GET)
-	@ResponseBody
-	public int idCheck(@RequestParam("user_id") String user_id) {
-		return memberService.idCheck(user_id);
-	}
+/**
+ * 회원아이디 조회 입니다.
+ * @throws Exception 
+ */
+@RequestMapping(value = "/member/idcheck", method = RequestMethod.GET)
+@ResponseBody 
+public int memberIdCheck(@RequestParam("user_id") String user_id) throws Exception {
+	PageVO pageVO = new PageVO();
+	pageVO.setSearchType("all");
+	pageVO.setSearchKeyword(user_id);
+	return memberService.countUserId(pageVO);
+}
 ``` 
 
 - JSP 쪽 Json 데이터를 Ajax로 처리(Jquery .blur() <-> .focus() 이벤트의미 파악)
 
 ```
 <span id="id_check"></span>
+<button disabled id="id_submit" type="submit" class="btn btn-warning">Submit</button>
 <script>
 	// 아이디 중복 검사(1 = 중복 / 0 = 중복아님)
 	$("#user_id").blur(function() {
@@ -416,7 +423,7 @@ public List<BoardTypeVO> CommonMap(Model model, HttpServletRequest request) thro
 						$("#id_submit").attr("disabled", true);
 					} else {
 						$("#id_check").text("");
-						$("#reg_submit").attr("disabled", false);
+						$("#id_submit").attr("disabled", false);
 					}
 				},
 				error : function() {
