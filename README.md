@@ -494,3 +494,30 @@ getPage("/reply/select/"+bno + "/" + replyPage);
 6. src/main/resources/mappers/boardMapper.xml
 7. src/main/webapp/WEB-INF/views/admin/bodtype/bodtype_list.jsp
 ```
+
+### IE와 크롬에서 모두 첨부파일 이미지 미리보기 가능하게 하는 코드 추가(20200805)
+
+```
+/**
+ * 게시물 첨부파일 이미지보기 메서드 구현(IE, 크롬 공통)
+ * @throws IOException 
+ */
+@RequestMapping(value = "/image_preview", method = RequestMethod.GET, produces = MediaType.IMAGE_JPEG_VALUE)
+@ResponseBody
+public byte[] getImageAsByteArray(@RequestParam("filename") String fileName, HttpServletResponse response) throws IOException {
+	FileInputStream fis = null;
+	ByteArrayOutputStream baos = new ByteArrayOutputStream();
+	fis = new FileInputStream(uploadPath + "/" + fileName);
+	int readCount = 0;
+	byte[] buffer = new byte[1024];
+	byte[] fileArray = null;
+while((readCount = fis.read(buffer)) != -1){
+	baos.write(buffer,0,readCount);
+}
+fileArray = baos.toByteArray();
+fis.close();
+baos.close();
+return fileArray;
+}
+```
+
