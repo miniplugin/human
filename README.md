@@ -115,7 +115,7 @@ public void testJobMethod() throws Exception;
 ========
 웹서버를 실행하면 스케줄에 따라서 배치프로그램이 자동 실행됨
 ```
-### 파스타 클라우드 신청하기
+### 파스타 클라우드 신청하기(신청완료 후 클라우드 Mysql과 스프링프로젝트 연동하기 실습)
 - 파스타 서비스 정상제공됩니다. 신규 신청이 필요합니다. https://paas-ta.kr/experience/apply 
 - http://playpark.paas-ta.org/
 
