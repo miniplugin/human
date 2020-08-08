@@ -1,4 +1,4 @@
-## 애플리케이션 설계 (v8.0.0)
+## 서버프로그램 구현 (v8.0.0)
  
 ---
 
@@ -115,8 +115,74 @@ public void testJobMethod() throws Exception;
 ========
 웹서버를 실행하면 스케줄에 따라서 배치프로그램이 자동 실행됨
 ```
+### 파스타 클라우드 신청하기
+- 파스타 서비스 정상제공됩니다. 신규 신청이 필요합니다. https://paas-ta.kr/experience/apply 
+- http://playpark.paas-ta.org/
+
+### 전자정부표준프레임워크 [관리자관리]메뉴의 CRUD 기능 추가
+- 기존 구조파악(ERD, 물리Table, 메이븐pom, web.xml이후 순서 따라감...)
+- Hsql DB -> Mysql 로 마이그레이션( 주의, '0000-00-00 00:00:00' DDL문에서 default 일시를 now()함수로 변경.)
+- 기본 sht(심플홈템플릿)에서 추가하거나 수정한 파일들(아래)
+------------------ 물리DB 부분(아래)
+
+```
+# 사용자정보 테이블 확인(일반회원+업무사용자+기업회원 중 업무사용자테이블 사용)
+# 업무사용자테이블명 = lettnemplyrinfo
+# 회원가입시 공통코드 테이블과 상세 테이블에 회원상태값 넣기(아래)
+INSERT INTO lettccmmncode VALUES (
+'COM013', '회원상태', '회원 가입 신청/승인/삭제를 위한 상태 구분', 'Y', 'LET', now(), 'SYSTEM', now(), 'SYSTEM'
+);
+INSERT INTO lettccmmndetailcode VALUES ('COM013', 'A', '회원 가입 신청 상태', '회원 가입 신청 상태', 'Y', now(), 'SYSTEM', now(), 'SYSTEM');
+INSERT INTO lettccmmndetailcode VALUES ('COM013', 'D', '회원 가입 삭제 상태', '회원 가입 삭제 상태', 'Y', now(), 'SYSTEM', now(), 'SYSTEM');
+INSERT INTO lettccmmndetailcode VALUES ('COM013', 'P', '회원 가입 승인 상태', '회원 가입 승인 상태', 'Y', now(), 'SYSTEM', now(), 'SYSTEM');
+
+# ID Generation Service(AI)를 활용하기 위해서 Sequence 저장테이블인 COMTECOPSEQ에 USRCNFRM_ID 항목을 추가해야 한다. 테이블이 생성되어 있는 경우라면 인서트 구문만을 수행한다.(본시스템의 기능 중에서 일반회원, 기업회원관리에서도 USRCNFRM_ID항목을 사용하여 자동증가 고유아이디를 생성한다. 관련정보: https://www.egovframe.go.kr/wiki/doku.php?id=egovframework:%EC%82%AC%EC%9A%A9%EC%9E%90_%EA%B4%80%EB%A6%AC )
+CREATE TABLE comtecopseq (
+    TABLE_NAME VARCHAR(20) NOT NULL,
+    NEXT_ID DECIMAL(30 , 0 ) DEFAULT NULL,
+    PRIMARY KEY (TABLE_NAME),
+    UNIQUE KEY COMTECOPSEQ_PK (TABLE_NAME)
+)  ENGINE=INNODB DEFAULT CHARSET=UTF8;
+INSERT INTO `comtecopseq` VALUES ('USRCNFRM_ID',2);
+
+```
+------------------ 설정 부분(아래)
+- pom.xml(mysql 사용 및 log4jdbc 드라이버사용)
+- src/main/resources/egovframework/egovProps/globals.properties 설정파일 수정.
+- src/main/resources/egovframework/spring/com/context-datasource.xml 설정파일 수정.
+------------------- 쿼리 부분(아래)
+- src/main/resources/egovframework/sqlmap/config/mysql/sql-map-config-mysql-uss.xml 쿼리위치파일 추가.
+- src/main/resources/egovframework/sqlmap/let/uss/umt/EgovMberManage_SQL_Mysql.xml 쿼리파일 추가.
+------------------- 서비스 + 컨트롤러 클래스 부분(아래)
+- egovframework.let.uss.umt.~ 시작하는 자바 패키지 3개 추가
+------------------- 뷰 css,js 부분(아래)
+- src/main/webapp/css/default.css 추가
+- src/main/webapp/js/EgovZipPopup.js
+------------------- 뷰 스프링 설정 수정(아래)
+- src/main/webapp/WEB-INF/config/egovframework/springmvc/egov-com-servlet.xml
+```
+<!-- 로그인 체크가 필요한 URL과 로그인 여부를 체크해준다 -->
+    <mvc:interceptors>
+        <mvc:interceptor>
+		...
+		<mvc:mapping path="/uss/umt/mber/*.do"/>
+		...
+		</mvc:interceptor>
+    </mvc:interceptors>		
+```
+------------------- 뷰 jsp 부분(아래)
+- src/main/webapp/WEB-INF/jsp/cmm/uss/umt/6개jsp파일
+- src/main/webapp/WEB-INF/jsp/main/inc/EgovIncLeftmenu.jsp (메뉴추가)
+
+```
+<li class="dept02"><a href="javascript:fn_main_headPageAction('57','uss/umt/mber/EgovMberManage.do')">관리자관리</a></li>
+```
+작업결과 소스: [download this](git_img/home.zip)
+데이터베이스쿼리: [download this](git_img/hst20200808.sql)
+데이터베이스ERD(워크벤치): [download this](git_img/simple_home.mwb)
 
 ### 참고자료 출처(아래)
+- 강사자료: http://blog.daum.net/web_design/search/new%EC%A0%84%EC%9E%90%EC%A0%95%EB%B6%80%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8D
 - 학습모듈: https://ncs.go.kr/unity/th03/ncsSearchMain.do 20.정보통신 > 01.정보기술 > 02.정보기술개발 > 02.응용SW엔지니어링
 - 배치프로그램 적용기술 참조:(아래)
  
