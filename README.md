@@ -134,7 +134,7 @@ for(MemberVO vo:memberDAO.testJobMethod()) {
 - 기존 구조파악(ERD, 물리Table, 메이븐pom, web.xml이후 순서 따라감...)
 - Hsql DB -> Mysql 로 마이그레이션( 주의, '0000-00-00 00:00:00' DDL문에서 default 일시를 now()함수로 변경.)
 - 기본 sht(심플홈템플릿)에서 추가하거나 수정한 파일들(아래)
------------------- 물리DB 부분(아래)
+- ----------------- 물리DB 부분(아래)
 
 ```
 # 사용자정보 테이블 확인(일반회원+업무사용자+기업회원 중 업무사용자테이블 사용)
@@ -157,26 +157,26 @@ CREATE TABLE comtecopseq (
 INSERT INTO `comtecopseq` VALUES ('USRCNFRM_ID',1);
 
 ```
------------------- 설정 부분(아래)
+- ----------------- 설정 부분(아래)
 - pom.xml(mysql 사용 및 log4jdbc 드라이버사용)
 - src/main/resources/egovframework/egovProps/globals.properties 설정파일 수정.
 - 유니코드 인코딩/디코딩 확인: https://www.online-toolz.com/langs/ko/tool-ko-text-unicode-entities-convertor.html
 - src/main/resources/egovframework/spring/com/context-datasource.xml 설정파일 수정.
------------------- iBatis와 myBatis 차이
+- ----------------- iBatis와 myBatis 차이
 - egov 기본: 아이바티스 ( context-sqlMap.xml ) 
 - 아이바티스설명(sqlmap 폴더사용): https://www.egovframe.go.kr/wiki/doku.php?id=egovframework:rte3.5:psl:data_access
 - egov 확장: 마이바티스 ( context-mapper.xml 추가필요 )
 - 마이바티스설명(mapper 폴더사용): https://www.egovframe.go.kr/wiki/doku.php?id=egovframework:rte2:psl:dataaccess:mybatisguide
 - 아이바티스 vs 마이바티스 비교: https://www.egovframe.go.kr/wiki/doku.php?id=egovframework:rte2:psl:dataaccess:ibatis_vs_mybatis
-------------------- 쿼리 부분(아래)
+- ------------------ 쿼리 부분(아래)
 - src/main/resources/egovframework/sqlmap/config/mysql/sql-map-config-mysql-uss.xml 쿼리위치파일 추가.
 - src/main/resources/egovframework/sqlmap/let/uss/umt/EgovMberManage_SQL_Mysql.xml 쿼리파일 추가.
-------------------- 서비스 + 컨트롤러 클래스 부분(아래)
+- ------------------ 서비스 + 컨트롤러 클래스 부분(아래)
 - egovframework.let.uss.umt.~ 시작하는 자바 패키지 3개 추가
-------------------- 뷰 css,js 부분(아래)
+- ------------------ 뷰 css,js 부분(아래)
 - src/main/webapp/css/default.css 추가
 - src/main/webapp/js/EgovZipPopup.js
-------------------- 뷰 스프링 설정 수정(아래)
+- ------------------ 뷰 스프링 설정 수정(아래)
 - src/main/webapp/WEB-INF/config/egovframework/springmvc/egov-com-servlet.xml
 ```
 <!-- 로그인 체크가 필요한 URL과 로그인 여부를 체크해준다 -->
@@ -188,7 +188,7 @@ INSERT INTO `comtecopseq` VALUES ('USRCNFRM_ID',1);
 		</mvc:interceptor>
     </mvc:interceptors>		
 ```
-------------------- 뷰 jsp 부분(아래)
+- ------------------ 뷰 jsp 부분(아래)
 - src/main/webapp/WEB-INF/jsp/cmm/uss/umt/6개jsp파일
 - src/main/webapp/WEB-INF/jsp/main/inc/EgovIncLeftmenu.jsp (메뉴추가)
 
