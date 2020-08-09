@@ -199,6 +199,11 @@ INSERT INTO `comtecopseq` VALUES ('USRCNFRM_ID',1);
 데이터베이스쿼리: [download this](git_img/hst20200808.sql)
 데이터베이스ERD(워크벤치): [download this](git_img/simple_home.mwb)
 
+### 미션: 권한그룹코드 CRUD 만들기(마이바티스사용)
+- 권한그룹관리 메뉴 추가
+- 회원등록에 사용되는 groupId_result 값 출력이 목표
+
+
 ### 참고자료 출처(아래)
 - 강사자료: http://blog.daum.net/web_design/search/new%EC%A0%84%EC%9E%90%EC%A0%95%EB%B6%80%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8D
 - 학습모듈: https://ncs.go.kr/unity/th03/ncsSearchMain.do 20.정보통신 > 01.정보기술 > 02.정보기술개발 > 02.응용SW엔지니어링
