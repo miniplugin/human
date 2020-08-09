@@ -154,7 +154,7 @@ CREATE TABLE comtecopseq (
     PRIMARY KEY (TABLE_NAME),
     UNIQUE KEY COMTECOPSEQ_PK (TABLE_NAME)
 )  ENGINE=INNODB DEFAULT CHARSET=UTF8;
-INSERT INTO `comtecopseq` VALUES ('USRCNFRM_ID',2);
+INSERT INTO `comtecopseq` VALUES ('USRCNFRM_ID',1);
 
 ```
 ------------------ 설정 부분(아래)
@@ -162,6 +162,12 @@ INSERT INTO `comtecopseq` VALUES ('USRCNFRM_ID',2);
 - src/main/resources/egovframework/egovProps/globals.properties 설정파일 수정.
 - 유니코드 인코딩/디코딩 확인: https://www.online-toolz.com/langs/ko/tool-ko-text-unicode-entities-convertor.html
 - src/main/resources/egovframework/spring/com/context-datasource.xml 설정파일 수정.
+------------------ iBatis와 myBatis 차이
+- egov 기본: 아이바티스 ( context-sqlMap.xml ) 
+- 아이바티스설명(sqlmap 폴더사용): https://www.egovframe.go.kr/wiki/doku.php?id=egovframework:rte3.5:psl:data_access
+- egov 확장: 마이바티스 ( context-mapper.xml 추가필요 )
+- 마이바티스설명(mapper 폴더사용): https://www.egovframe.go.kr/wiki/doku.php?id=egovframework:rte2:psl:dataaccess:mybatisguide
+- 아이바티스 vs 마이바티스 비교: https://www.egovframe.go.kr/wiki/doku.php?id=egovframework:rte2:psl:dataaccess:ibatis_vs_mybatis
 ------------------- 쿼리 부분(아래)
 - src/main/resources/egovframework/sqlmap/config/mysql/sql-map-config-mysql-uss.xml 쿼리위치파일 추가.
 - src/main/resources/egovframework/sqlmap/let/uss/umt/EgovMberManage_SQL_Mysql.xml 쿼리파일 추가.
