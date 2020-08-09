@@ -118,6 +118,25 @@ public void testJobMethod() throws Exception;
 ### 파스타 클라우드 신청하기(신청완료 후 클라우드 Mysql과 스프링프로젝트 연동하기 실습)
 - 파스타 서비스 정상제공됩니다. 신규 신청이 필요합니다. https://paas-ta.kr/experience/apply 
 - http://playpark.paas-ta.org/
+- 첫째로 작업한 스프링 프로젝트(Hsql용)을 이클립스에서 파스타로 배포 합니다.
+- 둘째로 위에서 성공한 소스를 Mysql용으로 변경한 후 이클립스에서 파스타로 배포 합니다.
+
+### 클라우드 Mysql 원격제어하기: 클라우드 파스타 php앱 추가 후 배포 소스[download this](git_img/phpmyadmin.zip)
+- 핵심소스: config.inc.php, libraries/classes/Plugins/Auth/AuthenticationCookie.php
+- 클라우드에 배포: php프로젝는 Java프로젝트처럼 이클립스 플러그인으로 배포할 수 없기 때문에 아래처럼 배포
+- 우선 윈도우용 cf cli 를 설치한다. https://github.com/cloudfoundry/cli#downloads (아래 직접 다운로드 있음)
+- 직접다운로드 [download this](git_img/cf-cli-installer_6.51.0_winx64.zip)
+
+```
+터미널 상태에서 phpmyadmin 프로젝트로 이동
+>cf login
+API endpoint: https://api.paas-ta.org
+Email> boramcom@daum.net (본인 파스타 이메일)
+Password> (본인 파스타 패스워드)
+Authenticating...
+OK
+>cf push 또는 cf push -s cflinuxfs3 (cflinuxfs3으로 스택을 지정해서 배포)
+```
 
 ### 서버프로그램 미션
 - 6개월 동안 회원정보 수정이 없는 회원 휴면계정으로 업데이트 하기
@@ -199,10 +218,17 @@ INSERT INTO `comtecopseq` VALUES ('USRCNFRM_ID',1);
 데이터베이스쿼리: [download this](git_img/hst20200808.sql)
 데이터베이스ERD(워크벤치): [download this](git_img/simple_home.mwb)
 
-### 미션: 권한그룹코드 CRUD 만들기(마이바티스사용)
+### 미션1: 권한그룹코드 CRUD 만들기(마이바티스사용)
 - 권한그룹관리 메뉴 추가
 - 회원등록에 사용되는 groupId_result 값 출력이 목표
+- 권한등급및회원테이블관계(아래)
+![ex_screenshot](./git_img/auth_member.jpg)
 
+### 미션2: 공통코드관리 CRUD 만들기(마이바티스사용)
+- 공통코드관리 메뉴 추가
+- 회원등록에 사용되는 mberSttus_result 값 출력이 목표
+- 공통코드에 사용된 테이블관계(아래)
+![ex_screenshot](./git_img/com_code.jpg)
 
 ### 참고자료 출처(아래)
 - 강사자료: http://blog.daum.net/web_design/search/new%EC%A0%84%EC%9E%90%EC%A0%95%EB%B6%80%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8D
