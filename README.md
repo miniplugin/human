@@ -119,6 +119,17 @@ public void testJobMethod() throws Exception;
 - 파스타 서비스 정상제공됩니다. 신규 신청이 필요합니다. https://paas-ta.kr/experience/apply 
 - http://playpark.paas-ta.org/
 
+### 서버프로그램 미션
+- 6개월 동안 회원정보 수정이 없는 회원 휴면계정으로 업데이트 하기
+
+```
+//추가한 코딩(MemberServiceImpl.java파일)
+System.out.println("===========6개월간 회원정보 수정없는 회원 휴면계정으로 만들기");
+for(MemberVO vo:memberDAO.testJobMethod()) {
+	vo.setEnabled(false);
+	memberDAO.updateMember(vo);
+}
+```
 ### 전자정부표준프레임워크 [관리자관리]메뉴의 CRUD 기능 추가
 - 기존 구조파악(ERD, 물리Table, 메이븐pom, web.xml이후 순서 따라감...)
 - Hsql DB -> Mysql 로 마이그레이션( 주의, '0000-00-00 00:00:00' DDL문에서 default 일시를 now()함수로 변경.)
@@ -149,6 +160,7 @@ INSERT INTO `comtecopseq` VALUES ('USRCNFRM_ID',2);
 ------------------ 설정 부분(아래)
 - pom.xml(mysql 사용 및 log4jdbc 드라이버사용)
 - src/main/resources/egovframework/egovProps/globals.properties 설정파일 수정.
+- 유니코드 인코딩/디코딩 확인: https://www.online-toolz.com/langs/ko/tool-ko-text-unicode-entities-convertor.html
 - src/main/resources/egovframework/spring/com/context-datasource.xml 설정파일 수정.
 ------------------- 쿼리 부분(아래)
 - src/main/resources/egovframework/sqlmap/config/mysql/sql-map-config-mysql-uss.xml 쿼리위치파일 추가.
