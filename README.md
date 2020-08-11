@@ -119,9 +119,9 @@ public void testJobMethod() throws Exception;
 - 파스타 서비스 정상제공됩니다. 신규 신청이 필요합니다. https://paas-ta.kr/experience/apply 
 - http://playpark.paas-ta.org/
 - 첫째로 작업한 스프링 프로젝트(Hsql용)을 이클립스에서 파스타로 배포 합니다.
-- 둘째로 위에서 성공한 소스를 Mysql용으로 변경한 후 이클립스에서 파스타로 배포 합니다.
+- 둘째로 위에서 성공한 소스를 Mysql용으로 변경한 후 이클립스에서 파스타로 배포 합니다.(주, 프로젝트명에 _ 언더바가 있으면 않됩니다.)
 
-### 클라우드 Mysql 원격제어하기: 클라우드 파스타 php앱 추가 후 배포 소스[download this](git_img/phpmyadmin.zip)
+### 클라우드 Mysql 원격제어하기: 클라우드 파스타 php앱 추가 후 배포 소스[download this](git_img/myadmin.zip)
 - 핵심소스: config.inc.php, libraries/classes/Plugins/Auth/AuthenticationCookie.php
 - 클라우드에 배포: php프로젝는 Java프로젝트처럼 이클립스 플러그인으로 배포할 수 없기 때문에 아래처럼 배포
 - 우선 윈도우용 cf cli 를 설치한다. https://github.com/cloudfoundry/cli#downloads (아래 직접 다운로드 있음)
