@@ -78,6 +78,100 @@ create table member
 - 인터페이스 구현 검증.
 - 인터페이스 오류 처리 확인 및 보고서 작성.
 
+### 타일즈 템플릿 사용(기술참고:https://opensrc.tistory.com/117)
+---
+- 질문: https://www.egovframe.go.kr/uss/olh/qna/QnaInqireCoUpdt.do?qaId=QA_00000000000017285&pageIndex=1
+---
+#### 1. 의존 라이브러리 모듈 설치
+- 우선 pom.xml 파일에 dependency 정보를 추가
+
+```
+<!-- pom.xml -->
+<dependencies>
+    <!-- Tiles -->
+    <dependency>
+        <groupId>org.apache.tiles</groupId>
+        <artifactId>tiles-extras</artifactId>
+        <version>3.0.8</version>
+    </dependency>
+</dependencies>
+```
+#### 2. 스프링 환경 설정
+- 타일즈 뷰리졸버(ViewResolver)와 타일즈를 컨트롤할 xml파일 설정을 해준다
+- servlet-context.xml or dispatcher-servlet.xml 중에 아래와 같이 설정
+- 주)tiles설정중 xml파일의 위치나 이름확인
+
+```
+<bean id="tilesViewResolver" class="org.springframework.web.servlet.view.UrlBasedViewResolver"
+p:order="1" p:viewClass="org.springframework.web.servlet.view.tiles3.TilesView" />
+<bean id="tilesConfigurer" class="org.springframework.web.servlet.view.tiles3.TilesConfigurer" >
+    <property name="definitions">
+        <value>classpath*:egovframework/spring/context-tiles.xml</value>
+    </property>
+</bean>
+```
+#### 3. 타일즈(Tiles) 설정
+- tiles 설정 xml(아래: 폴더구조 tiles/layouts/레이아웃,헤더,푸터파일 생성)
+- 타일즈 xml 스키마(schema) 선언이 중요하다.
+
+```
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+ "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+    <definition name="tiles_layout"  templateExpression="/WEB-INF/views/tiles/layouts/layout.jsp">
+        <put-attribute name="header" expression="/WEB-INF/views/tiles/layouts/header.jsp" />
+        <put-attribute name="body" expression="/WEB-INF/views/tiles/layouts/body.jsp" />
+        <put-attribute name="footer" expression="/WEB-INF/views/tiles/layouts/footer.jsp" />
+    </definition>
+    <definition name="*.giro" extends="tiles_layout">
+        <put-attribute name="body" expression="/WEB-INF/views/tiles/{1}.jsp" />
+    </definition>
+    <definition name="*/*.giro" extends="tiles_layout">
+        <put-attribute name="body" expression="/WEB-INF/views/tiles/{1}/{2}.jsp" />
+    </definition>
+    <definition name="*/*/*.giro" extends="tiles_layout">
+        <put-attribute name="body" expression="/WEB-INF/views/tiles/{1}/{2}/{3}.jsp" />
+    </definition>
+</tiles-definitions>
+```
+#### 4. jsp 뷰페이지 작성 예(아래)
+- 위와같이 파일들을 생성 한 후 아래와 같이 레이아웃 파일을 작성한다.
+- 타일즈 관련 tag를 사용해야 하므로 상단에 taglib를 통해 타일즈 tag를 선언해줘야 한다.
+
+```
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
+<%@ taglib uri="http://tiles.apache.org/tags-tiles" prefix="t"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+	<t:insertAttribute name="header" />
+</head>
+<body>
+	<t:insertAttribute name="body" />
+	<t:insertAttribute name="footer" />
+</body>
+</html>
+```
+#### 5. 컨트롤러에서 타일즈를 이용한 뷰 연결
+
+```
+import javax.servlet.http.HttpServletRequest;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+@RequestMapping(value = "/tiles")
+public class MgmtMain {
+    @RequestMapping(value = "/main.do")
+    public String main(HttpServletRequest request) {
+        return "main/index.giro";
+    }
+}
+```
 ### 참고자료 출처(아래)
 
 - 위에 사용된 소프트웨어는 자유SW 또는 GNU / LGPL / MIT license 입니다.
