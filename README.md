@@ -78,7 +78,7 @@ create table member
 - 인터페이스 구현 검증.
 - 인터페이스 오류 처리 확인 및 보고서 작성.
 
-### 타일즈 템플릿 사용
+### 전자정부 프로젝트에 타일즈 템플릿 사용
 ---
 - 질문: https://www.egovframe.go.kr/uss/olh/qna/QnaInqireCoUpdt.do?qaId=QA_00000000000017285&pageIndex=1
 ---
