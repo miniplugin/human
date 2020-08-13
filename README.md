@@ -143,6 +143,7 @@ p:order="0" p:viewClass="org.springframework.web.servlet.view.tiles3.TilesView" 
 #### 4. 컨트롤러에서 타일즈를 이용한 뷰 연결 샘플
 
 ```
+- main/java/egovframework/let/main/web/EgovMainController.java 클래스에 추가
 @RequestMapping(value = "/tiles/main.do")
 public String main(HttpServletRequest request) throws Exception {
 	return "EgovMainView.tiles";
