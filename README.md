@@ -96,10 +96,10 @@ create table member
     </dependency>
 </dependencies>
 ```
-#### 2. 스프링 환경 설정
+#### 2. 스프링 환경 설정 src\main\webapp\WEB-INF\config\egovframework\springmvc\
 - 타일즈 뷰리졸버(ViewResolver)와 타일즈를 컨트롤할 xml파일 설정을 해준다
-- egov-com-servlet.xml 중에 아래와 같이 설정 추가
-- 주) 기존 뷰해석기의 order="1" 추가한 뷰리졸버는 order="0", xml파일의 위치와 이름확인
+- egov-com-servlet.xml 중에 아래와 같이 설정 추가(기존 뷰리졸버는 변경없음)
+- 주) 기존 뷰해석기는 order="1",추가한 뷰리졸버는 order="0", xml파일의 위치와 이름확인
 
 ```
 <!-- 화면처리용 JSP 파일명의  prefix, suffix 처리에 대한 타일즈 설정추가 -->
@@ -116,7 +116,7 @@ p:order="0" p:viewClass="org.springframework.web.servlet.view.tiles3.TilesView" 
 <mvc:exclude-mapping path="/tiles/*.do"/>
 ...
 ```
-#### 3. 타일즈(Tiles) 설정
+#### 3. 타일즈(Tiles) 설정 egovframework/spring/com/context-tiles.xml
 - tiles 설정 xml(아래: 폴더구조 jsp/tiles/layouts/레이아웃,헤더,푸터파일 생성)
 - 타일즈 jsp/tiles폴더(생성)가 jsp/main폴더를 대체하게 처리하는 것을 목표로 한다.
 
