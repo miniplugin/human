@@ -98,8 +98,8 @@ create table member
 ```
 #### 2. 스프링 환경 설정
 - 타일즈 뷰리졸버(ViewResolver)와 타일즈를 컨트롤할 xml파일 설정을 해준다
-- egov-com-servlet.xml 중에 아래와 같이 설정
-- 주) xml파일의 위치와 이름확인
+- egov-com-servlet.xml 중에 아래와 같이 설정 추가
+- 주) 기존 뷰해석기의 order="1" 추가한 뷰리졸버는 order="0", xml파일의 위치와 이름확인
 
 ```
 <!-- 화면처리용 JSP 파일명의  prefix, suffix 처리에 대한 타일즈 설정추가 -->
@@ -110,6 +110,11 @@ p:order="0" p:viewClass="org.springframework.web.servlet.view.tiles3.TilesView" 
 		<value>classpath*:egovframework/spring/com/context-tiles.xml</value>
 	</property>
 </bean>
+...
+<!-- 로그인 체크가 필요한 URL과 로그인 여부를 체크해준다 아래 경로 추가 -->
+...
+<mvc:exclude-mapping path="/tiles/*.do"/>
+...
 ```
 #### 3. 타일즈(Tiles) 설정
 - tiles 설정 xml(아래: 폴더구조 jsp/tiles/layouts/레이아웃,헤더,푸터파일 생성)
