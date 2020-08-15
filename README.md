@@ -123,6 +123,7 @@
 
 ---
 - C언어 
+#### 강사자료: 구글프레젠테이션 https://drive.google.com/file/d/1uBq1FzFZyrc9T-gpU4S9W39rQL3gB6lC/view?usp=sharing
 #### 참고자료: https://freelec.co.kr/lecture/c-%EC%96%B8%EC%96%B4%EC%9D%98-%EB%B3%B8%EC%A7%88%EC%9D%84-%ED%8C%8C%ED%97%A4%EC%B9%98%EB%8B%A4/
 #### 예제소스: https://freelec.co.kr/datacenter/?mode=list&board_name=DataCenter2&order_by=fn_pid&order_type=desc&category1=&category2=&category3=&search_field=fn_title&search_text=C+%EC%96%B8%EC%96%B4+%EB%B3%B8%EC%83%89
 #### C언어이론 실습은 구름클라우드에서 합니다: https://ide.goorm.io/
