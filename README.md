@@ -117,6 +117,7 @@
 
 --- 
 - 이것이 자바다
+#### 강사자료: 구글프레젠테이션 https://drive.google.com/file/d/1Ns6S2g7RNdrspqnGXwCfGnEEWJ3j3KOx/view?usp=sharing
 #### 참고자료: https://www.youtube.com/playlist?list=PLVsNizTWUw7FPokuK8Cmlt72DQEt7hKZu
 #### 예제소스: https://www.hanbit.co.kr/support/supplement_list.html
 ---
