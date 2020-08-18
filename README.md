@@ -71,6 +71,14 @@ create table member
 	    ,CONSTRAINT MEMBERS_PK PRIMARY KEY (userid)
 	)
     INSERT INTO member VALUES ('user2','1234','kimilguk','user02@test.com',SYSDATE,SYSDATE);
+	주의) 오라클에서는 반드시 commit; 명령을 해야만, 위 insert가 실제 DB에 적용됩니다.
+
+JUnit테스트에서 selectMember()에는 아래 처럼 해야 제대로 된 결과가 출력됩니다.
+for(MemberVO vo:list) {
+	System.out.print("회원인덱스[" + cnt + "]:");
+	System.out.println(vo.toString());//기존 vo.toString();
+	cnt = cnt + 1;
+}
 ```
 
 ### 인터페이스 구현 검증하기(아래)
