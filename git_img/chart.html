@@ -1,0 +1,164 @@
+<html> 
+<head> 
+  <meta http-equiv="Content-type" content="text/html; charset=UTF-8"> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.js"></script>
+</head> 
+<body> 
+ 
+<div id="wrapper"> 
+	<table cellpadding="0" cellspacing="0" 
+		   style="width: 100%; border-collapse: collapse; background-color:white"> 
+		<tbody> 
+		<tr>
+			<td>
+				그룹별<br>통계챠트
+			</td>
+			<td>
+				<div>
+				<canvas id="chart_bar" class="chartjs" width="770" height="385" style="display: block; width: 770px; height: 385px;"></canvas>
+				</div>
+				<script>
+				//bar 막대챠트 디자인과 옵션 Start
+				var graphColors = [];
+				var graphOutlines = [];
+				var hoverColor = [];
+				var internalDataLength = 15;
+				i = 0;
+				while (i <= internalDataLength) {
+					var randomR = Math.floor((Math.random() * 130) + 100);
+					var randomG = Math.floor((Math.random() * 130) + 100);
+					var randomB = Math.floor((Math.random() * 130) + 100);
+				  
+					var graphBackground = "rgba(" 
+							+ randomR + ", " 
+							+ randomG + ", " 
+							+ randomB + ",0.2)";
+					graphColors.push(graphBackground);
+					
+					var graphOutline = "rgb(" 
+							+ (randomR - 80) + ", " 
+							+ (randomG - 80) + ", " 
+							+ (randomB - 80) + ")";
+					graphOutlines.push(graphOutline);
+					
+					var hoverColors = "rgb(" 
+							+ (randomR + 25) + ", " 
+							+ (randomG + 25) + ", " 
+							+ (randomB + 25) + ")";
+					hoverColor.push(hoverColors);
+					
+				  i++;
+				};
+				var chartOptions1 = {
+					scales: {
+						xAxes: [{
+							gridLines: {
+								zeroLineWidth: 2
+							},
+							ticks: {
+								beginAtZero: true,
+								min: 0,
+								max: 100,
+								stepSize: 10
+							},
+							scaleLabel: {
+								display: true,
+								labelString: "그룹별평균/그룹수"
+							}
+						}]
+					}
+				};
+				//bar 막대챠트 디자인과 옵션 End
+				//RestAPI에서 받은 배열데이터(Json데이터를 가공) Start
+				var json_labels = ["SQL응용","화면구현","소프트웨어 개발 보안 구축","애플리케이션 테스트 관리","애플리케이션 테스트 수행","정보시스템 이행","인터페이스 설계","애플리케이션 요구사항 분석","인터페이스 구현","제품 소프트웨어 패키징","애플리케이션 배포","프로그래밍 언어 활용","응용 SW 기초 기술 활용","소프트웨어 공학 활용","애플리케이션 리팩토링"];
+				var json_title = "웅용SW개발자 역량 종합진단 문제지";
+				var json_userinfo = "홍길동(test@test.ac.kr)";
+				var json_data = [75,100,50,75,75,75,75,75,75,75,75,75,83.33,75,50];
+				var json_avg = "73.89";
+				//RestAPI에서 받은 배열데이터(Json데이터를 가공) End
+				new Chart(document.getElementById("chart_bar"), {
+					"type": "horizontalBar",
+					"data": {
+						"labels": json_labels,
+						"datasets": [{
+							"label": "문제지: "+ json_title +"/ 응시자: "+ json_userinfo +" / 종합평균: "+ json_avg,
+							"data": json_data,
+							"fill": false,
+							"backgroundColor": graphColors,
+							"hoverBackgroundColor": hoverColor,
+							"borderColor": graphOutlines,
+							"borderWidth": 1
+						}]
+					},
+					"options": chartOptions1
+				});
+				</script>
+			</td>
+		</tr>
+		<tr><td colspan="2"><hr></hr></td></tr>
+		<tr>
+			<td>
+				카테고리별<br>통계챠트
+			</td>
+			<td>
+				<div>
+				<canvas id="chart_radar" class="chartjs" width="770" height="385" style="display: block; width: 770px; height: 385px;"></canvas>
+				</div>
+				<script>
+				//radar 레이더챠트 옵션 Start
+				var chartOptions2 = {
+					scale: {
+						ticks: {
+						  beginAtZero: true,
+						  min: 0,
+						  max: 100,
+						  stepSize: 10
+						},
+						pointLabels: {
+						  fontSize: 18,
+						  fontColor: graphOutlines
+						}
+					},
+					elements: {
+						line: {
+							tension: 0,
+							borderWidth: 3
+						}
+					}
+				};
+				//radar 레이더챠트 옵션 End
+				//RestAPI에서 받은 배열데이터(Json데이터를 가공) Start
+				var json_labels = ["공통","구현","배포","분석","설계","유지보수","테스트"];
+				var json_title = "웅용SW개발자 역량 종합진단 문제지";
+				var json_userinfo = "홍길동(test@test.ac.kr)";
+				var json_data = [75,87.5,75,75,75,50,75];
+				var json_avg = "73.89";
+				new Chart(document.getElementById("chart_radar"), {
+					"type": "radar",
+					"data": {
+						"labels": json_labels,
+						"datasets": [{
+							"label": "문제지: "+ json_title +" / 응시자: "+ json_userinfo +" / 종합평균: " + json_avg,
+							"data": [
+								75,87.5,75,75,75,50,75                				            ],
+							"fill": true,
+							"backgroundColor": "rgba(255, 99, 132, 0.2)",
+							"borderColor": "rgb(255, 99, 132)",
+							"pointBackgroundColor": "rgb(255, 99, 132)",
+							"pointBorderColor": "#fff",
+							"pointHoverBackgroundColor": "#fff",
+							"pointHoverBorderColor": "rgb(255, 99, 132)",
+							"borderWidth": 1
+						}]
+					},
+					"options": chartOptions2
+				});
+				</script>
+			</td>
+		</tr>
+		</tbody>
+	</table>
+</div>
+
+</body>
+</html>
