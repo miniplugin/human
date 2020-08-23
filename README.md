@@ -529,9 +529,9 @@ return fileArray;
 ### RestAPI와 연동된 시각화 도구 (아래 오픈소스 사용)
 [download this](git_img/chart.html)
 
-위 챠트소스에 적용된 내역은 아래와 같습니다.
-챠트소스URL: https://www.chartjs.org/
-라이센스정보: https://www.chartjs.org/docs/latest/notes/license.html (MIT라이센스)
-막대챠트: https://www.chartjs.org/docs/latest/charts/bar.html
-레이더챠트 : https://www.chartjs.org/docs/latest/charts/radar.html
+- 위 챠트소스에 적용된 내역은 아래와 같습니다.
+- 챠트소스URL: https://www.chartjs.org/
+- 라이센스정보: https://www.chartjs.org/docs/latest/notes/license.html (MIT라이센스)
+- 막대챠트: https://www.chartjs.org/docs/latest/charts/bar.html
+- 레이다챠트 : https://www.chartjs.org/docs/latest/charts/radar.html
 
