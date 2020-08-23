@@ -1,0 +1,122 @@
+===================================================
+2. 코딩으로 와이어프레임 설정하기(소스폴더명 참조)
+===================================================
+- 와이어프레임에서 레이아웃을 잡을 때 <HEADER>, <FOOTER>, <DIV>와 같은 태그를 이용하여 작성할 수 있습니다.
+- 여기에서는 HTML과 CSS 코딩을 이용하여 와이어프레임을 설정하도록 합니다.
+01. <header>를 이용하여 레이아웃 최상단 섹션, <div>를 이용하여 이미지 슬라이드 섹션과 콘텐츠 섹션, <footer>를 이용하여 바닥글 센션을 작성합니다. 작성한 내용은 html문서로 저장합니다.
+02. 레이아웃 영역의 크기 및 글꼴, 크기, 플로팅(floating) 등을 지정하기 위해 스타일시트파일을 작성합니다.
+css파일에 <body>, <html>, <header>, <footer> 요소에 대한 속성을 지정하며, <div>로 지정한 영역은 미리 지정한 class 선택자(imgslide, contents)를 이용하여 스타일 속성을 지정합니다. 각 박스 요소를 어느 쪽에 띄워서 정렬할 것인지를 지정하는 플로팅은 왼쪽이 되도록 float:left 로 지정합니다.
+03. 작성한 스타일은 css폴더에 style.css로 저장합니다.
+04. html문서에서 <head>태그안에 css파일을 연결합니다.
+ <link href="css/style.css" type="text/css" rel="stylesheet">
+05. 작업한 html문서를 크롬 브라우저에서 열어서 css에 지정한 값이 적용된 것을 확인합니다.
+06. 헤더<header> 영역에 로고 영역과 메뉴 영역으로 분할하는 <div> 태그를 입력합니다.
+header 영역에 로고와 메뉴가 들어갈 영역을 묶어서 <div class="top">처럼 지정합니다.
+top 클래스 안쪽에 로고자리와 <nav> 태그를 사용하여 메뉴자리를 생성합니다.
+07. css에서 top 클래스 영역에 스타일을 지정합니다.
+08. top 클래스내에 로고 부분과 메뉴부분에 해당하는 스타일을 지정합니다.
+ <nav> 요소로 지정된 박스 영역과 menu로 지정된 영역은 float:right 로 화면 오른쪽으로 위치하도록 지정합니다. 메뉴 전체 영역은 600px, 각 메뉴영역은 200px로 지정합니다.
+09. 지금까지 작업한 내용을 크롬으로 확인 합니다.
+10. 다음으로 이미지 슬라이드 영역과 콘텐츠 영역(세부3개) 으로 나누어 봅니다.
+11. 구분된 영역에 대한 css 스타일을 지정합니다.
+12. 지금까지 작업한 내용을 크롬으로 확인 합니다.
+13. footer 영역을 copyright 와 site 영역으로 나누기
+ <div> 요소를 사용하여 footer 영역을 copy영역과 site 영역을 생성합니다.
+14. css 파일에 footer 에 스타일을 지정합니다.
+ class 선택자 copy 로 지정된 영역은 float:left, site로 지정된 영역은 float:right 로 지정합니다.
+ class 선택자 site 로 지정된 영역은 width:400px, site의 li 태그 영역은 height:60px; width:400px 로 지정합니다.
+15. 위 예시에서는 메뉴가 들어가는 header 영역이 위쪽(상단)에 위치한 가로형 레이아웃으로 코딩 되어있습니다.
+HTML문서를 변경하지 않고 CSS 스타일 만으로 float, height, width 세 개의 속성값만 변경하여 header 영역이 화면 왼쪽에 배치되도록 합니다.
+===================================================
+3. 이미지 슬라이드, 페이드인아웃 구현하기(소스폴더명 참조)
+===================================================
+01. 소스 폴더에서 imageslide.html 문서를 열고 HTML 문서 구조를 파악합니다.
+02. 소스 CSS폴더에서 imgstyle.css 파일을 열고, 스타일 내용을 확인 합니다.
+ HTML 문서에서 이미지 슬라이드 영역은 class 선택자 imgs 로 지정하고, 이 선택자를 이용하여 스타일시트에서 해당 영역에 대한 속성을 지정합니다.
+ imgs 영역에 들어가는 이미지 요소들은 height:350px, width:1000px로 지정합니다.
+ imgs 영역의 하위 img 요소에 있는 이미지는 transition:all 1s 를 지정하여 이미지가 다른 이미지로 변경될때 1초에 걸쳐 자연스럽게 변경되도록 합니다.
+ position.relative 는 이미지 요소들이 화면 상단 왼쪽을 기준으로 어디에 위치할 것이지를 지정합니다. 여기서는 overflow:hidden 을 함께 지정하여 이미지가 height:350px, width:1000px만 나타나고 나머지는 숨겨지도록 합니다.
+03. CSS파일과 JQuery코어 파일을 연결합니다.
+ <link href="css/imgstyle.css" type="text/css" rel="stylesheet">
+ <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
+04. 이미지가 슬라이드 되도록 JQuery로 기능을 구현합니다.
+ <script>
+ var imgs = 2;
+ var now = 0;
+ function slide() {
+  now = now==imgs?0:now+=1;
+  $(".imgs>img").eq(now-1).css({"margin-left":"-2000px"});
+  $(".imgs>img").eq(now).css({"margin-left":"0px"});
+ }
+ function start() {
+  $(".imgs>img").eq(0).siblings().css({"margin-left":"-2000px"});
+  setInterval(function(){slide();},2000);
+ }
+ start();
+ </script>
+ 05. 이미지 페이드아웃을 JQuery로 구현합니다.
+  <script>
+ var imgs = 2;
+ var now = 0;
+ function slide() {
+  now = now==imgs?0:now+=1;
+  $(".imgs>img").eq(now-1).fadeOut(1000);
+  $(".imgs>img").eq(now).fadeIn(1000);
+ }
+ function start() {
+  $(".imgs>img").eq(0).siblings().fadeOut(1000);
+  setInterval(function(){slide();},2000);
+ }
+ start();
+ </script>
+===================================================
+4. 탭 메뉴 구현하기(소스폴더명 참조)
+===================================================
+탭 메뉴는 제한된 영역에서 콘텐츠의 일부는 보여주고 나머지 콘텐츠는 숨김으로써 보고 싶은 콘텐츠만 선택해서 볼수 있도록 하는 기능 입니다. 2개의 탭으로 구성합니다.
+01. 공지사항과 갤러리 2개의 탭 메뉴로 구성하기 위해서 <ul> <li> 요소를 사용하여 탭이름과 내용을 작성합니다.
+ 전체 탭 메뉴 영역을 class 명 tabmenu 로 지정하고, 내부 <li class="active"> 처럼 선택한 영역에 액티브 선택자를 줍니다.
+02. 전체 css스타일 * {list-style:none;}을 지정합니다. <a> 요소에 밑줄이 나타나지 않도록 text-decoration:none 을 작성합니다.
+ class 선택자  tabmenu 지정된 전체 탭메뉴 영역은 float:left 로 지정하고, 위치는 상단 왼쪽을 기준으로 절대 좌표를 부여하는 position:absolute 를 지정하여 화면상에 고정된 영역에 탭메뉴가 나타나도록 합니다.
+03. .tabmenu>li 영역은 공지사항, 갤러리로 나타나는 부분으로써, width:200px 로 지정합니다.
+ class='active' 로 지정된 영역의 배경색상을 #eeeeee 로 설정하고, 마우스 오버시 a:hover { background-color: #cccccc; }로 지정합니다. 해당 <div> 영역의 width:400px; height:200px 로 지정합니다.
+04. 탭영역의 테두리 크기는 1px, 색상은 #dddddd 로 지정합니다.
+05. .tabmenu>li:first-child a 는 가상 클래스 선택자로 li 요소가 가지고 있는 a 요소중 첫번째를 선택하는 것으로 해당영역의 테두리 오른쪽은 보이지 않도록 하였습니다. 이것은 테두리가 겹쳐서 두껩게 보이는 상황을 해결합니다.
+06. 탭 버튼 클릭시 화면이 전환 되도록 자바스크립트 제이쿼리(jQuery)를 사용하여 탭 기능을 구현합니다.
+ 우선 jQuery 코어를 사용하게 합니다. 아래 1줄을 <head> 요소 안쪽에 삽입합니다.
+ <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+07. 제이쿼리를 만듭니다.
+<script>
+ $(function() {
+	$('.tabmenu>li>a').click(function(){
+	$(this).parent().addClass("active").siblings().removeClass("active");
+		return false
+	});
+ });
+</script>
+ class 선택자 .tabmenu 로 지정된 영역의 자식요소 <li> 의 <a> 요소 영역을 클릭할 경우 현재 선택된 상위요소를 찾아서 active 클래스를 추가하고, 형제요소(siblings)의 active클래스를 삭제합니다.
+08. 작업 후 크롬으로 결과를 확인 합니다.
+===================================================
+5. 슬라이드 메뉴 구현하기(소스폴더명 참조)
+===================================================
+ 슬라이드 메뉴는 메인 메뉴에 마우스를 올리면 서브 메뉴가 부드럽게 나타나게 하는 기능 입니다.
+ 사용된 jQuery 액션은 mouseover, mouseout 입니다.
+
+01. <nav> 요소에 <ul class="navi"><li> 요소를 사용하여 메인 메뉴 목록을 만듭니다.
+ 메인 메뉴 <li> 안쪽에 <ul class="submenu"></ul>을 사용하여 서브 메뉴를 만듭니다.
+02. css 스타일을 적용합니다.
+ <nav> 요소에 float:right 를 지정합니다.
+ class navi 영역에 스타일을 지정합니다.
+ navi 클래스 내에 submenu 영역이 초기엔 나타지 않도록 스타일을 지정합니다. display:none; z-index:1; position:relative;
+03. 메뉴의 슬라이드 동작을 만들기 위한 slideDown(), slideUp() 사용 스크립트를 만듭니다.(아래)
+<script>
+jQuery(document).ready(function() {
+ $(".navi>li").mouseover(function(){
+  $(this).children(".submenu").stop().slideDown();
+  });
+ $(".navi>li").mouseout(function(){
+  $(this).children(".submenu").stop().slideUp();
+ });
+});
+</script>
+- $(document).ready(); 를 사용하면, HTML 문서의 DOM을 모두 로딩 한 후 자바스크립트 코드가 실행되도록 해 줍니다.
+- $(this)는 현재 마우스 오버/아웃 된 요소를 가리킵니다. jQuery 실행은 역순으로 됩니다. slideDown() -> stop()
