@@ -535,6 +535,6 @@ return fileArray;
 - 막대챠트: https://www.chartjs.org/docs/latest/charts/bar.html
 - 레이다챠트 : https://www.chartjs.org/docs/latest/charts/radar.html
 
-- Ps 프런트엔드 개발자용 코딩테스트 설명과 소스(취업 코딩테스트 대비)
-[프런트엔드 개발자용 설명 download this](git_img/coding_test.txt)
-[프런트엔드 개발자용 코딩 download this](git_img/coding_test.zip)
+### 프런트엔드 개발자용 코딩테스트 설명과 소스: 아래(취업 코딩테스트 대비용)
+- [프런트엔드 개발자용 설명 download this](git_img/coding_test.txt)
+- [프런트엔드 개발자용 코딩 download this](git_img/coding_test.zip)
