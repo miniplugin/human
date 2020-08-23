@@ -527,7 +527,7 @@ return fileArray;
 [download this](git_img/egov_package.xls)
 
 ### RestAPI와 연동된 시각화 도구 (아래 오픈소스 사용)
-[download this](git_img/chart.html)
+[챠트예제 소스 download this](git_img/chart.html)
 
 - 위 챠트소스에 적용된 내역은 아래와 같습니다.
 - 챠트소스URL: https://www.chartjs.org/
