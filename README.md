@@ -541,8 +541,31 @@ return fileArray;
 
 ### 비대면 수업시 필요한 프로그램 다운로드 목록(6개)
 - 1. 이클립스 (egov.zip) 다운로드 위치 https://drive.google.com/file/d/1GnIzkvZNgVj-o4EbHzoy5WSDCEWk3GAx/view?usp=sharing
+  ㅊ
 - 2. wamp 다운로드 위치 https://drive.google.com/file/d/1r2tUfV_eeYS2XhzXKabCZeEgeLP-LYL0/view?usp=sharing
+  주1), 암호 apmsetup 으로 추가해 주셔야 합나다. 
+```
+윈amp 작업표시줄의 아이콘 클릭 > phpMyAdmin > 로그인 후 > mysql 데이터베이스 user 테이블 선택 > root 선택 > 수정버튼 클릭
+> authentication_string 필드 타입 password 선택 후 apmsetup 입력 후 실행 버튼 클릭
+```
+
+  주2), 한글 입출력이 가능하게 my.ini 하단에 추가해 주셔야 합니다.
+```
+윈amp 작업표시줄의 아이콘 클릭 > MySQL > my.ini 클릭 후 제일 하단에 아래 내용 추가
+[client]
+default-character-set=utf8
+[mysqldump] 
+default-character-set = utf8
+[mysql]
+default-character-set=utf8
+[mysqld]
+init_connect="SET collation_connection = utf8_general_ci"
+init_connect="SET NAMES utf8"
+character-set-server = utf8
+```
 - 3. 워크벤치(mysql용) 다운로드 위치 https://drive.google.com/file/d/1j1GUtVGrB0IFxYv4_57r1PeThiWqNfs7/view?usp=sharing
 - 4. 안드로이드스튜디오.zip 다운로드 위치 https://drive.google.com/file/d/17y9mVdJ6Isgom1AQKpoFi5WIPQkDvWN4/view?usp=sharing
+  주) 반드시 C:\Android 에 압축을 풀어야 합니다.
 - 5. 오라클서버 다운로드 위치 https://drive.google.com/file/d/1L2XZuH-j47PaoscLNn16kqjPxFYmhi_F/view?usp=sharing
 - 6. sql디벨러퍼(oracle용) 다운로드 위치 https://drive.google.com/file/d/1n7jy85OeI06ipmDjKWFYxaYpTJY16lj-/view?usp=sharing
+- 7. 온라이 제안요청서 확인 https://www.smu.ac.kr/flexer/index.jsp?ftype=hwp&attachNo=467744
