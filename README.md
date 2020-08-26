@@ -543,10 +543,12 @@ return fileArray;
 - 1. 이클립스 (egov.zip) 다운로드 위치 https://drive.google.com/file/d/1GnIzkvZNgVj-o4EbHzoy5WSDCEWk3GAx/view?usp=sharing
 - 주) 반드시 C:\egov 에 압축을 풀어야 합니다. 
 - 2. wamp 다운로드 위치 https://drive.google.com/file/d/1r2tUfV_eeYS2XhzXKabCZeEgeLP-LYL0/view?usp=sharing
-- 주1), 암호 apmsetup 으로 추가해 주셔야 합나다. 
+- 주1), mysql root암호 apmsetup 으로 추가해 주셔야 합나다. 
 ```
-윈amp 작업표시줄의 아이콘 클릭 > phpMyAdmin > 로그인 후 > mysql 데이터베이스 user 테이블 선택 > root 선택 > 수정버튼 클릭
+1. 윈amp 작업표시줄의 아이콘 클릭 > phpMyAdmin > 로그인 후 > mysql 데이터베이스 user 테이블 선택 > root 선택 > 수정버튼 클릭
 > authentication_string 필드 타입 password 선택 후 apmsetup 입력 후 실행 버튼 클릭
+2. phpMyadmin 홈버튼 클릭 > 사용자 계정 탭메뉴 클릭 > 하단에 reload privileges 링크 클릭
+3. 로그아웃 후 로그인 (root / apmsetup) 확인
 ```
 
   주2), 한글 입출력이 가능하게 my.ini 하단에 추가해 주셔야 합니다.
