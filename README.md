@@ -66,6 +66,324 @@ $(document).ready(function() {
 ![ex_screenshot](./git_img/board_admin.jpg)
 
 
+#### 스프링에서 사용된 용어 설명(미리보기)
+```
+======================================
+@RequestMapping 을 매서드상단에 붙이면 HTTP 요청을 받아들이는 매서드임을 나타냄.
+@Autowired (스프링용) = @Inject-주입하다(자바용): 
+ - DI(디펜던시인젝션)컨테이너(등록된 Bean-스프링에서 관리하는 클래스)가 의존성 주입 해야할 클래스.
+ - 스프링 4.3버전 이상 부터 즉, 스프링부트2.x(스프링5.x) 부터는 @Autowired 애노테이션을 사용하지 않아도 DI가 가능합니다.
+@ComponentScan : 프로젝트에서 생성한 빈(Bean)클래스를 자동으로 DI컨테이너에 자동등록@SpringBootApplication (신)에서는 필요없음.
+@Component, @Controller, @Service, @Repository 등 : 
+ - 스프링 에서 DI컨테이너(등록된 Bean들)에 자동 등록될 빈(Bean) 클래스 지정.
+- @Controller : 스프링 웹MVC 컨트롤러를 의미. 
+  웹URI 등록에 사용. 위에 언급한 @RestController (RestFull용)참조.
+  jsp와 @Service서비스연결해주는 View 프리젠테이션 레이어 클래스.
+- @Service : 도메인(domain=VO,Value Object멤버변수) 와
+  DAO(데이터엑세스Repository)를 연결해 주는 비지니스(서비스) 로직 레이어 클래스.
+- @Repository : 서비스(비지니스)와 DB엑세스(DAO) 를 연결해 주는 레이어 클래스.
+==============================================================================
+스프링 웹 프로젝트 코딩 순서는 아래와 같습니다.
+==============================================================================
+1. DB ERD 작업 및 스키마 및 테이블 생성(이전 포스트 참조)
+2. 스프링 Legacy 프로젝트 생성 POM파일+스프링설정(root-context.xml)  및 패키지 구조 정의(이전 포스트 참조)
+3. 자바 코딩 시작(아래 나열된 순서대로 작업 합니다.)
+   아래 대표 @애노테이션 이름이 있습니다.
+ - VO (Db 클래스 멤버변수 정의)파일 생성.
+ - DAO(Db엑세스 인터페이스)파일 생성, Implement 구현클래스(@Repository) 파일 생성.
+ - db SQL쿼리 구문 Mapper xml 파일 생성.(DAO에서 사용하는 이름태그: <mapper namespace="org.edu.mapper.BoardMapper">)
+ - Biz(비지니즈-@Service) 인터페이스 파일 생성, Implement 구현클래스(@Service) 파일 생성
+ - JUnit 테스트(@Test)로 Biz(비지니스) CRUD 테스트.
+===============================================================================
+
+AOP기능 추가시 사용된 파일목록: 
+1.pom.xml (디펜던시추가), 
+2.root-context.xml 에 설정내용추가, 
+3. org.edu.aop 패키지 클래스 상단에 @Aspect지정,@Component 로 지정
+4. 클래스내부 메서드 상단에 @Around로 감싸줌
+@Around("execution(* org.edu.service.MemberService*.*(..))")//해당서비스명칭 변경
+5. log4j.xml 설정을 info -> debug 로 변경해줌.
+```
+
+### REST API 서버+서비스(REST FULL)댓글 처리
+### 댓글 리스트
+```
+<!-- 댓글 목록 반복처리 : 핸들러 플러그인 사용 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.1/handlebars.js"></script>
+<!-- 댓글 리스트 빵틀 -->
+<script id="template" type="text/x-handlebars-template">
+{{#each .}}
+<div class="replyLi" data-rno={{rno}}>
+	<i class="fa fa-comments bg-blue"></i>
+	<div class="timeline-item" >
+		<span class="time">
+			<i class="fa fa-clock-o"></i>{{regdate}}
+		</span>
+		<h3 class="timeline-header">
+			<strong>{{rno}}</strong> -{{replyer}}
+		</h3>
+		<div class="timeline-body">{{replytext}}</div>
+		<div class="timeline-footer">
+			<a class="btn btn-primary btn-sm" data-toggle="modal" data-target="#modifyModal">
+			Modify
+			</a>
+		</div>
+	</div>
+</div>
+{{/each}}
+</script>
+<script>
+//댓글 변수 초기화
+var bno = ${boardVO.bno};
+var printData = function(replyArr, target, templateObject) {
+	var template = Handlebars.compile(templateObject.html());
+	var html = template(replyArr);
+	$(".replyLi").remove();
+	target.after(html);
+}
+function getPage(pageInfo) {
+	$.getJSON(pageInfo, function(data) {
+		//console.log(data);//디버그
+		printData(data, $("#repliesDiv"), $('#template'));
+		$("#modifyModal").modal('hide');
+	});
+}
+//댓글 리스트 실행
+$(document).ready(function(){
+	getPage("/reply/select/"+bno);
+});
+</script>
+```
+### 댓글 입력
+```
+<script>
+$(document).ready(function(){
+	//댓글 입력
+	$("#replyAddBtn").on("click",function(){
+		 var replyerObj = $("#newReplyWriter");
+		 var replytextObj = $("#newReplyText");
+		 var replyer = replyerObj.val();
+		 var replytext = replytextObj.val();
+		  $.ajax({
+				type:'post',
+				url:'/reply/insert',
+				headers: { 
+				      "Content-Type": "application/json",
+				      "X-HTTP-Method-Override": "POST" },
+				dataType:'text',
+				data: JSON.stringify({bno:bno, 
+									  replyer:replyer, 
+									  replytext:replytext}),
+				success:function(result){
+					if(result == 'SUCCESS'){
+						alert("등록 되었습니다.");
+						getPage("/reply/select/"+bno);
+						replyerObj.val("");
+						replytextObj.val("");
+					}
+			}});
+	});
+});
+</script>
+```
+### 댓글 수정/삭제용 모달창 + 변수값 바인딩 및 이벤트
+```
+<div id="modifyModal" class="modal modal-primary fade" role="dialog">
+  <div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header" style="display:block;">
+	<button type="button" class="close" data-dismiss="modal">&times;</button>
+	<h4 class="modal-title"></h4>
+      </div>
+      <div class="modal-body" data-rno>
+	<p><input type="text" id="replytext" class="form-control"></p>
+      </div>
+      <div class="modal-footer">
+	<button type="button" class="btn btn-info" id="replyModBtn">Modify</button>
+	<button type="button" class="btn btn-danger" id="replyDelBtn">DELETE</button>
+	<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+$(document).ready(function() {
+	//선택한 댓글 모달찯에 바인딩
+	$(".timeline").on("click", ".replyLi", function(event){
+		var reply = $(this);
+		$("#replytext").val(reply.find('.timeline-body').text());
+		$(".modal-title").html(reply.attr("data-rno"));
+	});
+	//...댓글 수정 버튼 이벤트.
+	$("#replyModBtn").on("click",function(){
+		  var rno = $(".modal-title").html();
+		  var replytext = $("#replytext").val();
+		  $.ajax({
+				type:'put',
+				url:'/reply/update/'+rno,
+				headers: { 
+				      "Content-Type": "application/json",
+				      "X-HTTP-Method-Override": "PUT" },
+				data:JSON.stringify({replytext:replytext}), 
+				dataType:'text', 
+				success:function(result){
+					console.log("댓글 수정 result: " + result);
+					if(result == 'SUCCESS'){
+						alert("수정 되었습니다.");
+						getPage("/reply/select/"+bno);
+					}
+			}});
+	});
+	//...댓글 삭제 버튼 이벤트.
+	$("#replyDelBtn").on("click",function(){
+		  var rno = $(".modal-title").html();
+		  var replytext = $("#replytext").val();
+		  $.ajax({
+				type:'delete',
+				url:'/reply/delete/'+rno,
+				headers: { 
+				      "Content-Type": "application/json",
+				      "X-HTTP-Method-Override": "DELETE" },
+				dataType:'text', 
+				success:function(result){
+					console.log("댓글 삭제 result: " + result);
+					if(result == 'SUCCESS'){
+						alert("삭제 되었습니다.");
+						getPage("/reply/select/"+bno);
+					}
+			}});
+	});	
+});
+</script>
+```
+
+### 페이징 처리(게시판에 사용된 PageVO 클래스 사용-리뷰 후 아래 실습)
+```
+<!-- 쿼리추가 -->
+<select id="selectReply" resultType="org.edu.vo.ReplyVO">
+	select * from tbl_reply where bno = #{bno} 
+	order by regdate desc
+	limit #{pageVO.startNo}, #{pageVO.perPageNum}
+</select>
+<select id="countRno" resultType="int">
+	select count(bno) from tbl_reply where bno = #{bno}
+</select>
+
+<!-- DAO + Service 추가 -->
+@Override
+public List<ReplyVO> selectReply(Integer bno, PageVO pageVO) throws Exception {
+	Map<String, Object> paramMap = new HashMap<String, Object>();
+	paramMap.put("bno", bno);
+	paramMap.put("pageVO", pageVO);
+	return sqlSession.selectList(mapperQuery + ".selectReply", paramMap);
+}
+@Override
+public int countRno(Integer bno) throws Exception {
+	return sqlSession.selectOne(mapperQuery + ".countRno", bno);
+}
+
+<!-- 컨트롤러 slectReply 수정 -->
+@RequestMapping(value="/select/{bno}/{page}", method=RequestMethod.GET)
+public ResponseEntity<Map<String, Object>> selectReply(@PathVariable("bno") Integer bno, @PathVariable("page") Integer page) {
+	ResponseEntity<Map<String, Object>> entity = null;
+	try {
+		PageVO pageVO = new PageVO();
+		pageVO.setPage(page);
+		pageVO.setPerPageNum(5);
+		pageVO.setTotalCount(replyService.countRno(bno));
+		Map<String, Object> map = new HashMap<String, Object>();
+		map.put("replyList", replyService.selectReply(bno, pageVO));
+		map.put("pageVO", pageVO);
+		entity = new ResponseEntity<Map<String, Object>>(map , HttpStatus.OK);
+	} catch (Exception e) {
+		e.printStackTrace();
+		entity = new ResponseEntity<Map<String, Object>>(HttpStatus.BAD_REQUEST);
+	}
+	return entity;
+}
+
+<!-- 뷰페이지 board_view.jsp 수정 -->
+//댓글 페이지 변수 초기화
+var replyPage = 1;
+//페이징 빵틀
+var printPageVO = function(pageVO, target) {
+	var str = "";
+	if (pageVO.prev) {
+		str += "<li><a href='"+(pageVO.startPage - 1)+"'> << </a></li>";
+	}
+	for (var i=pageVO.startPage;i<=pageVO.endPage;i++) {
+		str = str + "<li class='page-item " + (pageVO.page==i?'active':'') + "'><a class='page-link' href='"+i+"'>"+i+"</a></li>"; 
+	}
+	if (pageVO.next) {
+		str += "<li><a href='"+(pageVO.endPage + 1)+"'> >> </a></li>";
+	}
+	target.html(str);
+};
+//출력부분 수정
+function getPage(pageInfo) {
+	$.getJSON(pageInfo, function(data){
+		//댓글리스트 빵틀 출력
+		printReplyList(data.replyList, $("#replyDiv"), $("#template"));//페이징 때문에 data.replyList 로 변경
+		//페이징 빵틀 출력(아래)
+		printPageVO(data.pageVO, $(".pagination"));
+		//getPage함수 호출시 페이지 카운터 계산 결과 넣어줌.
+		$("#reply_count").html(data.pageVO.totalCount);
+		//$("#modifyModal").modal('hide');
+	});
+}
+//댓글 리스트 출력실행
+$(document).ready(function(){
+	getPage("/reply/select/" + bno + "/" + replyPage);
+	//페이징 버튼 클릭시 이벤트 처리
+	$(".pagination").on("click", "li a", function(event){
+		event.preventDefault();
+		replyPage = $(this).attr("href");
+		getPage("/reply/select/"+bno+"/"+replyPage);
+	});
+});
+//입력,수정,삭제에서 getPage함수 호출하는 매개변수 수정
+getPage("/reply/select/"+bno + "/" + replyPage);
+```
+
+### 댓글 마무리 작업전 점검사항
+- 페이징 처리 pageVO 계산식 10 으로 박혀 있는 상수 -> this.perPageNum 변수로 처리(주, 소수점 아래 변수는 (double)형으로 형변환).
+- jsp뷰페이지에서 페이징에 사용된 자바스크립트 아래쪽에 모두 모아서 정리.
+- jsp뷰페이지에 countRno 값 출력.
+
+### Git에서 제공하는 도메인 사용하기 순서(포트폴리오용)
+1. 포트폴리오 사이트 = Git에서 제공하는 도메인
+2. https://github.com/miniplugin(개인폴더) 
+ - 핵심은 레포지토리명을 => miniplugin.github.io (레포지토리명)
+3. https://miniplugin.github.io (호스트네임)으로 접근가능.
+
+### IE와 크롬에서 모두 첨부파일 이미지 미리보기 가능하게 하는 코드 추가
+
+```
+/**
+ * 게시물 첨부파일 이미지보기 메서드 구현(IE, 크롬 공통)
+ * @throws IOException 
+ */
+@RequestMapping(value = "/image_preview", method = RequestMethod.GET, produces = MediaType.IMAGE_JPEG_VALUE)
+@ResponseBody
+public byte[] getImageAsByteArray(@RequestParam("filename") String fileName, HttpServletResponse response) throws IOException {
+	FileInputStream fis = null;
+	ByteArrayOutputStream baos = new ByteArrayOutputStream();
+	fis = new FileInputStream(uploadPath + "/" + fileName);
+	int readCount = 0;
+	byte[] buffer = new byte[1024];
+	byte[] fileArray = null;
+while((readCount = fis.read(buffer)) != -1){
+	baos.write(buffer,0,readCount);
+}
+fileArray = baos.toByteArray();
+fis.close();
+baos.close();
+return fileArray;
+}
+```
+
+
 ### JQuery 연습(아래)
 
 <h3>1. jQuery 개요</h3>
