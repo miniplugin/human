@@ -542,7 +542,7 @@ return fileArray;
 ### 비대면 수업시 필요한 프로그램 다운로드 목록(6개)
 - 1. 이클립스 (egov.zip) 다운로드 위치 https://drive.google.com/file/d/1GnIzkvZNgVj-o4EbHzoy5WSDCEWk3GAx/view?usp=sharing
 - 2. wamp 다운로드 위치 https://drive.google.com/file/d/1r2tUfV_eeYS2XhzXKabCZeEgeLP-LYL0/view?usp=sharing
-- 3. 워크벤치(mysql용) 다운로드 위치
+- 3. 워크벤치(mysql용) 다운로드 위치 https://drive.google.com/file/d/1j1GUtVGrB0IFxYv4_57r1PeThiWqNfs7/view?usp=sharing
 - 4. 안드로이드스튜디오.zip 다운로드 위치 https://drive.google.com/file/d/17y9mVdJ6Isgom1AQKpoFi5WIPQkDvWN4/view?usp=sharing
 - 5. 오라클서버 다운로드 위치 https://drive.google.com/file/d/1L2XZuH-j47PaoscLNn16kqjPxFYmhi_F/view?usp=sharing
 - 6. sql디벨러퍼(oracle용) 다운로드 위치 https://drive.google.com/file/d/1n7jy85OeI06ipmDjKWFYxaYpTJY16lj-/view?usp=sharing
