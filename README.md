@@ -553,7 +553,7 @@ return fileArray;
 
   주2), 한글 입출력이 가능하게 my.ini 하단에 추가해 주셔야 합니다.
 ```
-윈amp 작업표시줄의 아이콘 클릭 > MySQL > my.ini 클릭 후 제일 하단에 아래 내용 추가
+1. 윈amp 작업표시줄의 아이콘 클릭 > MySQL > my.ini 클릭 후 제일 하단에 아래 내용 추가
 [client]
 default-character-set=utf8
 [mysqldump] 
@@ -564,7 +564,10 @@ default-character-set=utf8
 init_connect="SET collation_connection = utf8_general_ci"
 init_connect="SET NAMES utf8"
 character-set-server = utf8
+
 ```
+- 한글 입출력 적용하시려면, 만세아이콘 정지 후 재시작 하시면 한글 입출력 적용이 됩니다.
+
 - 3. 워크벤치(mysql용) 다운로드 위치 https://drive.google.com/file/d/1j1GUtVGrB0IFxYv4_57r1PeThiWqNfs7/view?usp=sharing
 - 4. 안드로이드스튜디오.zip 다운로드 위치 https://drive.google.com/file/d/17y9mVdJ6Isgom1AQKpoFi5WIPQkDvWN4/view?usp=sharing
 - 주) 반드시 C:\Android 에 압축을 풀어야 합니다.
