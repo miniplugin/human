@@ -574,3 +574,6 @@ character-set-server = utf8
 - 5. 오라클서버 다운로드 위치 https://drive.google.com/file/d/1L2XZuH-j47PaoscLNn16kqjPxFYmhi_F/view?usp=sharing
 - 6. sql디벨러퍼(oracle용) 다운로드 위치 https://drive.google.com/file/d/1n7jy85OeI06ipmDjKWFYxaYpTJY16lj-/view?usp=sharing
 - 7. 온라이 제안요청서 확인 https://www.smu.ac.kr/flexer/index.jsp?ftype=hwp&attachNo=467744
+
+#### 줌 접속 테스트
+- https://zoom.us/j/95558307863?pwd=WXlXOGNUZ3NFekdIZUg5d0tMalV5QT09
