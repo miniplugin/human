@@ -141,7 +141,10 @@
 #### 예제소스: [download this](git_img/Embeded-System-2019-2.zip)
 #### 라즈베리 GPIO사용 하드웨어 제어: GCC컴파일 + wiringPi 라이브러리 사용 / http://blog.daum.net/ejleep1/search/wiringPi 
 #### 참고자료: http://blog.naver.com/PostSearchList.nhn?blogId=tipsware&categoryNo=0&SearchText=%EB%9D%BC%EC%A6%88%EB%B2%A0%EB%A6%AC+%ED%8C%8C%EC%9D%B4+%EC%8B%A4%EC%8A%B5&orderBy=date&term=specific&startDate=2017-05-16&endDate=2017-05-23&range=all&cpage=2
-#### 라즈베리안 설치 및 백업(복구) 소프트웨어(설치-Etcher,복구-Win32Diskmager)사용 : 라즈베리에서 제공하는 imager는 너무 느림. https://withcoding.com/99
+#### 라즈베리안 설치 및 백업(복구) 소프트웨어(설치-Etcher,복구-Win32Diskmager)사용 : 라즈베리에서 제공하는 imager는 너무 느림. 
+#### 라즈베리 설치 참고자료: https://blog.xcoda.net/82 / 라즈베리 백업 참고자료: https://withcoding.com/99
+#### 라즈베리안 설치에 사용되는 Etcher 프로그램 다운로드 위치: https://www.balena.io/etcher/
+#### 라즈베리안 다운로드 위치: https://www.raspberrypi.org/downloads/raspbian/
 #### 라즈베리파이 초기 셋팅시 암호 apmsetup으로 변경 및 국가 한국어로 선택해서 마무리.
 #### 와이파이 버그처리: 라즈베리 환경설정 메뉴에서 Localisation > Set WiFi Country 에서 GB Britain(UK)선택.
 #### 인터넷이 활성화 되면, 터미널에서 sudo apt-get update 다음 sudo apt-get upgrade
