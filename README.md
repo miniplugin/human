@@ -248,5 +248,6 @@ character-set-server = utf8
 - 6. sql디벨러퍼(oracle용) 다운로드 위치 https://drive.google.com/file/d/1n7jy85OeI06ipmDjKWFYxaYpTJY16lj-/view?usp=sharing
 - 7. 온라이 제안요청서 확인 https://www.smu.ac.kr/flexer/index.jsp?ftype=hwp&attachNo=467744
 
-#### 교실에서 줌 접속 테스트 했습니다. 실제 수업전 휴먼교육센터 행정실에서 단체 카톡으로 학생들에게 접속주소를 안내할 예정 입니다.
+#### 교실에서 줌 접속 테스트 했습니다. 실제 수업전 휴먼교육센터에서 카톡 오픈채팅방으로 학생들에게 접속주소를 안내할 예정 입니다.
+- 오픈채팅방 주소 : https://open.kakao.com/o/gncB0Hsc
 
