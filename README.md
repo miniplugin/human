@@ -257,6 +257,7 @@ character-set-server = utf8
 - 6. sql디벨러퍼(oracle용) 다운로드 위치 https://drive.google.com/file/d/1n7jy85OeI06ipmDjKWFYxaYpTJY16lj-/view?usp=sharing
 - 7. 공통 주의) 여러 학생들 git 소스 에 .gitignore 에 root-context.xml와 servlet-context.xml 파일을 제외 시키는 코드가 있어서 누락된 파일이 존재 할 수 있습니다.
 - Ps. 온라이 제안요청서 확인 https://www.smu.ac.kr/flexer/index.jsp?ftype=hwp&attachNo=467744
+- Ps. 원격지원에 사용할 팀뷰어 프로그램 구글 드라이브 위치 입니다. https://drive.google.com/file/d/1NSj_qpwT35kA3ZUVKiZD9C7M6vTl2rgK/view?usp=sharing
 
 #### 교실에서 줌 접속 테스트 했습니다. 실제 수업전 휴먼교육센터에서 카톡 오픈채팅방으로 학생들에게 접속주소를 안내할 예정 입니다.
 - 오픈채팅방 주소 : https://open.kakao.com/o/gncB0Hsc
