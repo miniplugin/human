@@ -253,7 +253,7 @@ character-set-server = utf8
 - 주) 반드시 C:\Android 에 압축을 풀어야 합니다.
 - 5. 오라클서버 다운로드 위치 https://drive.google.com/file/d/1L2XZuH-j47PaoscLNn16kqjPxFYmhi_F/view?usp=sharing
 - 주1) 오라클서버 설치하시기 전 이클립스에서 톰캣을 실행(자동포트 8080)하신 상태에서 설치하시면, 오라클서버 포트 바꾸는 수고를 하지 않아도 됩니다.
-- 주2) 오라클 서버 설치시 포트번호를 9000 으로 잡아 주시면 됩니다.
+- 주2) 오라클 서버 설치시 포트번호를 9000 으로 잡아 주시면 됩니다. 또는 https://github.com/miniplugin/human/tree/v8.0.0 문서의 참고자료출처 부분에 해결책이 있습니다.
 - 6. sql디벨러퍼(oracle용) 다운로드 위치 https://drive.google.com/file/d/1n7jy85OeI06ipmDjKWFYxaYpTJY16lj-/view?usp=sharing
 - 7. 공통 주의) 여러 학생들 git 소스 에 .gitignore 에 root-context.xml와 servlet-context.xml 파일을 제외 시키는 코드가 있어서 누락된 파일이 존재 할 수 있습니다.
 - Ps. 온라이 제안요청서 확인 https://www.smu.ac.kr/flexer/index.jsp?ftype=hwp&attachNo=467744
