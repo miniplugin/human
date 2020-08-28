@@ -252,8 +252,11 @@ character-set-server = utf8
 - 4. 안드로이드스튜디오.zip 다운로드 위치 https://drive.google.com/file/d/17y9mVdJ6Isgom1AQKpoFi5WIPQkDvWN4/view?usp=sharing
 - 주) 반드시 C:\Android 에 압축을 풀어야 합니다.
 - 5. 오라클서버 다운로드 위치 https://drive.google.com/file/d/1L2XZuH-j47PaoscLNn16kqjPxFYmhi_F/view?usp=sharing
+- 주1) 오라클서버 설치하시기 전 이클립스에서 톰캣을 실행(자동포트 8080)하신 상태에서 설치하시면, 오라클서버 포트 바꾸는 수고를 하지 않아도 됩니다.
+- 주2) 오라클 서버 설치시 포트번호를 9000 으로 잡아 주시면 됩니다.
 - 6. sql디벨러퍼(oracle용) 다운로드 위치 https://drive.google.com/file/d/1n7jy85OeI06ipmDjKWFYxaYpTJY16lj-/view?usp=sharing
-- 7. 온라이 제안요청서 확인 https://www.smu.ac.kr/flexer/index.jsp?ftype=hwp&attachNo=467744
+- 7. 공통 주의) 여러 학생들 git 소스 에 .gitignore 에 root-context.xml와 servlet-context.xml 파일을 제외 시키는 코드가 있어서 누락된 파일이 존재 할 수 있습니다.
+- Ps. 온라이 제안요청서 확인 https://www.smu.ac.kr/flexer/index.jsp?ftype=hwp&attachNo=467744
 
 #### 교실에서 줌 접속 테스트 했습니다. 실제 수업전 휴먼교육센터에서 카톡 오픈채팅방으로 학생들에게 접속주소를 안내할 예정 입니다.
 - 오픈채팅방 주소 : https://open.kakao.com/o/gncB0Hsc
