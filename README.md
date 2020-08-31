@@ -259,7 +259,7 @@ character-set-server = utf8
 - Ps. 온라이 제안요청서 확인 https://www.smu.ac.kr/flexer/index.jsp?ftype=hwp&attachNo=467744
 - Ps. 원격지원에 사용할 팀뷰어 프로그램 구글 드라이브 위치 입니다. https://drive.google.com/file/d/1NSj_qpwT35kA3ZUVKiZD9C7M6vTl2rgK/view?usp=sharing
 
-#### 맥북(애플) 사용자를 위한 부트캠프로 윈도우OS 설치 후 멀티부팅을 사용해서 교육용 윈도우 개발환경과 같이 사용할 수 있습니다.
+#### 맥북(애플) 사용자를 위한 부트캠프로 윈도우OS 설치 후 멀티부팅을 사용해서 교육용 윈도우 개발환경과 같은 결과가 나오게 사용할 수 있습니다.
 - 참조: https://m.blog.naver.com/PostView.nhn?blogId=aprilproj&logNo=220794261348&proxyReferer=https:%2F%2Fwww.google.com%2F
 - 조건, 단 Mysql(한글설정)을 사용하기 위한 wamp 설치에서, mysql(3308로 변경)은 실행이 않되고, MariaDB(3306로 변경)를 사용하셔야 합니다. 상단에서 작업하는 스프링 프로젝트 2가지는 Mysql 과 Maria DB가 소스 수정없이 동일한 결과가 나옵니다.
 
