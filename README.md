@@ -265,6 +265,3 @@ character-set-server = utf8
 
 #### 교실에서 줌 접속 테스트 했습니다. 실제 수업전 휴먼교육센터에서 카톡 오픈채팅방으로 학생들에게 접속주소를 안내할 예정 입니다.
 - 오픈채팅방 주소 : https://open.kakao.com/o/gncB0Hsc
-
-#### v11.0.0의 애플리케이션 설계 구글 프레젠테이션 문서 변경한 내용 다운로드(아래)
-[구글 프레젠테이션 문서 download this](git_img/develop_report_student.pptx)
