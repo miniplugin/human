@@ -165,6 +165,12 @@
 #### LED_BUILTIN 깜박이기: https://developer.ibm.com/kr/cloud/internet-of-things/2017/07/30/esp8266-iot-arduino-ide-nodemcu-basic/
 #### 참고사항 NODE MCU보드 강좌: https://blog.naver.com/PostSearchList.nhn?SearchText=NodeMCU+%EA%B0%95%EC%A2%8C&blogId=roboholic84
 #### 강사자료(아두이노메가2560): http://blog.daum.net/_blog/search.do?coll_range=1&query1=%EC%95%84%EB%91%90%EC%9D%B4%EB%85%B8&searchtype=%24%7Bsearchtype%7D&page=%2Fsearch%2Fmy%2FsearchBlog.vm&frombn=2&searchpage=&sort=&blogid=0FnMj&articleno=&recommend=N&sortType=recency&enddate=&begindate=&period=&category=0&target=all
+#### Do it! 안드로이드 앱 프로그래밍
+- 2020.03.04. 전자책 출간 / 2020.02.21. 종이책 출간
+- 무작정 따라하기 챕터3강의안(2015출판,안드로이드스튜디오2.3버전) : https://slidesplayer.org/slide/14087618/
+- 저자카페: https://cafe.naver.com/techtown
+- 저자깃: https://github.com/mike-jung/DoItAndroid
+- 유투브채널: https://www.youtube.com/playlist?list=PLG7te9eYUi7sjJzJR2i5m6wv-X_7K2pVE
 ---
 
 ---
