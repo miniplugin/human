@@ -16,9 +16,9 @@
 
 ### 애플리케이션 테스트 수행하기(아래)
 - 인수 테스트용 매뉴얼작성: 교사가 제시한 매뉴얼을 참고하여 학생이 제작한 웹프로젝트 매뉴얼을 작성(구글 프레젠테이션 사용).
-- 실습자료 프레젠테이션 파일 다운로드: [download this](git_img/projectv1.1_manual.ppt) 
+- 실습자료 프레젠테이션 파일 다운로드: [download this](git_img/projectv1.1_manual.pptx) 
 - 완료보고서용 프로제트 아키텍쳐 제작-사용자폴더/관리자단폴더,클래스/패키지,MVC구조(구글 스프레드시트 사용).
-- 실습자료 스프레드시트 파일 다운로드: [download this](git_img/projectv1.1_architecher.xls)
+- 실습자료 스프레드시트 파일 다운로드: [download this](git_img/projectv1.1_architecher.xlsx)
 
 ### 애플리케이션 결함조치하기(아래)
 - 인수 테스트용 매뉴얼 확인 후 개선사항 조치 하기.
