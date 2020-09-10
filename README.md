@@ -627,7 +627,7 @@ public class NaverLoginController {
  </p>
 ```
 
-### 스프링 프로젝트에 ck에디터 추가하기
+### 스프링 프로젝트 jsp파일에 ck에디터 추가하기
 [download ck에디터](git_img/ckeditor.zip)
 
 ```
@@ -636,7 +636,7 @@ public class NaverLoginController {
 <textarea class="ckeditor" name="content">...</textarea>
 <!-- 위 textarea 태그에 클래스명(ckeditor) 만 추가하면 작동됩 -->
 ```
-### 전자정부 프로젝트 게시판에 웹에디터 적용.
+### 전자정부 프로젝트 게시판에 웹에디터 적용은 jsp파일에 위 처럼 적용 후 아래 내용을 수정하면 됨.
 - 기존 depends="required" 값제거 -> depends="" 
 - src/main/resources/egovframework/validator/let/cop/bbs/EgovNoticeRegist.xml 파일
 
