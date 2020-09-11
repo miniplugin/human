@@ -171,6 +171,11 @@
 - 저자카페: https://cafe.naver.com/techtown
 - 저자깃: https://github.com/mike-jung/DoItAndroid
 - 유투브채널: https://www.youtube.com/playlist?list=PLG7te9eYUi7sjJzJR2i5m6wv-X_7K2pVE
+- VT-x 설정확인: https://www.grc.com/securable.htm 프로그램
+- VT-x 설정이enabled 정상인데도 아래와 같은 에러 메시지 보일때,
+- HAXM device is not found in Windows 7 에러 상황시 현재 설치된v7.5.6 에서 에러가 발생 되었음.
+- 처리는 v7.5.1 로 설치 후 OK. https://github.com/intel/haxm/releases
+-  [바로download this](git_img/haxm-windows_v7_5_1.zip)
 ---
 
 ---
