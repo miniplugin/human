@@ -175,7 +175,8 @@
 - VT-x 설정이enabled 정상인데도 아래와 같은 에러 메시지 보일때,
 - HAXM device is not found in Windows 7 에러 상황시 현재 설치된v7.5.6 에서 에러가 발생 되었음.
 - 처리는 v7.5.1 로 설치 후 OK. https://github.com/intel/haxm/releases
--  [바로download this](git_img/haxm-windows_v7_5_1.zip)
+- [바로download this](git_img/haxm-windows_v7_5_1.zip)
+- 주의) 윈도우사용자계정이름이 한글이면, AVD애뮬레이터 실행시 에러가 발생 됩니다. 계정이름을 영문으로 변경하셔야 합니다.
 ---
 
 ---
