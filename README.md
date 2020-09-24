@@ -63,21 +63,25 @@ public class JsonDataController {
 	@Inject
 	private IF_MemberDAO memberDAO;
 	
-	@RequestMapping(value="/android/login", method = RequestMethod.POST) //안드로이드 외부로그인용
-	public ResponseEntity<List<MemberVO>> loginMember(@RequestParam("txtUsername") String user_id,@RequestParam("txtPassword") String user_pw) {
-		ResponseEntity<List<MemberVO>> entity = null;
+	@RequestMapping(value="/android/login", method= RequestMethod.POST)
+	public ResponseEntity<MemberVO> androidLogin(@RequestParam("txtUsername") String user_id,@RequestParam("txtPassword") String user_pw) {
+		ResponseEntity<MemberVO> entity = null;
 		try {
-			entity = new ResponseEntity<>(memberDAO.loginMember(user_id, user_pw), HttpStatus.OK);
-			System.out.println("OK... user_id = " + user_id);
-			System.out.println("OK... entity = " + entity);
-		
+			MemberVO memberVO = memberDAO.selectMember(user_id);
+			String bcryptPassword = memberVO.getUser_pw();
+			//스프링 시큐리티 4.x BCryptPasswordEncoder 암호화 사용
+			BCryptPasswordEncoder bcryptPasswordEncoder = new BCryptPasswordEncoder(10);
+			if(bcryptPasswordEncoder.matches(user_pw, bcryptPassword )){
+				System.out.println("계정정보 일치");
+				entity = new ResponseEntity<>(memberVO, HttpStatus.OK);//code 200
+			}else{
+				System.out.println("계정정보 불일치");
+				entity = new ResponseEntity<>(HttpStatus.NO_CONTENT);//code 204
+			}
 		} catch (Exception e) {
-			System.out.println("Error ...........");
-			e.printStackTrace();
-			entity = new ResponseEntity<>(HttpStatus.BAD_REQUEST);
-		}	
+			entity = new ResponseEntity<>(HttpStatus.BAD_REQUEST);//code 400
+		}
 		return entity;
-		
 	}
 	
 	@RequestMapping(value="/android/list", method = RequestMethod.POST) //안드로이드 외부로그인용
