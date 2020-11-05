@@ -93,7 +93,7 @@
 - 04월13일~04월21일(48시간) : 사전평가(04월13일) /사후평가(04월21일,4교시)
 - 평가항목(수준3) : 사후 + 포트폴리오
 
-![ex_screenshot](./git_img/loadmap001.png)
+![ex_screenshot](./git_img/loadmap002.png)
 
 ### 교재별 소스 정보(아래)
 
