@@ -192,9 +192,9 @@
 #### 학생PC 환경 
 - 기본브라우저: 크롬 ( 설정: Flash플레이어 허용-교사 다음카페에 과제물제출을 위해서... )
 - 다음카페 도움말: https://cs.daum.net/faq/36/4417.html?faqId=32547
-- 과제물제출처: 교사 다음카페 ( http://cafe.daum.net/human20 ) 학생 카페가입 후 교사가 정회원처리 후 이용가능.
+- 과제물제출처: 교사 다음카페 ( http://cafe.daum.net/human22 ) 학생 카페가입 후 교사가 정회원처리 후 이용가능.
 - 유스케이스 실습자료: [download this](git_img/usecase.jpg)
-- 교사PC화면공유SW설치: https://drive.google.com/file/d/1H5efmROpNFm2zY33RgSx5jsETLI795Ga/view?usp=sharing
+- 교사PC화면공유SW설치(오프라인수업시): https://drive.google.com/file/d/1H5efmROpNFm2zY33RgSx5jsETLI795Ga/view?usp=sharing
 - UI디자인 & Development개발 가이드 샘플: https://drive.google.com/file/d/1JsAIwUItL2phlsXEwQ7yK-BOA7mbizJ-/view
 - 학생작업샘플다운로드: https://drive.google.com/file/d/1TWohmhcdzOqY0P9mX1SmfmXVYcZTnrJo/view?usp=sharing 
 - 화면구현 프로젝트 관리자단 home.html 디자인시안 : [보기](git_img/AdminLte_home.jpg)
