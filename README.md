@@ -274,4 +274,4 @@ character-set-server = utf8
 - 조건, 단 Mysql(한글설정)을 사용하기 위한 wamp 설치에서, mysql(3308로 변경)은 실행이 않되고, MariaDB(3306로 변경)를 사용하셔야 합니다. 상단에서 작업하는 스프링 프로젝트 2가지는 Mysql 과 Maria DB가 소스 수정없이 동일한 결과가 나옵니다.
 
 #### 교실에서 줌 접속 테스트 했습니다. 실제 수업전 휴먼교육센터에서 카톡 오픈채팅방으로 학생들에게 접속주소를 안내할 예정 입니다.
-- 오픈채팅방 주소 : https://open.kakao.com/o/gncB0Hsc
+- 오픈채팅방 주소 : https://open.kakao.com/o/gCdXuNEc
