@@ -4,6 +4,7 @@
 
 - [학습목차](https://github.com/miniplugin/human)
 - 교사정보: 김일국, boramcom@daum.net, 010-8175-6075
+- 과제물제출처: 다음카페 ( http://cafe.daum.net/human22 ) 학생 카페가입 후 교사가 정회원처리 후 이용가능.
 - 학습목표
 ```
 디지털 기술을 기반으로 다양한 기기의 융합, 콘텐츠의 융합을 통해 
@@ -194,7 +195,6 @@
 #### 학생PC 환경 
 - 기본브라우저: 크롬 ( 설정: Flash플레이어 허용-교사 다음카페에 과제물제출을 위해서... )
 - 다음카페 도움말: https://cs.daum.net/faq/36/4417.html?faqId=32547
-- 과제물제출처: 교사 다음카페 ( http://cafe.daum.net/human22 ) 학생 카페가입 후 교사가 정회원처리 후 이용가능.
 - 유스케이스 실습자료: [download this](git_img/usecase.jpg)
 - 교사PC화면공유SW설치(오프라인수업시): https://drive.google.com/file/d/1H5efmROpNFm2zY33RgSx5jsETLI795Ga/view?usp=sharing
 - UI디자인 & Development개발 가이드 샘플: https://drive.google.com/file/d/1JsAIwUItL2phlsXEwQ7yK-BOA7mbizJ-/view
@@ -227,7 +227,7 @@
 - 막대챠트: https://www.chartjs.org/docs/latest/charts/bar.html
 - 레이다챠트 : https://www.chartjs.org/docs/latest/charts/radar.html
 
-### 프런트엔드 개발자용 코딩테스트 설명과 소스: 아래(취업 코딩테스트 대비용)
+### 참고용: 프런트엔드 개발자용 코딩테스트 설명과 소스: 아래(취업 코딩테스트 대비용)
 - [프런트엔드 개발자용 설명 download this](git_img/coding_test.txt)
 - [프런트엔드 개발자용 코딩 download this](git_img/coding_test.zip)
 
@@ -237,7 +237,8 @@
 - 2. wamp 다운로드 위치 https://drive.google.com/file/d/1r2tUfV_eeYS2XhzXKabCZeEgeLP-LYL0/view?usp=sharing
 - 주1), mysql root암호 apmsetup 으로 추가해 주셔야 합나다. 
 ```
-1. 윈amp 작업표시줄의 아이콘 클릭 > phpMyAdmin > 로그인 후 > mysql 데이터베이스 user 테이블 선택 > root 선택 > 수정버튼 클릭
+1. 윈amp 작업표시줄의 아이콘 클릭 > phpMyAdmin > 로그인 후 > 
+mysql 데이터베이스 user 테이블 선택 > root 선택 > 수정버튼 클릭
 > authentication_string 필드 타입 password 선택 후 apmsetup 입력 후 실행 버튼 클릭
 2. phpMyadmin 홈버튼 클릭 > 사용자 계정 탭메뉴 클릭 > 하단에 reload privileges 링크 클릭
 3. 로그아웃 후 로그인 (root / apmsetup) 확인
@@ -261,7 +262,7 @@ character-set-server = utf8
 - 한글 입출력 적용하시려면, 만세아이콘 정지 후 재시작 하시면 한글 입출력 적용이 됩니다.
 
 - 3. 워크벤치(mysql용) 다운로드 위치 https://drive.google.com/file/d/1j1GUtVGrB0IFxYv4_57r1PeThiWqNfs7/view?usp=sharing
-- 4. 안드로이드스튜디오.zip 다운로드 위치 https://drive.google.com/file/d/17y9mVdJ6Isgom1AQKpoFi5WIPQkDvWN4/view?usp=sharing
+- 4. 안드로이드스튜디오5.x 다운로드 위치 https://drive.google.com/file/d/1X9wu2DCLJBbyuZ6BsIxV4U7wLsn-t6WW/view?usp=sharing
 - 주) 반드시 C:\Android 에 압축을 풀어야 합니다.
 - 5. 오라클서버 다운로드 위치 https://drive.google.com/file/d/1L2XZuH-j47PaoscLNn16kqjPxFYmhi_F/view?usp=sharing
 - 주1) 오라클서버 설치하시기 전 이클립스에서 톰캣을 실행(자동포트 8080)하신 상태에서 설치하시면, 오라클서버 포트 바꾸는 수고를 하지 않아도 됩니다.
