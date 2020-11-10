@@ -261,7 +261,7 @@ character-set-server = utf8
 ```
 - 한글 입출력 적용하시려면, 만세아이콘 정지 후 재시작 하시면 한글 입출력 적용이 됩니다.
 
-- 3. 워크벤치(mysql용) 다운로드 위치 https://drive.google.com/file/d/1j1GUtVGrB0IFxYv4_57r1PeThiWqNfs7/view?usp=sharing
+- 3. 워크벤치(mysql용) 다운로드 위치 https://drive.google.com/file/d/1hypGkz74PUzhdkvS6JrknbjZ7jUnTHGd/view?usp=sharing
 - 4. 안드로이드스튜디오5.x 다운로드 위치 https://drive.google.com/file/d/1X9wu2DCLJBbyuZ6BsIxV4U7wLsn-t6WW/view?usp=sharing
 - 주) 반드시 C:\Android 에 압축을 풀어야 합니다.
 - 5. 오라클서버 다운로드 위치 https://drive.google.com/file/d/1L2XZuH-j47PaoscLNn16kqjPxFYmhi_F/view?usp=sharing
