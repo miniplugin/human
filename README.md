@@ -101,41 +101,40 @@
 ### 교재별 소스 정보(아래)
 
 ---
-- 스프링 변경 -> 자바 웹을 다루는 기술(이병승 길벗)
-#### 참고자료: https://github.com/miniplugin/edu_ora/blob/master/spring5.md
-#### 예제소스: https://github.com/madvirus/spring5fs
-#### 강사자료: http://blog.daum.net/web_design/search/%EC%8A%A4%ED%94%84%EB%A7%81%20%EC%9B%B9%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%20%EC%97%B0%EC%8A%B5
+- 스프링 변경1 -> 자바 웹을 다루는 기술(이병승 길벗)
+#### 깃자료: https://github.com/gilbutITbook/006895
+#### 책소스: https://www.gilbut.co.kr/book/view?bookcode=BN002351
+#### 동영상자료: https://www.youtube.com/watch?v=qhc50ZYY4PM&list=PLuvImYntyp-s76lJiia8YfskDRAypeoyh
 ---
 
 --- 
 - 자바스크립트
-#### 예제소스: http://www.webdongne.com/bbs/bbs/board.php?bo_table=wbook_list&wr_id=12
+#### 책소스: http://www.webdongne.com/bbs/bbs/board.php?bo_table=wbook_list&wr_id=12
 #### 맛보기(ebook): https://www.epubx.com/book/291
 ---
 
 --- 
-- 오라클 변경 -> 오라클로 배우는 데이터베이스 입문(이지훈 이지스퍼블리싱)
-#### 예제소스: https://github.com/gilbutITbook/006696
+- 오라클 변경2 -> 오라클로 배우는 데이터베이스 입문(이지훈 이지스퍼블리싱)
+#### 책소스: http://www.easyspub.co.kr/20_Menu/BookView/277/PUB
 #### 강사자료: http://blog.daum.net/web_design/725 (기존 스프링 웹프로젝트를 오라클용으로_1 )
 ---
 
 --- 
-- 이것이 자바다 변경 -> 열혈자바프로그래밍(윤성우 오렌지미디어)
+- 이것이 자바다 변경3 -> 열혈자바프로그래밍(윤성우 오렌지미디어)
+#### 책소스: https://www.orentec.co.kr/jaryosil/JAVA_BASIC_2/add_form.php
 #### 강사자료: 구글프레젠테이션 https://drive.google.com/file/d/1Ns6S2g7RNdrspqnGXwCfGnEEWJ3j3KOx/view?usp=sharing
-#### 참고자료: https://www.youtube.com/playlist?list=PLVsNizTWUw7FPokuK8Cmlt72DQEt7hKZu
-#### 예제소스: https://www.hanbit.co.kr/support/supplement_list.html
 ---
 
 ---
-- C언어 변경 -> 혼자공부하는 C언어(서현우 한빛미디어)
+- C언어 변경4 -> 혼자공부하는 C언어(서현우 한빛미디어)
 #### 강사자료: 구글프레젠테이션 https://drive.google.com/file/d/1uBq1FzFZyrc9T-gpU4S9W39rQL3gB6lC/view?usp=sharing
-#### 참고자료: https://freelec.co.kr/lecture/c-%EC%96%B8%EC%96%B4%EC%9D%98-%EB%B3%B8%EC%A7%88%EC%9D%84-%ED%8C%8C%ED%97%A4%EC%B9%98%EB%8B%A4/
-#### 예제소스: https://freelec.co.kr/datacenter/?mode=list&board_name=DataCenter2&order_by=fn_pid&order_type=desc&category1=&category2=&category3=&search_field=fn_title&search_text=C+%EC%96%B8%EC%96%B4+%EB%B3%B8%EC%83%89
+#### 책소스: https://www.hanbit.co.kr/support/supplement_list.html (검색어: 혼자 공부하는 C 언어 )
 #### C언어이론 실습은 구름클라우드에서 합니다: https://ide.goorm.io/
 ---
 
 ---
-- 임베디드 리눅스 변경 -> 아두이노를 활용한 임베디드 시스템 설계(류지열 부경대학교 출판부)
+- 임베디드 리눅스 변경5 -> 아두이노를 활용한 임베디드 시스템 설계(류지열 부경대학교 출판부)
+#### 책소개 : http://www.kyobobook.co.kr/product/detailViewKor.laf?ejkGb=KOR&mallGb=KOR&barcode=9791187263180&orderClick=&Kc=
 #### 임베디드 프로그램으로 할 수 있는 작업 예: https://www.youtube.com/watch?v=WayCRcelbTU 동영상 2분06초 부분에 내용 있음.
 #### 안드로이드 스튜디오 + SDK 구글드라이브에서 다운로드: https://drive.google.com/file/d/17y9mVdJ6Isgom1AQKpoFi5WIPQkDvWN4/view?usp=sharing
 #### 예제소스: [download this](git_img/Embeded-System-2019-2.zip)
