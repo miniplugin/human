@@ -135,6 +135,7 @@
 ---
 - 임베디드 리눅스 변경5 -> 아두이노를 활용한 임베디드 시스템 설계(류지열 부경대학교 출판부)
 #### 책소개 : http://www.kyobobook.co.kr/product/detailViewKor.laf?ejkGb=KOR&mallGb=KOR&barcode=9791187263180&orderClick=&Kc=
+#### 노드MCU로 웹서버기반으로 Ajax를 이용해서 LED제어하는 드라이버 제작실습으로 변경(아래 라즈베리사용 하지 않음.)
 #### 임베디드 프로그램으로 할 수 있는 작업 예: https://www.youtube.com/watch?v=WayCRcelbTU 동영상 2분06초 부분에 내용 있음.
 #### 안드로이드 스튜디오 + SDK 구글드라이브에서 다운로드: https://drive.google.com/file/d/17y9mVdJ6Isgom1AQKpoFi5WIPQkDvWN4/view?usp=sharing
 #### 예제소스: [download this](git_img/Embeded-System-2019-2.zip)
