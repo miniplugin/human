@@ -38,6 +38,9 @@
 - 와이파이 구동 드라이버: [download this](git_img/02_sketch_led_wifi.ino)
 - 웹서버 구현 드라이버: [download this](git_img/03_sketch_led_server.ino)
 - 결과 예시(아래) : ![ex_screenshot](./git_img/iot.jpg)
+- 기술참조(아래):
+- 웹서버에서 Ajax구현: https://micropilot.tistory.com/2951
+- 와이파이로 웹서버구현: https://kookyungmin.github.io/category/arduino/
 
 ### 라즈베리파이 3B+ 로 실습할때(아래)
 ### 디바이스 드라이버구현하기(아래)
