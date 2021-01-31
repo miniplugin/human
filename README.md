@@ -136,6 +136,8 @@
 - 임베디드 리눅스 변경5 -> 아두이노를 활용한 임베디드 시스템 설계(류지열 부경대학교 출판부)
 #### 책소개 : http://www.kyobobook.co.kr/product/detailViewKor.laf?ejkGb=KOR&mallGb=KOR&barcode=9791187263180&orderClick=&Kc=
 #### 노드MCU로 웹서버기반으로 Ajax를 이용해서 LED제어하는 드라이버 제작실습으로 변경(아래 라즈베리사용 하지 않음.)
+- 만약 코로나상황때문에 실습을 하지 못한다면, 시뮬레이션으로 작동 학습 : https://www.tinkercad.com/
+- 이전 13번째 과목의 프리징은 시뮬레이션 작동이 않됨. https://sourceforge.net/projects/fritzing-portable/
 #### 임베디드 프로그램으로 할 수 있는 작업 예: https://www.youtube.com/watch?v=WayCRcelbTU 동영상 2분06초 부분에 내용 있음.
 #### 안드로이드 스튜디오 + SDK 구글드라이브에서 다운로드: https://drive.google.com/file/d/17y9mVdJ6Isgom1AQKpoFi5WIPQkDvWN4/view?usp=sharing
 #### 예제소스: [download this](git_img/Embeded-System-2019-2.zip)
@@ -160,6 +162,8 @@
 #### 실습에 사용될 NODE MCU ESP8266보드 확인: http://makeshare.org/bbs/board.php?bo_table=project&wr_id=201
 #### CP210x USB to UART Bridge 드라이버 설치하기(윈7용): http://www.iamamaker.kr/ko/tutorials/cp210x-usb-to-uart-%EB%93%9C%EB%9D%BC%EC%9D%B4%EB%B2%84-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0/
 #### 윈7용 UART드라이버 다운로드: https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers
+- UART드라이버 윈10용 다운로드 https://github.com/miniplugin/human/blob/v14.0.0/git_img/CP210x_wind10.zip
+- UART드라이버 윈7용 다운로드 https://github.com/miniplugin/human/blob/v14.0.0/git_img/CP210x_win7.zip
 #### 아두이노 IDE(통합개발환경) 설치 파일 다운로드: https://www.arduino.cc/
 #### NODE MCU개발환경구축하기: https://blog.naver.com/PostView.nhn?blogId=roboholic84&logNo=221187841348
 #### LED_BUILTIN 깜박이기: https://developer.ibm.com/kr/cloud/internet-of-things/2017/07/30/esp8266-iot-arduino-ide-nodemcu-basic/
