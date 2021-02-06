@@ -285,3 +285,30 @@ character-set-server = utf8
 #### 교실에서 줌 접속 테스트 했습니다. 실제 수업전 휴먼교육센터에서 카톡 오픈채팅방으로 학생들에게 접속주소를 안내할 예정 입니다.
 - 교사용 이러닝 가이드: https://sites.google.com/ajou.ac.kr/bbguide/%EA%B5%90%EC%88%98%EC%9A%A9-%EA%B0%80%EC%9D%B4%EB%93%9C/4-2-%EC%8B%9C%ED%97%98/4-2-5-zoom-%ED%99%9C%EC%9A%A9-%EC%98%A8%EB%9D%BC%EC%9D%B8-%EC%8B%9C%ED%97%98-%EA%B0%90%EB%8F%85
 - 오픈채팅방 주소 : https://open.kakao.com/o/gCdXuNEc
+
+#### 만약 코로나19상황때문에 출석수업이 어려울 경우
+- IoT 실습 교육으로 온라인으로 아두이노 시뮬레이션이 가능한 
+- 싱커캐드 사이트(캐드로 유명한 오토데스크사가 만든)를 이용해서 온라인으로 강의할 예정 입니다.
+#### 13번째 과목: 펌웨어 구현(C언어활용)
+-1) 아두이노로 LED 회로 구성 후 C언어로 깜빡이게 시뮬레이션
+  - 실행결과: https://www.tinkercad.com/things/f7sRG8rtN6Z
+-2) 외부버튼을 이용해서 전압 입력값을 시리얼모니터에 출력.
+  - 실행결과: https://www.tinkercad.com/things/hp5aJtBgnmq
+-3) 아날로그 핀을 사용해서 LED에 그라디언트 효과 구현
+  - 실행결과: https://www.tinkercad.com/things/0mo4do0dWCD
+
+#### 14번째 과목: 디바이스 드라이버구현(시리얼통신)
+-4) 외부 시리얼 입력을 아스키코드값으로 변경후 보드를 제어
+  - 실행결과: https://www.tinkercad.com/things/6B6Am5S9yAl
+-5) 스피커를 내장 tone명령어로 8개음을 음표단위로 출력
+  - 실행결과: https://www.tinkercad.com/things/fy1FZkXkP4j
+-6) 외부 가변저항 센서를 이용해서 LED 그라디언트 구현
+  - 실행결과: https://www.tinkercad.com/things/cR8E2Rwxou9
+
+#### 15번째 과목: 임베디드 애클리케이션 구현(무선통신)
+-7) 적외선 센서를 이용해서 LED제어하기
+  - 실행결과: https://www.tinkercad.com/things/dHP3DCYMTai
+-8) 외부 라이브러리를 이용해서 스트립램프에 색상을 흐르게 하기
+  - 실행결과: https://www.tinkercad.com/things/itoxirSsO6S
+- 평가문제도 위 시뮬레이션 내용을 기준으로 출제 하도록 하겠습니다.
+- UI to IoT(19유로) : https://www.creatingo.com/themes-templates-list.html -> http://symbiot4.creatingo.com/
