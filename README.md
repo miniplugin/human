@@ -126,7 +126,7 @@
 ---
 
 ---
-- C언어 변경4 -> 혼자공부하는 C언어(서현우 한빛미디어)
+- C언어(펌웨어구현과목) 변경4 -> 혼자공부하는 C언어(서현우 한빛미디어)
 #### 강사자료: 구글프레젠테이션 https://drive.google.com/file/d/1uBq1FzFZyrc9T-gpU4S9W39rQL3gB6lC/view?usp=sharing
 #### 책소스: https://www.hanbit.co.kr/support/supplement_list.html (검색어: 혼자 공부하는 C 언어 )
 #### C언어이론 실습은 구름클라우드에서 합니다: https://ide.goorm.io/
@@ -157,7 +157,7 @@
 ---
 
 ---
-- 아두이노
+- 아두이노(펌웨어구현과목) NCS 아두이노를 이용한 펌웨어 개발 실무(오상균, 이명희, 권민주:광문각)
 #### 예제소스: http://www.kwangmoonkag.co.kr/sub3/sub3_1.html?target=Board_List&DB=sub3_1&Mode=View&Num=852&page=1&S=S&val=0&Word=&Board_TYPE=&PHPSESSID=03901ac7ddf268e8562dfba0413f5f1a
 #### 실습에 사용될 NODE MCU ESP8266보드 확인: http://makeshare.org/bbs/board.php?bo_table=project&wr_id=201
 #### CP210x USB to UART Bridge 드라이버 설치하기(윈7용): http://www.iamamaker.kr/ko/tutorials/cp210x-usb-to-uart-%EB%93%9C%EB%9D%BC%EC%9D%B4%EB%B2%84-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0/
