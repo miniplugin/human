@@ -172,7 +172,8 @@
 #### Do it! 안드로이드 앱 프로그래밍
 - 2020.03.04. 전자책 출간 / 2020.02.21. 종이책 출간
 - 무작정 따라하기 챕터3강의안(2015출판,안드로이드스튜디오2.3버전) : https://slidesplayer.org/slide/14087618/
-- 최신버전4.1.2구글클라우드다운로드: https://drive.google.com/file/d/1C-DIwGHCMnjufAOoZX0V4Jv13UGjdGIc/view?usp=sharing
+- 속도때문에 SDK포함 버전4.0.1구글클라우드다운로드: https://drive.google.com/file/d/1_AAOcTVimH6FXTkkaofR_trXXrdEq2y3/view?usp=sharing
+- 최신버전 공식배포 사이트: https://developer.android.com/studio?hl=ko
 - 저자카페: https://cafe.naver.com/techtown
 - 저자깃: https://github.com/mike-jung/DoItAndroid
 - 유투브채널: https://www.youtube.com/playlist?list=PLG7te9eYUi7sjJzJR2i5m6wv-X_7K2pVE
