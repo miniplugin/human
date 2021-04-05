@@ -314,4 +314,24 @@ character-set-server = utf8
 - 실행결과: https://www.tinkercad.com/things/itoxirSsO6S
 
 - 평가문제도 위 시뮬레이션 내용을 기준으로 출제 하도록 하겠습니다
+- [학습]노드js기반 Ajax로 앱 제어하기 구름IDE로 진행 예정입니다. 작업순서는 아래와 같습니다. 노드js기본 설명 후 다 같이 하겠습니다.
+
+```
+작업순서
+1. 구름ide 익스프레스 컨테이너 생성 후 모듈 설치 npm install multiline
+2. 소스 상단에 모듈 임포트 var multiline = require('multiline');
+3. const template = multiline(()=>{ /* html코드 집어넣기 */});
+app.get('/on', function(req, res) {
+  res.send("전등ON");
+});
+app.get('/off', function(req, res) {
+  res.send("전등OFF");
+});
+app.get('/human', function(req, res) {
+  //res.setHeader('Content-type','text/html');
+  //res.send(Buffer.from(template));
+  res.send(template);
+});
+```
+- 참고: https://m.blog.naver.com/PostView.nhn?blogId=sdj04048&logNo=221327558775&proxyReferer=https:%2F%2Fwww.google.com%2F
 - UI to IoT 예,(19유로) : https://www.creatingo.com/themes-templates-list.html -> http://symbiot4.creatingo.com/
