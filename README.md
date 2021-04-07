@@ -130,6 +130,7 @@
 #### 강사자료: 구글프레젠테이션 https://drive.google.com/file/d/1uBq1FzFZyrc9T-gpU4S9W39rQL3gB6lC/view?usp=sharing
 #### 책소스: https://www.hanbit.co.kr/support/supplement_list.html (검색어: 혼자 공부하는 C 언어 )
 #### C언어이론 실습은 구름클라우드에서 합니다: https://ide.goorm.io/
+#### 문자열처리 ppt자료: https://web.yonsei.ac.kr/hgjung/Lectures/GEN131/%EC%A0%9C12%EC%9E%A5%20%EB%AC%B8%EC%9E%90%EC%99%80%20%EB%AC%B8%EC%9E%90%EC%97%B4.pdf
 ---
 
 ---
