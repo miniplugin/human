@@ -336,3 +336,34 @@ app.get('/human', function(req, res) {
 ```
 - 참고: https://m.blog.naver.com/PostView.nhn?blogId=sdj04048&logNo=221327558775&proxyReferer=https:%2F%2Fwww.google.com%2F
 - UI to IoT 예,(19유로) : https://www.creatingo.com/themes-templates-list.html -> http://symbiot4.creatingo.com/
+
+#### 구름IDE에서 Mysql 사용시 주의 사항
+- 구름IDE에서 노드js 앱 실행시 Mysql접근에러가 발생 됩니다.(아래)
+Error: ER_NOT_SUPPORTED_AUTH_MODE: Client does not support aut hentication protocol requested by server
+- 해결책은 아래와 같습니다. 구름ide 터미널오 접속후
+- service mysql start; //우분투 리눅스에서 mysql서버 시작 부터 합니다.
+- service mysql status; //mysql 서버 버전 및 상태 확인
+- mysql -uroot -p //엔터 후 암호 apmsetup을 입력 합니다.
+- use mysql;
+- ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'apmsetup'
+- FLUSH PRIVILEGES;
+
+- Ps. 구름IDE에서 초기 mysql설치 후 root 암호 변경(아래 -p 옆은 초기암호가 없기 때문에 공백으로
+- apt-get update -> apt-get install mysql-server 로 설치 한다.
+- mysqladmin -u root -p password 'apmsetup' //엔터 후 다음 입력 창에 apmsetup 한번더 입력
+
+#### 노드js CRUD 작업 기술참조(인프런 무료강좌- Do it! Node.js 프로그래밍)
+- 기술참조: https://www.inflearn.com/course/2017-node-js-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D
+
+#### 구름IDE에서 깃허브 연동방법
+- git init
+- git add .
+- git commit -m "first commit"
+- git branch -M master
+- git remote add origin https://github.com/miniplugin/NodejsTest.git
+- git push -u origin master
+- 개발PC에서 깃으로 업로드 후 구름IDE에서 최신 소스를 내려 받을 때는 구름IDE터미널에서 git pull 합니다.
+#### Error: refname refs/heads/master not found 에러처리방법
+- git fetch
+- git reset --hard origin/master
+- 결과는 root@goorm:/workspace/iot_c/src(master)# 이렇게 마스터로 나오면 됩니다.
