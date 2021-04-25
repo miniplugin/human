@@ -241,8 +241,7 @@
 - 1. 이클립스 (egov.zip) 다운로드 위치 https://drive.google.com/file/d/1GnIzkvZNgVj-o4EbHzoy5WSDCEWk3GAx/view?usp=sharing
 - 주) 반드시 C:\egov 에 압축을 풀어야 합니다. 
 - egov3.10용 이클립스 다운로드 위치: https://drive.google.com/file/d/1YqSF2rKbR1M1hbn_fn_Jpg6n8_7abf96/view?usp=sharing
-- 2. wamp 3.1.9버전 다운로드 위치 https://drive.google.com/file/d/1r2tUfV_eeYS2XhzXKabCZeEgeLP-LYL0/view?usp=sharing
-- wamp 3.2.x버전 다운로드 위치 https://drive.google.com/file/d/1nlTRbcWLUhwinNScZC3Ahijy3KNUXBbg/view?usp=sharing
+- 2. wamp 3.2.x버전 다운로드 위치 https://drive.google.com/file/d/1nlTRbcWLUhwinNScZC3Ahijy3KNUXBbg/view?usp=sharing
 - 주1), mysql root암호 apmsetup 으로 추가해 주셔야 합나다. 
 ```
 1. 윈amp 작업표시줄의 아이콘 클릭 > phpMyAdmin > 로그인 후 > 
