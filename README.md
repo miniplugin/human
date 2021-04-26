@@ -189,8 +189,6 @@
 ---
 - NCS학습모듈 
 #### 참고자료: https://ncs.go.kr/unity/th03/ncsSearchMain.do :/정보통신/정보기술/정보기술개발
-#### 전자정부표준프레임웍3.9버전 개발환경 다운로드(아래 배포사이트) 
- https://www.egovframe.go.kr/EgovDevEnvRelease_300.jsp?menu=3&submenu=2&leftsub=2
 #### 참고자료: Hello World MVC프로젝트 생성시 템플릿확인(아래) 
 #### 참고자료: 템플릿:https://dist.springsource.com/release/STS/help/org.springframework.templates.mvc-3.2.2.zip
 #### 참고자료: 위 템플릿 동시접속 문제로 보이지 않을때 다른 주소: http://timespace12.dothome.co.kr/org.springframework.templates.mvc-3.2.2.zip
@@ -238,10 +236,10 @@
 - [프런트엔드 개발자용 코딩 download this](git_img/coding_test.zip)
 
 ### 비대면 수업시 필요한 프로그램 다운로드 목록(6개)
-- 1. 이클립스 (egov.zip) 다운로드 위치 https://drive.google.com/file/d/1GnIzkvZNgVj-o4EbHzoy5WSDCEWk3GAx/view?usp=sharing
+- 1. 이클립스 (egov.zip) 다운로드 위치 https://drive.google.com/file/d/1BLj4XX9_ADx8NVZUZjcHxyjNJ6ZlEf_d/view?usp=sharing
 - 주) 반드시 C:\egov 에 압축을 풀어야 합니다. 
-- egov3.10용 이클립스 다운로드 위치: https://drive.google.com/file/d/1YqSF2rKbR1M1hbn_fn_Jpg6n8_7abf96/view?usp=sharing
-- 2. wamp 3.2.x버전 다운로드 위치 https://drive.google.com/file/d/1nlTRbcWLUhwinNScZC3Ahijy3KNUXBbg/view?usp=sharing
+- egov3.10 개발환경 공식 배포위치: https://www.egovframe.go.kr/home/sub.do?menuNo=41
+- 2. wamp 3.2.x버전(마리아DB/Mysql 포함) 다운로드 위치 https://drive.google.com/file/d/1nlTRbcWLUhwinNScZC3Ahijy3KNUXBbg/view?usp=sharing
 - 주1), mysql root암호 apmsetup 으로 추가해 주셔야 합나다. 
 ```
 1. 윈amp 작업표시줄의 아이콘 클릭 > phpMyAdmin > 로그인 후 > 
@@ -251,7 +249,7 @@ mysql 데이터베이스 user 테이블 선택 > root 선택 > 수정버튼 클�
 3. 로그아웃 후 로그인 (root / apmsetup) 확인
 ```
 
-  주2), 한글 입출력이 가능하게 my.ini 하단에 추가해 주셔야 합니다.
+- 주2), 한글 입출력이 가능하게 my.ini 하단에 추가해 주셔야 합니다.
 ```
 1. 윈amp 작업표시줄의 아이콘 클릭 > MySQL > my.ini 클릭 후 제일 하단에 아래 내용 추가
 [client]
@@ -264,9 +262,9 @@ default-character-set=utf8
 init_connect="SET collation_connection = utf8_general_ci"
 init_connect="SET NAMES utf8"
 character-set-server = utf8
-
 ```
-- 한글 입출력 적용하시려면, 만세아이콘 정지 후 재시작 하시면 한글 입출력 적용이 됩니다.
+
+- 주3) 한글 입출력 적용하시려면, 만세아이콘 정지 후 재시작 하시면 한글 입출력 적용이 됩니다.
 
 - 3. 워크벤치(mysql용) 다운로드 위치 https://drive.google.com/file/d/1hypGkz74PUzhdkvS6JrknbjZ7jUnTHGd/view?usp=sharing
 - 4. 안드로이드스튜디오5.x 다운로드 위치 https://drive.google.com/file/d/1X9wu2DCLJBbyuZ6BsIxV4U7wLsn-t6WW/view?usp=sharing
