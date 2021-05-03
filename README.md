@@ -4,7 +4,7 @@
 
 - [학습목차](https://github.com/miniplugin/human)
 - 교사정보: 김일국, boramcom@daum.net, 010-8175-6075
-- 과제물제출처: 다음카페 ( http://cafe.daum.net/human22 ) 학생 카페가입 후 교사가 정회원처리 후 이용가능.
+- 과제물제출처: 다음카페 ( https://cafe.daum.net/human-digital ) 학생 카페가입 후 교사가 정회원처리 후 이용가능.
 - 학습목표
 ```
 디지털 기술을 기반으로 다양한 기기의 융합, 콘텐츠의 융합을 통해 
