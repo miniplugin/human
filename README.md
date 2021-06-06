@@ -296,22 +296,29 @@ character-set-server = utf8
 - 실행결과: https://www.tinkercad.com/things/hp5aJtBgnmq
 - 3) 아날로그 핀을 사용해서 LED에 그라디언트 효과 구현(아래)
 - 실행결과: https://www.tinkercad.com/things/0mo4do0dWCD
+- 4) LCD패널에 채팅창 처럼 입력항목 출력하기(아래)
+- 실행결과: https://www.tinkercad.com/things/i5IDDA9hm61
 
 #### 14번째 과목: 디바이스 드라이버구현(시리얼통신)
-- 4) 외부 시리얼 입력을 아스키코드값으로 변경후 보드를 제어(아래)
+- 5) 외부 시리얼 입력을 아스키코드값으로 변경후 보드를 제어(아래)
 - 실행결과: https://www.tinkercad.com/things/6B6Am5S9yAl
-- 5) 스피커를 내장 tone명령어로 8개음을 음표단위로 출력(아래)
+- 6) 스피커를 내장 tone명령어로 8개음을 음표단위로 출력(아래)
 - 실행결과: https://www.tinkercad.com/things/fy1FZkXkP4j
-- 6) 외부 가변저항 센서를 이용해서 LED 그라디언트 구현(아래)
+- 7) 03 작업물에 외부 가변저항 센서를 추가 해서 LED 그라디언트 구현(아래)
 - 실행결과: https://www.tinkercad.com/things/cR8E2Rwxou9
+- 8) 04 작업물 LCD출력에 온도센서 추가 해서 온도 출력하기
+- 실행결과: https://www.tinkercad.com/things/4aGhuuVPlaq
+
 
 #### 15번째 과목: 임베디드 애클리케이션 구현(무선통신)
-- 7) 적외선 센서를 이용해서 LED제어하기(아래)
+- 9) 적외선 센서를 이용해서 LED제어하기(아래)
 - 실행결과: https://www.tinkercad.com/things/dHP3DCYMTai
-- 8) 외부 라이브러리를 이용해서 스트립램프에 색상을 흐르게 하기(아래)
+- 10) 외부 라이브러리를 이용해서 스트립램프에 색상을 흐르게 하기(아래)
 - 실행결과: https://www.tinkercad.com/things/itoxirSsO6S
-- 9) 7세그먼트를 이용하여 0부터 9까지 숫자를 출력하기(아래)
+- 11) 7세그먼트를 이용하여 시리얼통신으로 0부터 9까지 숫자를 출력하기(아래)
 - 실행결과: https://www.tinkercad.com/things/auCCur63WSX-117segment
+- 12) 서보모터를 이용하여 시리얼통신으로 구동, 중지 기능 구현하기(아래)
+- 실행결과: https://www.tinkercad.com/things/avWjRXjWP2U
 
 - 평가문제도 위 시뮬레이션 내용을 기준으로 출제 하도록 하겠습니다
 - 참고: 인프런 무료강좌: https://www.inflearn.com/course/%ED%82%A4%ED%8A%B8%EC%97%86%EC%9D%B4-%EB%B0%B0%EC%9A%B0%EB%8A%94-%EC%95%84%EB%91%90%EC%9D%B4%EB%85%B8#
