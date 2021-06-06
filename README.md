@@ -310,6 +310,8 @@ character-set-server = utf8
 - 실행결과: https://www.tinkercad.com/things/dHP3DCYMTai
 - 8) 외부 라이브러리를 이용해서 스트립램프에 색상을 흐르게 하기(아래)
 - 실행결과: https://www.tinkercad.com/things/itoxirSsO6S
+- 9) 7세그먼트를 이용하여 0부터 9까지 숫자를 출력하기(아래)
+- 실행결과: https://www.tinkercad.com/things/auCCur63WSX-117segment
 
 - 평가문제도 위 시뮬레이션 내용을 기준으로 출제 하도록 하겠습니다
 - 참고: 인프런 무료강좌: https://www.inflearn.com/course/%ED%82%A4%ED%8A%B8%EC%97%86%EC%9D%B4-%EB%B0%B0%EC%9A%B0%EB%8A%94-%EC%95%84%EB%91%90%EC%9D%B4%EB%85%B8#
