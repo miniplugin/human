@@ -365,6 +365,7 @@ CREATE TABLE users (
     password char(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 ```
+- npm install //실행목적 node_modules 추가
 - Ps. 구름IDE에서 초기 mysql설치 후 root 암호 변경(아래 -p 옆은 초기암호가 없기 때문에 공백으로
 - apt-get update -> apt-get install mysql-server 로 설치 한다.
 - mysqladmin -u root -p password 'apmsetup' //엔터 후 다음 입력 창에 apmsetup 한번더 입력
