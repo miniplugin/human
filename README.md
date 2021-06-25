@@ -344,7 +344,7 @@ app.get('/human', function(req, res) {
 - 참고: https://m.blog.naver.com/PostView.nhn?blogId=sdj04048&logNo=221327558775&proxyReferer=https:%2F%2Fwww.google.com%2F
 - UI to IoT 예,(19유로) : https://www.creatingo.com/themes-templates-list.html -> http://symbiot4.creatingo.com/
 
-#### 구름IDE에서 Mysql 사용시 주의 사항
+#### 구름IDE에서 노드JS와 Mysql pool 사용시 주의 사항
 - 구름IDE에서 노드js 앱 실행시 Mysql접근에러가 발생 됩니다.(아래)
 Error: ER_NOT_SUPPORTED_AUTH_MODE: Client does not support aut hentication protocol requested by server
 - 해결책은 아래와 같습니다. 구름ide 터미널오 접속후
@@ -354,7 +354,17 @@ Error: ER_NOT_SUPPORTED_AUTH_MODE: Client does not support aut hentication proto
 - use mysql;
 - ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'apmsetup'
 - FLUSH PRIVILEGES;
+- 실습용 디비 및 테이블 생성
+- create database nodejs default character set utf8;
 
+```
+CREATE TABLE users (
+    id char(255) PRIMARY KEY,
+    name char(255) DEFAULT NULL,
+    age int DEFAULT NULL,
+    password char(255) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+```
 - Ps. 구름IDE에서 초기 mysql설치 후 root 암호 변경(아래 -p 옆은 초기암호가 없기 때문에 공백으로
 - apt-get update -> apt-get install mysql-server 로 설치 한다.
 - mysqladmin -u root -p password 'apmsetup' //엔터 후 다음 입력 창에 apmsetup 한번더 입력
