@@ -5,6 +5,7 @@
 - [학습목차](https://github.com/miniplugin/human)
 - 교사정보: 김일국, boramcom@daum.net, 010-8175-6075
 - 과제물제출처: 다음카페 ( https://cafe.daum.net/human-digital ) 학생 카페가입 후 교사가 정회원처리 후 이용가능.
+- 원격지원에 사용할 애니데스크 프로그램 위치: https://anydesk.com/
 - 학습목표
 ```
 디지털 기술을 기반으로 다양한 기기의 융합, 콘텐츠의 융합을 통해 
@@ -101,7 +102,7 @@
 ### 교재별 소스 정보(아래)
 
 ---
-- 스프링 변경1 -> 자바 웹을 다루는 기술(이병승 길벗)
+- 스프링 -> 자바 웹을 다루는 기술(이병승 길벗)
 #### 깃자료: https://github.com/gilbutITbook/006895
 #### 책소스: https://www.gilbut.co.kr/book/view?bookcode=BN002351
 #### 동영상자료: https://www.youtube.com/watch?v=qhc50ZYY4PM&list=PLuvImYntyp-s76lJiia8YfskDRAypeoyh
@@ -114,19 +115,19 @@
 ---
 
 --- 
-- 오라클 변경2 -> 오라클로 배우는 데이터베이스 입문(이지훈 이지스퍼블리싱)
+- 오라클 -> 오라클로 배우는 데이터베이스 입문(이지훈 이지스퍼블리싱)
 #### 책소스: http://www.easyspub.co.kr/20_Menu/BookView/277/PUB
 #### 강사자료: http://blog.daum.net/web_design/725 (기존 스프링 웹프로젝트를 오라클용으로_1 )
 ---
 
 --- 
-- 이것이 자바다 변경3 -> 열혈자바프로그래밍(윤성우 오렌지미디어)
+- 자바 -> 열혈자바프로그래밍(윤성우 오렌지미디어)
 #### 책소스: https://www.orentec.co.kr/jaryosil/JAVA_BASIC_2/add_form.php
 #### 강사자료: 구글프레젠테이션 https://drive.google.com/file/d/1Ns6S2g7RNdrspqnGXwCfGnEEWJ3j3KOx/view?usp=sharing
 ---
 
 ---
-- C언어(펌웨어구현과목) 변경4 -> 혼자공부하는 C언어(서현우 한빛미디어)
+- C언어(펌웨어구현과목) -> 혼자공부하는 C언어(서현우 한빛미디어)
 #### 강사자료: 구글프레젠테이션 https://drive.google.com/file/d/1uBq1FzFZyrc9T-gpU4S9W39rQL3gB6lC/view?usp=sharing
 #### 책소스: https://www.hanbit.co.kr/support/supplement_list.html (검색어: 혼자 공부하는 C 언어 )
 #### C언어이론 실습은 구름클라우드에서 합니다: https://ide.goorm.io/
@@ -134,7 +135,7 @@
 ---
 
 ---
-- 임베디드 리눅스 변경5 -> 아두이노를 활용한 임베디드 시스템 설계(류지열 부경대학교 출판부)
+- 임베디드 리눅스 -> 아두이노를 활용한 임베디드 시스템 설계(류지열 부경대학교 출판부)
 #### 책소개 : http://www.kyobobook.co.kr/product/detailViewKor.laf?ejkGb=KOR&mallGb=KOR&barcode=9791187263180&orderClick=&Kc=
 #### 노드MCU로 웹서버기반으로 Ajax를 이용해서 LED제어하는 드라이버 제작실습으로 변경(아래 라즈베리사용 하지 않음.)
 - 만약 코로나상황때문에 실습을 하지 못한다면, 시뮬레이션으로 작동 학습 : https://www.tinkercad.com/
@@ -158,7 +159,7 @@
 ---
 
 ---
-- 아두이노(펌웨어구현과목) NCS 아두이노를 이용한 펌웨어 개발 실무(오상균, 이명희, 권민주:광문각)
+- 아두이노(펌웨어구현과목) -> NCS 아두이노를 이용한 펌웨어 개발 실무(오상균, 이명희, 권민주:광문각)
 #### 예제소스: http://www.kwangmoonkag.co.kr/sub3/sub3_1.html?target=Board_List&DB=sub3_1&Mode=View&Num=852&page=1&S=S&val=0&Word=&Board_TYPE=&PHPSESSID=03901ac7ddf268e8562dfba0413f5f1a
 #### 실습에 사용될 NODE MCU ESP8266보드 확인: http://makeshare.org/bbs/board.php?bo_table=project&wr_id=201
 #### CP210x USB to UART Bridge 드라이버 설치하기(윈7용): http://www.iamamaker.kr/ko/tutorials/cp210x-usb-to-uart-%EB%93%9C%EB%9D%BC%EC%9D%B4%EB%B2%84-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0/
@@ -196,16 +197,16 @@
 ---
 
 ---
-#### 학생PC 환경 
-- 기본브라우저: 크롬 ( 설정: Flash플레이어 허용-교사 다음카페에 과제물제출을 위해서... )
-- 다음카페 도움말: https://cs.daum.net/faq/36/4417.html?faqId=32547
+#### 코로나19상황이 아닐 때
+- 기본브라우저: 크롬
 - 유스케이스 실습자료: [download this](git_img/usecase.jpg)
-- 교사PC화면공유SW설치(오프라인수업시): https://drive.google.com/file/d/1H5efmROpNFm2zY33RgSx5jsETLI795Ga/view?usp=sharing
+- 교사PC화면공유SW설치(코로나19상황이 아닐때): https://drive.google.com/file/d/1H5efmROpNFm2zY33RgSx5jsETLI795Ga/view?usp=sharing
+- 원격지원에 사용할 팀뷰어 프로그램 구글 드라이브 위치 입니다. https://drive.google.com/file/d/1NSj_qpwT35kA3ZUVKiZD9C7M6vTl2rgK/view?usp=sharing
 - UI디자인 & Development개발 가이드 샘플: https://drive.google.com/file/d/1JsAIwUItL2phlsXEwQ7yK-BOA7mbizJ-/view
 - 학생작업샘플다운로드: https://drive.google.com/file/d/1TWohmhcdzOqY0P9mX1SmfmXVYcZTnrJo/view?usp=sharing 
 - 화면구현 프로젝트 관리자단 home.html 디자인시안 : [보기](git_img/AdminLte_home.jpg)
 
-#### 매달 초 자리바꾸기 공개용프로그램 자리이동.
+#### 매달 초 자리바꾸기 공개용프로그램 자리이동.(코로나19상황이 아닐 때)
 - 변경기준: 자리바꾸기 공개용프로그램-주최자:교사(아래)
 - [자리바꾸기 공개용프로그램 배포처 확인 링크](https://sciencelove.com/2353)
 - 자리 이동 후 작업내용(git소스) 초기화 방법(아래)
