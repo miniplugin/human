@@ -26,11 +26,14 @@
 
 - 8월03일~8월11일(48시간) : 
 - 평가항목 (수준5): 포트폴리오(2교시)
+- 교사가 제시한 화면설계서 PPT파일 검토 한 후 카카오오븐으로 화면설계 작업을 하세요(아래 서식 URL).
+- https://docs.google.com/presentation/d/1fd-xOKr6f1swAxspflSf9dG-I4K5IXhKcDdFhuOqLFM/edit?usp=sharing
 
 ### [v3.0.0](https://github.com/miniplugin/human/tree/v3.0.0) 화면구현 (2001020225_19v5)
 
 - 8월11일~8월19일(48시간) : 
 - 평가항목(수준3) : 포트폴리오(2교시)
+- 위에서 작업한 화면설계를 기준으로 vs code IDE를 이용해서 모바일 화면구현 작업을 하세요(아래 서식 URL).
 
 ### [v4.0.0](https://github.com/miniplugin/human/tree/v4.0.0) 프로그래밍언어활용 (2001020231_19v4)
 
@@ -46,6 +49,8 @@
 
 - 9월09일~10월21일(216시간) : 
 - 평가항목(수준3) : 포트폴리오(2교시)
+- 교사가 제시한 화면설계서 PPT파일 검토 한 후 소스 작업을 하세요(아래 서식 URL).
+https://docs.google.com/presentation/d/1fd-xOKr6f1swAxspflSf9dG-I4K5IXhKcDdFhuOqLFM/edit?usp=sharing
 
 ### [v7.0.0](https://github.com/miniplugin/human/tree/v7.0.0) SQL활용 (2001020413_19v4)
 
@@ -102,32 +107,32 @@
 ### 교재별 소스 정보(아래)
 
 ---
-- 스프링 -> 자바 웹을 다루는 기술(이병승 길벗)
+- UI구현(스프링) -> 자바 웹을 다루는 기술(이병승 길벗)
 #### 깃자료: https://github.com/gilbutITbook/006895
 #### 책소스: https://www.gilbut.co.kr/book/view?bookcode=BN002351
 #### 동영상자료: https://www.youtube.com/watch?v=qhc50ZYY4PM&list=PLuvImYntyp-s76lJiia8YfskDRAypeoyh
 ---
 
 --- 
-- 자바스크립트
+- 화면구현(자바스크립트) -> 자바스크립트+jQuery 완전정복 스터디1
 #### 책소스: http://www.webdongne.com/bbs/bbs/board.php?bo_table=wbook_list&wr_id=12
 #### 맛보기(ebook): https://www.epubx.com/book/291
 ---
 
 --- 
-- 오라클 -> 오라클로 배우는 데이터베이스 입문(이지훈 이지스퍼블리싱)
+- SQL활용(오라클) -> 오라클로 배우는 데이터베이스 입문(이지훈 이지스퍼블리싱)
 #### 책소스: http://www.easyspub.co.kr/20_Menu/BookView/277/PUB
 #### 강사자료: http://blog.daum.net/web_design/725 (기존 스프링 웹프로젝트를 오라클용으로_1 )
 ---
 
 --- 
-- 자바 -> 열혈자바프로그래밍(윤성우 오렌지미디어)
+- 프로그램언어활용(자바) -> 열혈자바프로그래밍(윤성우 오렌지미디어)
 #### 책소스: https://www.orentec.co.kr/jaryosil/JAVA_BASIC_2/add_form.php
 #### 강사자료: 구글프레젠테이션 https://drive.google.com/file/d/1Ns6S2g7RNdrspqnGXwCfGnEEWJ3j3KOx/view?usp=sharing
 ---
 
 ---
-- C언어(펌웨어구현과목) -> 혼자공부하는 C언어(서현우 한빛미디어)
+- 펌웨어구현(C언어) -> 혼자공부하는 C언어(서현우 한빛미디어)
 #### 강사자료: 구글프레젠테이션 https://drive.google.com/file/d/1uBq1FzFZyrc9T-gpU4S9W39rQL3gB6lC/view?usp=sharing
 #### 책소스: https://www.hanbit.co.kr/support/supplement_list.html (검색어: 혼자 공부하는 C 언어 )
 #### C언어이론 실습은 구름클라우드에서 합니다: https://ide.goorm.io/
@@ -135,7 +140,7 @@
 ---
 
 ---
-- 임베디드 리눅스 -> 아두이노를 활용한 임베디드 시스템 설계(류지열 부경대학교 출판부)
+- 디바이스드라이버구현 -> 아두이노를 활용한 임베디드 시스템 설계(류지열 부경대학교 출판부)
 #### 책소개 : http://www.kyobobook.co.kr/product/detailViewKor.laf?ejkGb=KOR&mallGb=KOR&barcode=9791187263180&orderClick=&Kc=
 #### 노드MCU로 웹서버기반으로 Ajax를 이용해서 LED제어하는 드라이버 제작실습으로 변경(아래 라즈베리사용 하지 않음.)
 - 만약 코로나상황때문에 실습을 하지 못한다면, 시뮬레이션으로 작동 학습 : https://www.tinkercad.com/
@@ -188,7 +193,7 @@
 ---
 
 ---
-- NCS학습모듈 
+- NCS학습모듈 과 참고자료
 #### 참고자료: https://ncs.go.kr/unity/th03/ncsSearchMain.do :/정보통신/정보기술/정보기술개발
 #### 참고자료: Hello World MVC프로젝트 생성시 템플릿확인(아래) 
 #### 참고자료: 템플릿:https://dist.springsource.com/release/STS/help/org.springframework.templates.mvc-3.2.2.zip
