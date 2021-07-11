@@ -132,7 +132,7 @@ https://docs.google.com/presentation/d/1fd-xOKr6f1swAxspflSf9dG-I4K5IXhKcDdFhuOq
 ---
 
 ---
-- 펌웨어구현(C언어) -> 혼자공부하는 C언어(서현우 한빛미디어)
+- 펌웨어구현(C언어+아두이노) -> 혼자공부하는 C언어(서현우 한빛미디어)
 #### 강사자료: 구글프레젠테이션 https://drive.google.com/file/d/1uBq1FzFZyrc9T-gpU4S9W39rQL3gB6lC/view?usp=sharing
 #### 책소스: https://www.hanbit.co.kr/support/supplement_list.html (검색어: 혼자 공부하는 C 언어 )
 #### C언어이론 실습은 구름클라우드에서 합니다: https://ide.goorm.io/
@@ -140,7 +140,7 @@ https://docs.google.com/presentation/d/1fd-xOKr6f1swAxspflSf9dG-I4K5IXhKcDdFhuOq
 ---
 
 ---
-- 디바이스드라이버구현 -> 아두이노를 활용한 임베디드 시스템 설계(류지열 부경대학교 출판부)
+- 디바이스드라이버구현(아두이노) -> 아두이노를 활용한 임베디드 시스템 설계(류지열 부경대학교 출판부)
 #### 책소개 : http://www.kyobobook.co.kr/product/detailViewKor.laf?ejkGb=KOR&mallGb=KOR&barcode=9791187263180&orderClick=&Kc=
 #### 노드MCU로 웹서버기반으로 Ajax를 이용해서 LED제어하는 드라이버 제작실습으로 변경(아래 라즈베리사용 하지 않음.)
 - 만약 코로나상황때문에 실습을 하지 못한다면, 시뮬레이션으로 작동 학습 : https://www.tinkercad.com/
